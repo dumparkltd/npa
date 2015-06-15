@@ -18,15 +18,9 @@ var actions         = require("actions"),
     routes          = require("routes"),
     loadData        = require('data/load-data')
 //stores
-var DataStore           = require('stores/data-store'),
-    DataBreakdownStore  = require('stores/data-breakdown-store'),
-    DataGroupStore      = require('stores/data-group-store'),
-    DatasetStore        = require('stores/dataset-store'),
-    IndicatorStore      = require('stores/indicator-store'),
-    IssueStore          = require('stores/issue-store'),
-    RecommendationStore = require('stores/recommendation-store'),
-    RouteStore          = require("stores/route-store"),
-    ChartStore          = require("stores/chart-store")
+var RouteStore          = require("stores/route-store"),
+    EntityStore          = require("stores/entity-store")
+    
 
 //helpers
 var insertCSS       = require('insert-css')
@@ -45,19 +39,21 @@ var router = Router.create({
 })
 
 // the google spreadhseet key
-var key = '1nmW8b_2HDgMzvuyllWCSV2hc8uUpyNrTT0WAC_7MnhE'
+var key = '1V5SQbTVfGgTMCJa0MMPb1t93LryiiTVkZNIQ-VxEiLg'
 
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  issues: new IssueStore({ key: key, sheet: 'issues', loadData: loadData }),
-  indicators: new IndicatorStore({ key: key, sheet: 'indicators', loadData: loadData  }),
-  dataBreakdowns: new DataBreakdownStore({ key: key, sheet: 'data_breakdowns', loadData: loadData  }),
-  dataGroups: new DataGroupStore({ key: key, sheet: 'data_groups', loadData: loadData  }),
-  datasets: new DatasetStore({ key: key, sheet: 'data_sets', loadData: loadData  }),
-  recommendations: new RecommendationStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  data: new DataStore({ key: key, sheet: 'data', loadData: loadData }),
-  charts: new ChartStore()
+  actions: new EntityStore({ key: key, sheet: 'actions', loadData: loadData }),  
+  recommendations: new EntityStore({ key: key, sheet: 'recommendations', loadData: loadData }),
+  issues: new EntityStore({ key: key, sheet: 'issues', loadData: loadData }),
+  groups: new EntityStore({ key: key, sheet: 'groups', loadData: loadData }),
+  agencies: new EntityStore({ key: key, sheet: 'agencies', loadData: loadData }),
+  treatybodies: new EntityStore({ key: key, sheet: 'treatybodies', loadData: loadData }),
+  articles: new EntityStore({ key: key, sheet: 'articles', loadData: loadData }),
+  terms: new EntityStore({ key: key, sheet: 'glossary', loadData: loadData }),
+  sessions: new EntityStore({ key: key, sheet: 'sessions', loadData: loadData })  
+  
 }
 
 log('init flux...')
