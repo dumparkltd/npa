@@ -1,0 +1,46 @@
+/*own style overrides*/
+
+
+body {
+  padding: 0px;
+  background-color: #E2DFD6;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8D825F;
+}
+
+.emphasis {
+  color: black;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  color: white
+}
+
+a {
+
+}
+a:hover,a:focus{
+  text-decoration:none
+}
