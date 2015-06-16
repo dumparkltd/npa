@@ -44,15 +44,15 @@ var key = '1V5SQbTVfGgTMCJa0MMPb1t93LryiiTVkZNIQ-VxEiLg'
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  actions: new EntityStore({ key: key, sheet: 'actions', loadData: loadData }),  
-  recommendations: new EntityStore({ key: key, sheet: 'recommendations', loadData: loadData }),
-  issues: new EntityStore({ key: key, sheet: 'issues', loadData: loadData }),
-  groups: new EntityStore({ key: key, sheet: 'groups', loadData: loadData }),
-  agencies: new EntityStore({ key: key, sheet: 'agencies', loadData: loadData }),
-  treatybodies: new EntityStore({ key: key, sheet: 'treatybodies', loadData: loadData }),
-  articles: new EntityStore({ key: key, sheet: 'articles', loadData: loadData }),
-  terms: new EntityStore({ key: key, sheet: 'glossary', loadData: loadData }),
-  sessions: new EntityStore({ key: key, sheet: 'sessions', loadData: loadData })  
+  actions: new EntityStore({ key: key, sheet: 'actions', type:'action', loadData: loadData }),  
+  recommendations: new EntityStore({ key: key, sheet: 'recommendations', type:'recommendation', loadData: loadData }),
+  issues: new EntityStore({ key: key, sheet: 'issues', type:'issue', loadData: loadData }),
+  groups: new EntityStore({ key: key, sheet: 'groups', type:'group', loadData: loadData }),
+  agencies: new EntityStore({ key: key, sheet: 'agencies', type:'agency', loadData: loadData }),
+  treatybodies: new EntityStore({ key: key, sheet: 'treatybodies', type:'treatybody', loadData: loadData }),
+  articles: new EntityStore({ key: key, sheet: 'articles', type:'article', loadData: loadData }),
+  terms: new EntityStore({ key: key, sheet: 'glossary', type:'term', loadData: loadData }),
+  sessions: new EntityStore({ key: key, sheet: 'sessions', type:'session', loadData: loadData })  
   
 }
 
