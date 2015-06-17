@@ -1,7 +1,7 @@
 /* SPRITE */
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
-  background: url('./img/TEW-sprite.png') no-repeat top left;
+  background: url('./img/NPA-sprite.png') no-repeat top left;
   width: 50px;
   height: 50px;
   vertical-align: middle;
@@ -18,49 +18,53 @@
                        width: 100px;
                        height: 100px; }
 
-.icon-employment      {background-position: 0px -100px;  
+.icon-issues      {background-position: 0px -100px;  
                        width: 100px;
                        height: 80px; }
-.active .icon-employment,
-.active.icon-employment,      
-a:hover .icon-employment,
-.icon-employment:hover      
+.active .icon-issues,
+.active.icon-issues,      
+a:hover .icon-issues,
+.icon-issues:hover      
                       {background-position: -100px -100px }
 
-.icon-discrimination  {background-position: 0px -200px;  
+.icon-groups  {background-position: 0px -200px;  
                        width: 100px;
                        height: 80px; }
-.active .icon-discrimination,
-.active.icon-discrimination,   
-a:hover .icon-discrimination,
-.icon-discrimination:hover      
+.active .icon-groups,
+.active.icon-groups,   
+a:hover .icon-groups,
+.icon-groups:hover      
                       {background-position: -100px -200px}
                       
-.icon-pay             {background-position: 0px -300px;  
+.icon-agencies             {background-position: 0px -300px;  
                        width: 80px;
                        height: 80px; }
-.active .icon-pay,
-.active.icon-pay,      
-.icon-pay:hover      
+.active .icon-agencies,
+.active.icon-agencies,      
+.icon-agencies:hover      
                       {background-position: -100px -300px }
 
-.icon-leadership      {background-position: 0px -400px;  
+.icon-treatybodies      {background-position: 0px -400px;  
                        width: 100px;
                        height: 80px; }
-.active .icon-leadership,
-.active.icon-leadership,     
-a:hover .icon-leadership,
-.icon-leadership:hover      
+.active .icon-treatybodies,
+.active.icon-treatybodies,     
+a:hover .icon-treatybodies,
+.icon-treatybodies:hover      
                       {background-position: -100px -400px }
 
 .icon-close           {background-position: 0px -500px }
 .icon-previous        {background-position: 0px -550px }
 .icon-next            {background-position: 0px -600px }
-.icon-right-large     {background-position: 0px -650px }
-.icon-li-arrow        {background-position: 0px -700px }
-.icon-li-dot          {background-position: 0px -750px }
-.icon-information     {background-position: 0px -800px }
-.icon-arrow-right-sm  {background-position: 0px -850px }
+.icon-li-arrow        {background-position: 0px -650px }
+.icon-li-dot          {background-position: 0px -700px }
+.icon-information     {background-position: 0px -750px }
+.icon-arrow-right-sm  {background-position: 0px -800px }
+.active .icon-arrow-right-sm,
+.active.icon-arrow-right-sm,     
+a:hover .icon-arrow-right-sm,
+.icon-arrow-right-sm:hover      
+  {background-position: -50px -800px }
 
 .icon-barchart        {background-position: 0px -900px }
 a:hover .icon-barchart,
@@ -106,65 +110,13 @@ a:hover .icon-snapshot,
 
 
 
-/*nav-primary
-.icon-logo {background-position: 12px 12px; width: 100px; height: 100px}
-.icon-employment {background-position: -10px -125px; width: 100px; height: 50px}
-.icon-discrimination {background-position: -10px -225px; width: 100px; height: 50px}
-.icon-pay {background-position: -10px -325px; width: 100px; height: 50px}
-.icon-leadership {background-position: -10px -425px; width: 100px; height: 50px}
-
-nav-carousel
-.icon-previous {background-position: 12px -594px; width: 40px; height: 30px}
-.icon-next {background-position: 12px -645px; width: 40px; height: 30px}
-.icon-close {background-position: 1px -500px; width: 70px; height: 70px}
-
-indicator-preview
-.icon-barchart {background-position: 5px -895px; width: 40px; height: 30px}
-.icon-linechart {background-position: 5px -947px; width: 40px; height: 30px}
-
-
-Time-filter
-.icon-snapshot-active {
-  background-color: #7F7C6F;
-  background-position: -90px -1218px;
-  width: 100px;
-  height: 75px;
-}
-.icon-snapshot {
-  background-color: #ECEBE6;
-  background-position: 10px -1218px;
-  width: 100px;
-  height: 75px;
-}
-.icon-timeline-active {
-  background-color: #7F7C6F;
-  background-position: -90px -1175px;
-  width: 100px;
-  height: 75px;
-}
-.icon-timeline {
-  background-color: #ECEBE6;
-  background-position: 10px -1175px;
-  width: 100px;
-  height: 75px;
-}
-.icon-dropdown-arrow {
-  background-color: #E2DFD6;
-  background-position: 81px -1288px;
-  width: 100px;
-  height: 30px;
-}
-
-
-*/
-
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (-o-min-device-pixel-ratio: 3/2),
     only screen and (min--moz-device-pixel-ratio: 1.5),
     only screen and (min-device-pixel-ratio: 1.5) {
 
   [class^="icon-"], [class*=" icon-"] {
-    background-image: url('../img/tew-sprite@2.png');
+    background-image: url('../img/NPA-sprite@2.png');
     background-size: 200px 1650px;
   }
 }
