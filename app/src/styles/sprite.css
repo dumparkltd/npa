@@ -7,16 +7,13 @@
   vertical-align: middle;
 }
 
-/*.icon-big{
-  zoom:2;
-  -moz-transform:scale(2);
-  -moz-transform-origin: 0 0;
-}*/
 
 /* icons */
-.icon-hrc-logo-sm     {background-position: 0px 0px;  
-                       width: 100px;
-                       height: 100px; }
+.icon-hrc-logo-sm {
+  background-position: 0px 0px;
+  width: 75px;
+  height: 46px;
+}
 
 .icon-issues      {background-position: 0px -100px;  
                        width: 100px;
@@ -53,27 +50,30 @@ a:hover .icon-treatybodies,
 .icon-treatybodies:hover      
                       {background-position: -100px -400px }
 
-.icon-close           {background-position: 0px -500px }
-.icon-previous        {background-position: 0px -550px }
-.icon-next            {background-position: 0px -600px }
-.icon-li-arrow        {background-position: 0px -650px }
-.icon-li-dot          {background-position: 0px -700px }
-.icon-information     {background-position: 0px -750px }
-.icon-arrow-right-sm  {background-position: 0px -800px }
-.active .icon-arrow-right-sm,
-.active.icon-arrow-right-sm,     
-a:hover .icon-arrow-right-sm,
-.icon-arrow-right-sm:hover      
-  {background-position: -50px -800px }
+.icon-close           {background-position: 0px -500px;  
+                       width: 68px;
+                        height: 68px; }
+a:hover .icon-close,
+.icon-close:hover
+                      {background-position: -100px -500px; }
+.icon-previous        {background-position: 0px -600px;  width: 13px; }
+a:hover .icon-previous, .icon-previous:hover        {background-position: -50px -600px;}
+.icon-next            {background-position: 0px -650px;  width: 13px; }
+a:hover .icon-next, .icon-next:hover        {background-position: -50px -650px;}
+.icon-li-arrow        {background-position: 0px -700px }
+.icon-li-dot          {background-position: 0px -750px }
+.icon-information     {background-position: 0px -800px }
+.icon-arrow-right-sm  {background-position: 0px -850px }
 
-.icon-barchart        {background-position: 0px -900px }
+.icon-barchart        {background-position: 0px -900px;width: 30px;height: 21px; }
 a:hover .icon-barchart,
 .icon-barchart:hover
-                      {background-position: -50px -900px }
-.icon-linechart       {background-position: 0px -950px }
+                      {background-position: 0px -900px }
+.icon-linechart       {background-position: 0px -950px;width: 30px;height: 21px; }
 a:hover .icon-linechart,
 .icon-linechart:hover
-                      {background-position: -50px -950px }
+                      {background-position: 0px -950px;
+                      }
                       
 .icon-menu            {background-position: 0px -1000px }
 .icon-menu-open       {background-position: -50px -1000px }
@@ -82,32 +82,46 @@ a:hover .icon-linechart,
 .icon-social-linkedin {background-position: 0px -1100px }
 .icon-social-twitter  {background-position: 0px -1150px }
 
-.icon-timeline        {background-position: 0px -1200px; width:100px }
+.icon-social-facebook-sm {background-position: -100px -1050px;width: 20px;
+  height: 20px;  margin-top: -5px; }
+.icon-social-share {background-position: -100px -1100px;width: 20px;
+  height: 20px;  margin-top: -5px; }
+.icon-social-twitter-sm  {background-position: -100px -1150px; width: 20px;
+  height: 20px;  margin-top: -5px;}
+a:hover .icon-social-facebook-sm {background-position: -150px -1050px;}
+a:hover .icon-social-share {background-position: -150px -1100px;}
+a:hover .icon-social-twitter-sm  {background-position: -150px -1150px; }
+
 a:hover .icon-timeline,
-.icon-timeline:hover
+.icon-timeline:hover,
+.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 40px; }
+
+a.active .icon-timeline,
+a:active .icon-timeline,
+.icon-timeline.active,
+.icon-timeline:active
                       {background-position: -100px -1200px }
-.active .icon-timeline,
-.active.icon-timeline
-                      {background-position: -200px -1200px }
                       
-                      
-.icon-snapshot        {background-position: 0px -1250px; width:100px }
 a:hover .icon-snapshot,
-.icon-snapshot:hover
+.icon-snapshot:hover,                      
+.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 40px; }
+a.active .icon-snapshot,
+a:active .icon-snapshot,
+.icon-snapshot.active,
+.icon-snapshot:active
                       {background-position: -100px -1250px }
-.active .icon-snapshot,
-.active.icon-snapshot
-                      {background-position: -200px -1250px }
+
 .icon-arrow-up-sm     {background-position: 0px -1300px }
 .icon-arrow-down-sm   {background-position: -50px -1300px }
 .icon-hrc-logo-claim  {background-position: 0px -1350px;  
-                       width: 150px;
-                       height: 100px; }
+                       width: 200px;
+                       height: 115px;  }
 .icon-hrc-logo        {background-position: 0px -1500px;  
-                       width: 100px;
-                       height: 100px; }
-.icon-hrc-claim       {background-position: 0px -1600px }
-
+                       width: 150px;
+                       height: 50px; }
+.icon-hrc-claim       {background-position: 0px -1600px;
+                       width: 150px;
+                        height: 25px; }
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -116,7 +130,7 @@ a:hover .icon-snapshot,
     only screen and (min-device-pixel-ratio: 1.5) {
 
   [class^="icon-"], [class*=" icon-"] {
-    background-image: url('../img/NPA-sprite@2.png');
-    background-size: 200px 1650px;
+    background-image: url('./img/NPA-sprite@2.png');
+    background-size: 300px 1650px;
   }
 }

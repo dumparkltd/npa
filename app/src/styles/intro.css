@@ -1,0 +1,20 @@
+
+.intro-lead {
+  font-size: 16px;
+}
+
+.intro-sub-lead {
+  font-size: 14px;
+}
+
+.intro-content {
+  margin: 30px 85px 8px
+}
+
+.intro-content p {
+  margin-bottom: 20px;
+}
+
+.intro-read-more {
+  margin-top: 20px;
+}

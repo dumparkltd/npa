@@ -1,0 +1,84 @@
+.share-modal .close-modal{
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.share-modal-inner {
+  position: absolute;
+  top: 100px;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+
+.share-modal-row {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.btn.share-modal-social {
+  padding: 0px 7px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.btn.share-modal-social,
+.btn.share-modal-social:focus {
+  background-color: #559EB2;
+  color: white;  
+}
+.btn.share-modal-social:hover {
+  background-color: #4B93A4;
+}
+
+.share-modal-social span {
+  height: 40px;
+  width: 40px;
+  padding-right: 10px;
+}
+
+.share-modal-link {
+  background-color: #D8E0E3;
+  width: 100%;
+  height: 40px;
+  color: #559EB2;
+  /*copied from btn*/
+  padding: 6px 12px;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  /*copied from .btn*/
+}
+
+.share-modal-close {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.share-modal-close a.btn:hover {  
+  color: #4B93A4;
+ }
+
+.share-modal-close a.btn {
+  text-align: center;
+  color: #559EB2;
+  min-width: 50px;
+  padding: 0;
+  background-color:transparent;
+}
+
+.share-modal-control {
+}
+
+.share-modal h1 {
+  margin-bottom: 40px;
+}
