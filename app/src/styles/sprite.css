@@ -9,119 +9,144 @@
 
 
 /* icons */
-.icon-hrc-logo-sm {
-  background-position: 0px 0px;
-  width: 75px;
-  height: 46px;
-}
+.icon-hrc-logo-sm         { background-position: 0px 0px;     width: 75px;  height: 46px;}
 
-.icon-issues      {background-position: 0px -100px;  
-                       width: 100px;
-                       height: 80px; }
+.icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
 .active .icon-issues,
 .active.icon-issues,      
 a:hover .icon-issues,
-.icon-issues:hover      
-                      {background-position: -100px -100px }
+.icon-issues:hover        { background-position: -100px -100px }
 
-.icon-groups  {background-position: 0px -200px;  
-                       width: 100px;
-                       height: 80px; }
+.icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
 .active .icon-groups,
 .active.icon-groups,   
 a:hover .icon-groups,
-.icon-groups:hover      
-                      {background-position: -100px -200px}
+.icon-groups:hover        { background-position: -100px -200px}
                       
-.icon-agencies             {background-position: 0px -300px;  
-                       width: 80px;
-                       height: 80px; }
+.icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
 .active .icon-agencies,
 .active.icon-agencies,      
-.icon-agencies:hover      
-                      {background-position: -100px -300px }
+.icon-agencies:hover      { background-position: -100px -300px }
 
-.icon-treatybodies      {background-position: 0px -400px;  
-                       width: 100px;
-                       height: 80px; }
+.icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
 .active .icon-treatybodies,
 .active.icon-treatybodies,     
 a:hover .icon-treatybodies,
-.icon-treatybodies:hover      
-                      {background-position: -100px -400px }
+.icon-treatybodies:hover  { background-position: -100px -400px }
 
-.icon-close           {background-position: 0px -500px;  
-                       width: 68px;
-                        height: 68px; }
+.icon-close               { background-position: 0px -500px; width: 68px; height: 68px; }
 a:hover .icon-close,
 .icon-close:hover
-                      {background-position: -100px -500px; }
-.icon-previous        {background-position: 0px -600px;  width: 13px; }
-a:hover .icon-previous, .icon-previous:hover        {background-position: -50px -600px;}
-.icon-next            {background-position: 0px -650px;  width: 13px; }
-a:hover .icon-next, .icon-next:hover        {background-position: -50px -650px;}
-.icon-li-arrow        {background-position: 0px -700px }
-.icon-li-dot          {background-position: 0px -750px }
-.icon-information     {background-position: 0px -800px }
-.icon-arrow-right-sm  {background-position: 0px -850px }
+                          { background-position: -100px -500px; }
+.icon-previous            { background-position: 0px -600px; width: 13px; }
+a:hover .icon-previous, 
+.icon-previous:hover      { background-position: -50px -600px;}
+.icon-next                { background-position: 0px -650px; width: 13px; }
+a:hover .icon-next, 
+.icon-next:hover          { background-position: -50px -650px;}
+.icon-li-arrow            { background-position: 0px -700px }
+.icon-li-dot              { background-position: 0px -750px }
+.icon-information         { background-position: 0px -800px }
+.icon-arrow-right-sm      { background-position: 0px -850px }
+a:hover .icon-arrow-right-sm,
+.icon-arrow-right-sm:hover{ background-position: -50px -850px }
 
-.icon-barchart        {background-position: 0px -900px;width: 30px;height: 21px; }
+.icon-barchart            { background-position: 0px -900px; width: 30px; height: 21px; }
 a:hover .icon-barchart,
-.icon-barchart:hover
-                      {background-position: 0px -900px }
-.icon-linechart       {background-position: 0px -950px;width: 30px;height: 21px; }
+.icon-barchart:hover      { background-position: 0px -900px }
+.icon-linechart           { background-position: 0px -950px; width: 30px; height: 21px; }
 a:hover .icon-linechart,
-.icon-linechart:hover
-                      {background-position: 0px -950px;
-                      }
+.icon-linechart:hover     { background-position: 0px -950px; }
                       
-.icon-menu            {background-position: 0px -1000px }
-.icon-menu-open       {background-position: -50px -1000px }
+.icon-menu                { background-position: 0px -1000px }
+.icon-menu-open           { background-position: -50px -1000px }
 
-.icon-social-facebook {background-position: 0px -1050px }
-.icon-social-linkedin {background-position: 0px -1100px }
-.icon-social-twitter  {background-position: 0px -1150px }
+.icon-social-facebook     { background-position: 0px -1050px }
+.icon-social-linkedin     { background-position: 0px -1100px }
+.icon-social-twitter      { background-position: 0px -1150px }
 
-.icon-social-facebook-sm {background-position: -100px -1050px;width: 20px;
-  height: 20px;  margin-top: -5px; }
-.icon-social-share {background-position: -100px -1100px;width: 20px;
-  height: 20px;  margin-top: -5px; }
-.icon-social-twitter-sm  {background-position: -100px -1150px; width: 20px;
-  height: 20px;  margin-top: -5px;}
-a:hover .icon-social-facebook-sm {background-position: -150px -1050px;}
-a:hover .icon-social-share {background-position: -150px -1100px;}
-a:hover .icon-social-twitter-sm  {background-position: -150px -1150px; }
+.icon-social-facebook-sm  { background-position: -100px -1050px; width: 20px; height: 20px;  margin-top: -5px; }
+.icon-social-share        { background-position: -100px -1100px; width: 20px; height: 20px;  margin-top: -5px; }
+.icon-social-twitter-sm   { background-position: -100px -1150px; width: 20px; height: 20px;  margin-top: -5px; }
+a:hover .icon-social-facebook-sm { background-position: -150px -1050px;}
+a:hover .icon-social-share       { background-position: -150px -1100px;}
+a:hover .icon-social-twitter-sm  { background-position: -150px -1150px; }
 
 a:hover .icon-timeline,
 .icon-timeline:hover,
-.icon-timeline        {background-position: 0px -1200px;   width: 76px; height: 40px; }
+.icon-timeline            { background-position: 0px -1200px; width: 76px; height: 40px; }
 
 a.active .icon-timeline,
 a:active .icon-timeline,
 .icon-timeline.active,
-.icon-timeline:active
-                      {background-position: -100px -1200px }
+.icon-timeline:active     { background-position: -100px -1200px }
                       
 a:hover .icon-snapshot,
 .icon-snapshot:hover,                      
-.icon-snapshot        {background-position: 0px -1250px;   width: 76px; height: 40px; }
+.icon-snapshot            { background-position: 0px -1250px; width: 76px; height: 40px; }
 a.active .icon-snapshot,
 a:active .icon-snapshot,
 .icon-snapshot.active,
-.icon-snapshot:active
-                      {background-position: -100px -1250px }
+.icon-snapshot:active     { background-position: -100px -1250px }
 
-.icon-arrow-up-sm     {background-position: 0px -1300px }
-.icon-arrow-down-sm   {background-position: -50px -1300px }
-.icon-hrc-logo-claim  {background-position: 0px -1350px;  
-                       width: 200px;
-                       height: 115px;  }
-.icon-hrc-logo        {background-position: 0px -1500px;  
-                       width: 150px;
-                       height: 50px; }
-.icon-hrc-claim       {background-position: 0px -1600px;
-                       width: 150px;
-                        height: 25px; }
+.icon-arrow-up-sm         { background-position: 0px -1300px }
+.icon-arrow-down-sm       { background-position: -50px -1300px }
+.icon-hrc-logo-claim      { background-position: 0px -1350px; width: 200px; height: 115px; }
+.icon-hrc-logo            { background-position: 0px -1500px; width: 150px; height: 50px; }
+.icon-hrc-claim           { background-position: 0px -1600px; width: 150px; height: 25px; }
+
+.active .icon-smart-s,
+.icon-smart-s.active      { background-position: 0px -1700px;}
+.active .icon-smart-m,
+.icon-smart-m.active      { background-position: 0px -1800px;}
+.active .icon-smart-a,
+.icon-smart-a.active      { background-position: 0px -1900px;}
+.active .icon-smart-r,
+.icon-smart-r.active      { background-position: 0px -2000px;}
+.active .icon-smart-t,
+.icon-smart-t.active      { background-position: 0px -2100px;}
+
+.icon-smart-s             { background-position: -100px -1700px; width:54px; height:54px}
+.icon-smart-m             { background-position: -100px -1800px; width:54px; height:54px}
+.icon-smart-a             { background-position: -100px -1900px; width:54px; height:54px}
+.icon-smart-r             { background-position: -100px -2000px; width:54px; height:54px}
+.icon-smart-t             { background-position: -100px -2100px; width:54px; height:54px}
+
+.active .icon-smart-sm-s,
+.icon-smart-sm-s.active   { background-position: -200px -1700px;}
+.active .icon-smart-sm-m,
+.icon-smart-sm-m.active   { background-position: -200px -1800px;}
+.active .icon-smart-sm-a,
+.icon-smart-sm-a.active   { background-position: -200px -1900px;}
+.active .icon-smart-sm-r,
+.icon-smart-sm-r.active   { background-position: -200px -2000px;}
+.active .icon-smart-t-sm,
+.icon-smart-sm-t.active   { background-position: -200px -2100px;}
+
+.icon-smart-sm-s           { background-position: -250px -1700px; width:36px; height:36px}
+.icon-smart-sm-m           { background-position: -250px -1800px; width:36px; height:36px}
+.icon-smart-sm-a           { background-position: -250px -1900px; width:36px; height:36px}
+.icon-smart-sm-r           { background-position: -250px -2000px; width:36px; height:36px}
+.icon-smart-sm-t           { background-position: -250px -2100px; width:36px; height:36px}
+
+.icon-accepted             { background-position: 0px -2200px;    width:36px; height:36px}
+.icon-rejected             { background-position: -50px -2200px;  width:36px; height:36px}
+.icon-accepted-sm          { background-position: 0px -2250px;    width:15px; height:15px}
+.icon-rejected-sm          { background-position: -50px -2250px;  width:15px; height:15px}
+
+.icon-arrow-link           { background-position: 0px -2300px;  width:21px; height:35px}
+
+.icon-arrow-tall           { background-position: 0px -2350px;  width:30px; height:150px}
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -131,6 +156,6 @@ a:active .icon-snapshot,
 
   [class^="icon-"], [class*=" icon-"] {
     background-image: url('./img/NPA-sprite@2.png');
-    background-size: 300px 1650px;
+    background-size: 300px 2500px;
   }
 }
