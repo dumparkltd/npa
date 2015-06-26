@@ -52,7 +52,8 @@ var stores = {
   treatybodies: new EntityStore({ key: key, sheet: 'treatybodies', type:'treatybody', loadData: loadData }),
   articles: new EntityStore({ key: key, sheet: 'articles', type:'article', loadData: loadData }),
   terms: new EntityStore({ key: key, sheet: 'glossary', type:'term', loadData: loadData }),
-  sessions: new EntityStore({ key: key, sheet: 'sessions', type:'session', loadData: loadData })  
+  sessions: new EntityStore({ key: key, sheet: 'sessions', type:'session', loadData: loadData }),
+  pages: new EntityStore({ key: key, sheet: 'pages', type:'pages', loadData: loadData })  
   
 }
 
