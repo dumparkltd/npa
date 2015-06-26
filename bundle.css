@@ -4487,6 +4487,48 @@ color: #CCCBC5;  background: none;
 .nav-group {
   padding: 34px 10px;
 }
+.hrc-cell .bar-value {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 20px;
+  top: 0;
+}
+.hrc-cell-spacer-bar,
+.header-cell-bar,
+.header-cell-ratio-bar {
+  width:180px
+}
+
+.header-cell-links,
+.header-cell-key-links {
+  width:60px
+}
+
+.hrc-cell .cell-bar-wrap {
+  display: table;
+  width: 100%;
+}
+
+.hrc-cell .bar-label {
+  display: table-cell;
+  width: 30px;
+  text-align: right;
+  padding: 5px;
+}
+
+.hrc-cell .bar {
+  position: relative;
+  display: table-cell;
+}
+
+.hrc-cell .bar-value {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 20px;
+  top: 5px;
+}
 .intro-lead {
   font-size: 16px;
 }
