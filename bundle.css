@@ -4586,6 +4586,41 @@ a.indicator-preview-tile:hover .date {
 }
 .bottom-group-label {
   margin-top: 8px;
+}
+
+
+li.list-item-smart {
+  text-align: center;
+}
+
+.category-list-aside {
+  border-top: 1px solid white;
+  padding: 5px 0;
+}
+ul.hrc-category-list {
+  padding: 0;
+  list-style-type: none;
+}
+.hrc-category-list > li {
+  display: inline;
+  border-right: 1px solid #559EB2;
+  padding: 0 10px;
+}
+.hrc-category-list > li:first-child {    
+  padding-left: 0;
+}
+.hrc-category-list > li:last-child {    
+  border-right: 0;
+}
+
+.recommendation-attributes {
+  border-top: 1px solid white;
+  padding-top: 20px;
+} 
+
+.recommendation-attributes td.label-cell {
+  font-weight: bold;
+  padding: 3px 10px 3px 0;
 }footer.hrc-footer {
   background-color: #E7EBED;
 }
@@ -4777,12 +4812,35 @@ color: #CCCBC5;  background: none;
 .table.hrc-table > tfoot > tr > td {
   vertical-align: middle;
 }
+.table.hrc-table > tbody > tr > td {
+    border-bottom: 1px solid white;
+}
+.table > thead:first-child > tr:first-child > th, 
+.table > thead:first-child > tr:first-child > td {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+.table > thead:first-child > tr:first-child > th:first-child, 
+.table > thead:first-child > tr:first-child > th.header-cell-key-links, 
+.table > thead:first-child > tr:first-child > th.header-cell-links, 
+.table > thead:first-child > tr:first-child > th.header-cell-spacer-bar, 
+.table > thead:first-child > tr:first-child > td:first-child { 
+  border-left: 0;
+}
 
 .hrc-cell.hrc-cell-no {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px;
   text-align: right;
+}
+.hrc-cell.hrc-cell-label {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top !important;
+  width: 150px;
 }
 
 .cell-key-units {
@@ -4806,6 +4864,24 @@ td.hrc-cell.hrc-cell-key-links {
 
 th.hrc-cell.hrc-header-cell.header-cell-no {
   width: 50px;
+}
+
+.table.hrc-table.articles-table > thead > tr > th, 
+.table.hrc-table.articles-table > tbody > tr > th, 
+.table.hrc-table.articles-table > tfoot > tr > th, 
+.table.hrc-table.articles-table > thead > tr > td, 
+.table.hrc-table.articles-table > tbody > tr > td, 
+.table.hrc-table.articles-table > tfoot > tr > td {
+  vertical-align: top;
+}
+.articles-table .header-cell-no {
+  width:4%
+}
+.articles-table .header-cell-text {
+  width:48%;
+}
+.articles-table .hrc-cell-text {
+  padding:15px
 }
 .intro-lead {
   font-size: 16px;
@@ -4964,9 +5040,9 @@ h5 {
 h5.header-type {
   font-size:13px;
   margin-bottom:6px;
-  text-transform:uppercase;
-    
+  text-transform:uppercase;    
 }
+h5.tt-none {text-transform:none}
 
 h6 {
   font-size: 12px;
@@ -4975,8 +5051,9 @@ h6 {
   color: #7A969D
 }
 
-.sources h6 {
-  text-transform:none;
+.category-list-aside h6 {
+  text-transform: none;
+  color: #333333;
 }
 .serif {
   font-family: 'Droid serif', serif;
@@ -5156,7 +5233,12 @@ hr {
 }
 
 
-
+ul.list-inline.list-bordered {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
 /*nav-primary*/
 .nav-primary-container {
   width: 100%;
