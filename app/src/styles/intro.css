@@ -18,3 +18,32 @@
 .intro-read-more {
   margin-top: 20px;
 }
+.stat-large {
+  font-weight: bold;
+  font-size: 42px;
+}
+.stat-title {
+  font-weight: bold;
+}
+
+.intro-stats ul.list-inline li.intro-stat-item {
+  font-size: 14px;
+  padding: 0px 15px;
+  display: table-cell;
+  vertical-align: middle;
+    width: 28%;
+}
+.intro-stats ul.list-inline li.intro-stat-divider {
+  display: table-cell !important;
+  vertical-align: middle;
+  width:30px
+}
+.intro-stats ul.list-inline {
+  font-size: 0;
+  width: 100%;
+  display: table;
+}
+
+.intro-stats.row {
+  margin-bottom: 30px;
+}
