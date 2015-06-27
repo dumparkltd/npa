@@ -4392,207 +4392,7 @@ button.list-group-item-danger.active:focus {
     display: none !important;
   }
 }
-footer.hrc-footer {
-  background-color: #E7EBED;
-}
-
-.hrc-footer-info, .hrc-footer-parentsite {
-}
-
-
-.hrc-footer-info {
-  background-color: white;
-}
-
-.hrc-footer-item {
-  vertical-align: top;
-  min-height: 180px;
-    padding: 30px 26px 0
-}
-
-.hrc-footer-item p {
-  font-size: 14px;
-  margin: 0
-} 
-.hrc-footer-item a {
-  color: #559EB2;
-}
-
-
-a.builtby {
-  color: #C2C0BA;
-  position: absolute;
-  bottom: 10px;
-}
-
-footer h4 {
-  text-transform: none;
-}
-.hrc-footer-brand-logo {
-  text-align: right;
-}/*navbar*/
-.navbar-tew > .container {
-  width: 100% !important;
-}
-
-.navbar-tew {
-  background-color: #405058;
-  margin-bottom: 0px;
-  border: 0;
-  border-radius: 0;   
-}
-.header-logo.navbar-brand {
-  padding: 27px 25px;
-}
-.header-claim {
-  padding: 36px 25px;
-}
-
-.navbar-tew .header-logo {
-  height: 100px;
-  border-right: 1px solid #535148;
-}
-.header-intro .navbar-tew .header-logo {
-  border-right: solid black 0
-}
-
-li.hrc-title-item {
-  height: 100px;
-  padding-left: 30px;
-}
-
-.navbar li.hrc-title-item > a {
-  padding: 0;
-}
-
-li.hrc-title-item .hrc-subtitle {
-  color: #D0CFC5;
-}
-
-.navbar-tew .navbar-right a {
-  font-weight: bold;
-    padding: 5px 1px;
-}
-.navbar-tew.navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-.navbar-tew.navbar-default .navbar-nav > li > a:hover{
-color: #CCCBC5;  background: none;
-}
-
-.nav-group.nav-group-share {
-  padding-right:30px;
-
-}
-.nav-group {
-  padding: 34px 10px;
-}
-.hrc-cell .bar-value {
-  position: absolute;
-  left: 0;
-  display: block;
-  height: 20px;
-  top: 0;
-}
-.hrc-cell-spacer-bar,
-.header-cell-bar,
-.header-cell-ratio-bar {
-  width: 225px;
-}
-
-.header-cell-links,
-.header-cell-key-links {
-  width:60px
-}
-
-.hrc-cell .cell-bar-wrap {
-  display: table;
-  width: 100%;
-}
-
-.hrc-cell .bar-label {
-  display: table-cell;
-  width: 30px;
-  text-align: right;
-  padding: 5px;
-  font-weight:bold;
-}
-
-.hrc-cell .bar {
-  position: relative;
-  display: table-cell;
-}
-
-.hrc-cell .bar-value {
-  position: absolute;
-  left: 0;
-  display: block;
-  height: 20px;
-  top: 5px;
-}
-
-.hrc-cell .bar-label.bar-label-value-total {
-  position: absolute;
-  display:block;
-  text-align: left;
-}
-
-.hrc-cell.header-cell-key-links,
-.hrc-cell.header-cell-links {
-  width: 50px;
-}
-.hrc-cell.header-cell-key-links {
-  position: relative;
-  font-weight: normal;  
-  font-size: 12px;
-}
-
-.hrc-cell .cell-key-item-block {
-  display: inline-block;
-  width: 8px;
-  height: 15px;
-  margin-right: 5px;
-  margin-bottom: -3px;
-}
-
-.hrc-cell .cell-key-item-title {
-  display: inline-block;
-}
-
-.hrc-cell .cell-key-wrap {
-  position: absolute;
-  top: -10px;
-  left: -40px;
-}
-
-
-
-.intro-lead {
-  font-size: 16px;
-}
-
-.intro-sub-lead {
-  font-size: 14px;
-}
-
-.intro-content {
-  margin: 30px 85px 8px
-}
-
-.intro-content p {
-  margin-bottom: 20px;
-}
-
-.intro-read-more {
-  margin-top: 20px;
-}
-/*/issue*/
-
-.issue-title {
-  margin-top: 0px;
-}
-
-.issue-main {
+.content-main {
   margin-top: 28px;
 }
 
@@ -4786,12 +4586,247 @@ a.indicator-preview-tile:hover .date {
 }
 .bottom-group-label {
   margin-top: 8px;
-}.hrc-table-link-row {
+}footer.hrc-footer {
+  background-color: #E7EBED;
+}
+
+.hrc-footer-info, .hrc-footer-parentsite {
+}
+
+
+.hrc-footer-info {
+  background-color: white;
+}
+
+.hrc-footer-item {
+  vertical-align: top;
+  min-height: 180px;
+    padding: 30px 26px 0
+}
+
+.hrc-footer-item p {
+  font-size: 14px;
+  margin: 0
+} 
+.hrc-footer-item a {
+  color: #559EB2;
+}
+
+
+a.builtby {
+  color: #C2C0BA;
+  position: absolute;
+  bottom: 10px;
+}
+
+footer h4 {
+  text-transform: none;
+}
+.hrc-footer-brand-logo {
+  text-align: right;
+}/*navbar*/
+.navbar-tew > .container {
+  width: 100% !important;
+}
+
+.navbar-tew {
+  background-color: #405058;
+  margin-bottom: 0px;
+  border: 0;
+  border-radius: 0;   
+}
+.header-logo.navbar-brand {
+  padding: 27px 25px;
+}
+.header-claim {
+  padding: 36px 25px;
+}
+
+.navbar-tew .header-logo {
+  height: 100px;
+  border-right: 1px solid #535148;
+}
+.header-intro .navbar-tew .header-logo {
+  border-right: solid black 0
+}
+
+li.hrc-title-item {
+  height: 100px;
+  padding-left: 30px;
+}
+
+.navbar li.hrc-title-item > a {
+  padding: 0;
+}
+
+li.hrc-title-item .hrc-subtitle {
+  color: #D0CFC5;
+}
+
+.navbar-tew .navbar-right a {
+  font-weight: bold;
+    padding: 5px 1px;
+}
+.navbar-tew.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-tew.navbar-default .navbar-nav > li > a:hover{
+color: #CCCBC5;  background: none;
+}
+
+.nav-group.nav-group-share {
+  padding-right:30px;
+
+}
+.nav-group {
+  padding: 34px 10px;
+}
+.hrc-cell .bar-value {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 20px;
+  top: 0;
+}
+.hrc-cell-spacer-bar,
+.header-cell-bar,
+.header-cell-ratio-bar {
+  width: 225px;
+}
+
+.header-cell-links,
+.header-cell-key-links {
+  width:60px
+}
+
+.hrc-cell .cell-bar-wrap {
+  display: table;
+  width: 100%;
+}
+
+.hrc-cell .bar-label {
+  display: table-cell;
+  width: 30px;
+  text-align: right;
+  padding: 5px;
+  font-weight:bold;
+}
+
+.hrc-cell .bar {
+  position: relative;
+  display: table-cell;
+}
+
+.hrc-cell .bar-value {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 20px;
+  top: 5px;
+}
+
+.hrc-cell .bar-label.bar-label-value-total {
+  position: absolute;
+  display:block;
+  text-align: left;
+}
+
+.hrc-cell.header-cell-key-links,
+.hrc-cell.header-cell-links {
+  width: 50px;
+}
+.hrc-cell.header-cell-key-links {
+  position: relative;
+  font-weight: normal;  
+  font-size: 12px;
+}
+
+.hrc-cell .cell-key-item-block {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+.cell-key-item-icon {
+  margin-right: 5px;
+}
+
+.hrc-cell .cell-key-item-title {
+  display: inline-block;
+}
+
+.hrc-cell .cell-key-wrap {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+}
+
+.hrc-table-link-row {
   cursor:pointer
 }
 .hrc-table-link-row:hover {
   opacity:0.8
-}/*own style overrides*/
+}
+
+.table.hrc-table > thead > tr > th, 
+.table.hrc-table > tbody > tr > th, 
+.table.hrc-table > tfoot > tr > th, 
+.table.hrc-table > thead > tr > td, 
+.table.hrc-table > tbody > tr > td, 
+.table.hrc-table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+.hrc-cell.hrc-cell-no {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  text-align: right;
+}
+
+.cell-key-units {
+  width: 100px;
+}
+
+.hrc-cell.hrc-cell-icon {
+  text-align: center;
+}
+
+
+.hrc-table.upr-recommendations-table .hrc-cell .cell-key-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+td.hrc-cell.hrc-cell-key-links {
+  text-align: center;
+}
+
+th.hrc-cell.hrc-header-cell.header-cell-no {
+  width: 50px;
+}
+.intro-lead {
+  font-size: 16px;
+}
+
+.intro-sub-lead {
+  font-size: 14px;
+}
+
+.intro-content {
+  margin: 30px 85px 8px
+}
+
+.intro-content p {
+  margin-bottom: 20px;
+}
+
+.intro-read-more {
+  margin-top: 20px;
+}
+/*own style overrides*/
 
 html,body,#app { 
   position: relative;
@@ -4879,6 +4914,9 @@ h1 {
   font-size: 34px;
   font-weight: bold;
 }
+h1.header-title {
+  margin-top: 0px;
+}
 
 h2 {
   font-size: 30px;
@@ -4923,9 +4961,11 @@ h5 {
   text-transform:uppercase;
   color: #7A969D
 }
-.issue-header  h5 {
+h5.header-type {
   font-size:13px;
-  margin-bottom:6px
+  margin-bottom:6px;
+  text-transform:uppercase;
+    
 }
 
 h6 {
@@ -5069,6 +5109,54 @@ hr {
   margin-top: -12px;
   font-weight: bold;
 }
+
+.marked-inner-html.custom-list-icon ul {
+  margin:0; padding:0;
+  text-align: left;
+}
+.marked-inner-html.custom-list-icon ul li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-left: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.marked-inner-html.custom-list-icon ul li:before {
+  position: relative;
+  margin: 2px 8px 0 0px;
+  height: 15px;
+  background: url('./img/NPA-sprite.png') no-repeat 0px -700px;
+  width: 17px;
+  content: "";
+  vertical-align: middle;
+  float: left;
+}
+
+.marked-inner-html ul {
+  margin:0; padding:0;
+  text-align: left;
+  margin-bottom:20px
+}
+.marked-inner-html ul li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.marked-inner-html ul li:before {
+  position: absolute;
+  margin: 7px 0 0 -15px;
+  height: 15px;
+  background: url('./img/NPA-sprite.png') no-repeat 0px -750px;
+  width: 17px;
+  content: "";
+  vertical-align: middle;
+}
+
+
+
 /*nav-primary*/
 .nav-primary-container {
   width: 100%;
