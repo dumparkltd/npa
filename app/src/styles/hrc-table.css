@@ -66,6 +66,9 @@
   margin-right: 5px;
   margin-bottom: -3px;
 }
+.cell-key-item-icon {
+  margin-right: 5px;
+}
 
 .hrc-cell .cell-key-item-title {
   display: inline-block;
@@ -77,4 +80,48 @@
   left: -40px;
 }
 
+.hrc-table-link-row {
+  cursor:pointer
+}
+.hrc-table-link-row:hover {
+  opacity:0.8
+}
 
+.table.hrc-table > thead > tr > th, 
+.table.hrc-table > tbody > tr > th, 
+.table.hrc-table > tfoot > tr > th, 
+.table.hrc-table > thead > tr > td, 
+.table.hrc-table > tbody > tr > td, 
+.table.hrc-table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+.hrc-cell.hrc-cell-no {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  text-align: right;
+}
+
+.cell-key-units {
+  width: 100px;
+}
+
+.hrc-cell.hrc-cell-icon {
+  text-align: center;
+}
+
+
+.hrc-table.upr-recommendations-table .hrc-cell .cell-key-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+td.hrc-cell.hrc-cell-key-links {
+  text-align: center;
+}
+
+th.hrc-cell.hrc-header-cell.header-cell-no {
+  width: 50px;
+}
