@@ -193,3 +193,38 @@ a.indicator-preview-tile:hover .date {
 .bottom-group-label {
   margin-top: 8px;
 }
+
+
+li.list-item-smart {
+  text-align: center;
+}
+
+.category-list-aside {
+  border-top: 1px solid white;
+  padding: 5px 0;
+}
+ul.hrc-category-list {
+  padding: 0;
+  list-style-type: none;
+}
+.hrc-category-list > li {
+  display: inline;
+  border-right: 1px solid #559EB2;
+  padding: 0 10px;
+}
+.hrc-category-list > li:first-child {    
+  padding-left: 0;
+}
+.hrc-category-list > li:last-child {    
+  border-right: 0;
+}
+
+.recommendation-attributes {
+  border-top: 1px solid white;
+  padding-top: 20px;
+} 
+
+.recommendation-attributes td.label-cell {
+  font-weight: bold;
+  padding: 3px 10px 3px 0;
+}

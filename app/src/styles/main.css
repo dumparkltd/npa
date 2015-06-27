@@ -136,9 +136,9 @@ h5 {
 h5.header-type {
   font-size:13px;
   margin-bottom:6px;
-  text-transform:uppercase;
-    
+  text-transform:uppercase;    
 }
+h5.tt-none {text-transform:none}
 
 h6 {
   font-size: 12px;
@@ -147,8 +147,9 @@ h6 {
   color: #7A969D
 }
 
-.sources h6 {
-  text-transform:none;
+.category-list-aside h6 {
+  text-transform: none;
+  color: #333333;
 }
 .serif {
   font-family: 'Droid serif', serif;
@@ -328,3 +329,9 @@ hr {
 }
 
 
+ul.list-inline.list-bordered {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
