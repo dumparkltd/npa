@@ -9,7 +9,7 @@
 .hrc-cell-spacer-bar,
 .header-cell-bar,
 .header-cell-ratio-bar {
-  width:180px
+  width: 225px;
 }
 
 .header-cell-links,
@@ -48,3 +48,33 @@
   display:block;
   text-align: left;
 }
+
+.hrc-cell.header-cell-key-links,
+.hrc-cell.header-cell-links {
+  width: 50px;
+}
+.hrc-cell.header-cell-key-links {
+  position: relative;
+  font-weight: normal;  
+  font-size: 12px;
+}
+
+.hrc-cell .cell-key-item-block {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.hrc-cell .cell-key-item-title {
+  display: inline-block;
+}
+
+.hrc-cell .cell-key-wrap {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+}
+
+
