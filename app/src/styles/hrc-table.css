@@ -97,6 +97,7 @@
 }
 .table.hrc-table > tbody > tr > td {
     border-bottom: 1px solid white;
+    padding: 10px 8px 9px;
 }
 .table > thead:first-child > tr:first-child > th, 
 .table > thead:first-child > tr:first-child > td {
@@ -165,4 +166,28 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 }
 .articles-table .hrc-cell-text {
   padding:15px
+}
+
+th.hrc-header-cell {
+  text-transform: uppercase;
+  color: #7a969d;
+  font-size: 12px;
+}
+
+th.hrc-cell.header-cell-key-links {
+  text-transform: none;
+}
+
+.hrc-table.explore-table td.hrc-cell.hrc-cell-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.hrc-table.articles-table td.hrc-cell.hrc-cell-text:last-child {
+  color: #405058;
+}
+
+.table.hrc-table.terms-table > tbody > tr > td {
+  padding: 15px 8px 14px;
 }

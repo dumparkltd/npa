@@ -18,10 +18,7 @@
 
 .navbar-tew .header-logo {
   height: 100px;
-  border-right: 1px solid #535148;
-}
-.header-intro .navbar-tew .header-logo {
-  border-right: solid black 0
+  border-right: 1px solid #34444b;
 }
 
 li.hrc-title-item {
@@ -34,11 +31,11 @@ li.hrc-title-item {
 }
 
 li.hrc-title-item .hrc-subtitle {
-  color: #D0CFC5;
+  color: #D8E0E3;
+  font-size: 13px;
 }
 
 .navbar-tew .navbar-right a {
-  font-weight: bold;
     padding: 5px 1px;
 }
 .navbar-tew.navbar-default .navbar-nav > li > a {
@@ -54,4 +51,8 @@ color: #CCCBC5;  background: none;
 }
 .nav-group {
   padding: 34px 10px;
+}
+
+.nav-group-pages li {
+  padding: 0 8px;
 }

@@ -1,3 +1,6 @@
+.intro {
+  color:#405058
+}
 
 .intro-lead {
   font-size: 16px;
@@ -20,14 +23,14 @@
 }
 .stat-large {
   font-weight: bold;
-  font-size: 42px;
+  font-size: 39px;
 }
 .stat-title {
   font-weight: bold;
 }
 
 .intro-stats ul.list-inline li.intro-stat-item {
-  font-size: 14px;
+  font-size: 13px;
   padding: 0px 15px;
   display: table-cell;
   vertical-align: middle;
