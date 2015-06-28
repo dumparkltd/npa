@@ -2,8 +2,9 @@
   margin-top: 28px;
 }
 
+.column-categories h5,
 .column-smart h5{
-  height: 20px;
+  margin: 20px 0 10px;
 }
 .smart-label {
   font-weight: bold;
@@ -11,7 +12,7 @@
   color: #7a969d;
 }
 .page-content-action .column-categories {
-  padding-top:40px
+  padding-top:46px
 }
 
 ul.hrc-list {
