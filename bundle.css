@@ -4693,12 +4693,12 @@ color: #CCCBC5;  background: none;
 .hrc-cell-spacer-bar,
 .header-cell-bar,
 .header-cell-ratio-bar {
-  width: 225px;
+  width: 244px;
 }
 
 .hrc-cell .cell-bar-wrap {
   display: table;
-  width: 100%;
+  width: 244px;
 }
 
 .hrc-cell .bar-label {
@@ -4712,6 +4712,7 @@ color: #CCCBC5;  background: none;
 .hrc-cell .bar {
   position: relative;
   display: table-cell;
+  width: 184px;
 }
 
 .hrc-cell .bar-value {
@@ -4722,9 +4723,16 @@ color: #CCCBC5;  background: none;
   top: 5px;
 }
 
+span.bar-unit {
+  height: 20px;
+  display: inline-block;
+  margin-right: 1px;
+  top: 5px;
+  position: relative;
+}
+
 .hrc-cell .bar-label.bar-label-value-total {
-  position: absolute;
-  display:block;
+  display: inline-block;
   text-align: left;
 }
 
@@ -4783,6 +4791,17 @@ color: #CCCBC5;  background: none;
     border-bottom: 1px solid white;
     padding: 15px 12px 12px;
 }
+
+.table.hrc-table.terms-table > tbody > tr > td {
+  padding: 15px 8px 14px;
+}
+
+.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-bar,
+.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-ratio-bar {
+  padding: 15px 0px 12px;
+}
+
+
 .table > thead:first-child > tr:first-child > th, 
 .table > thead:first-child > tr:first-child > td {
   border-bottom: 1px solid white;
@@ -4827,25 +4846,12 @@ color: #CCCBC5;  background: none;
 td.hrc-cell.hrc-cell-key-links {
   text-align: right;
 }
-
+.articles-table .header-cell-no,
 th.hrc-cell.hrc-header-cell.header-cell-no {
   width:6%
 }
 
-/*.table.hrc-table.articles-table > thead > tr > th, 
-.table.hrc-table.articles-table > tbody > tr > th, 
-.table.hrc-table.articles-table > tfoot > tr > th, 
-.table.hrc-table.articles-table > thead > tr > td, 
-.table.hrc-table.articles-table > tbody > tr > td, 
-.table.hrc-table.articles-table > tfoot > tr > td {
-  vertical-align: top;
-}*/
-.articles-table .header-cell-no {
-  width:6%
-}
-/*.articles-table .header-cell-text {
-  width:47%;
-}*/
+
 .articles-table .hrc-cell-text {
   padding:15px
 }
@@ -4869,11 +4875,6 @@ th.hrc-cell.header-cell-key-links {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
-}
-
-
-.table.hrc-table.terms-table > tbody > tr > td {
-  padding: 15px 8px 14px;
 }
 
 
