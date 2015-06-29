@@ -4831,7 +4831,11 @@ span.bar-unit {
 .table > thead:first-child > tr:first-child > td:first-child { 
   border-left: 0;
 }
-
+.table > thead:first-child > tr:first-child > th:first-child,
+.table > tbody > tr > td:first-child, 
+.table.hrc-table.terms-table > tbody > tr > td:first-child {
+  padding-left: 2px;
+}
 .hrc-cell.hrc-cell-no {
   font-size: 1.5em;
   font-weight: bold;
@@ -5423,6 +5427,7 @@ li.nav-primary-li .title {
 }
 .btn.share-modal-social:hover {
   background-color: #008399;
+  color: white; 
 }
 
 .share-modal-social span {
