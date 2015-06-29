@@ -4398,12 +4398,12 @@ button.list-group-item-danger.active:focus {
 
 .column-categories h5,
 .column-smart h5{
-  margin: 20px 0 10px;
+  margin: 26px 0 4px;
 }
 .smart-label {
   font-weight: bold;
   padding-top: 10px;
-  color: #B6C2C7;
+  color: #a5bdc7;
 }
 .page-content-action .column-categories {
   padding-top:46px
@@ -4669,7 +4669,7 @@ li.hrc-title-item .hrc-subtitle {
   color: #fff;
 }
 .navbar-tew.navbar-default .navbar-nav > li > a:hover{
-color: #CCCBC5;  background: none;
+color: #d9e3e6;  background: none;
 }
 
 .nav-group.nav-group-share {
@@ -4758,8 +4758,25 @@ span.bar-unit {
   margin-bottom: -3px;
 }
 .cell-key-item-icon {
-  margin-right: 5px;
 }
+.cell-key-item-no {
+  font-size: 14px;
+}
+
+.cell-key {
+  width: 100px;
+  display: table;
+}
+.cell-key-item {
+  display: table-row;
+}
+
+.cell-key-item span{
+  display: table-cell;
+  text-align: right;
+  padding-right: 5px;
+}
+
 
 .hrc-cell .cell-key-item-title {
   display: inline-block;
@@ -4767,7 +4784,7 @@ span.bar-unit {
 
 .hrc-cell .cell-key-wrap {
   position: absolute;
-  top: -10px;
+  bottom: 8px;
   left: -40px;
 }
 
@@ -4828,10 +4845,6 @@ span.bar-unit {
   text-align: left;
   vertical-align: top !important;
   width: 150px;
-}
-
-.cell-key-units {
-  width: 100px;
 }
 
 .hrc-cell.hrc-cell-icon {
@@ -5099,7 +5112,7 @@ h6 {
 
 .category-list-aside h6 {
   text-transform: none;
-  color: #3C5462;
+  color: #2c2c2c;
   margin-bottom: 5px;
 }
 .serif {
@@ -5121,13 +5134,21 @@ button,a {
 a{
   color: #0094ab;
 }
+a.btn:focus,
+a.btn {
+  background-color: #ecebe6;
+  color: #0094ab;
+}
 p a {
   font-weight:bold; 
 }
 p a em {
   font-style: normal;
 }
-a:hover {
+a:hover,
+a.btn:hover,
+a.btn:focus:hover
+{
   color: #008399;
   text-decoration:none
 }
@@ -5155,12 +5176,7 @@ a:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-a.list-group-item,
-.btn:focus,
-.btn {
-  background-color: #ecebe6;
-  color: #008399;
-}
+
 
 
 
@@ -5191,7 +5207,7 @@ a.list-group-item,
   list-style-type: none;
   padding-top: 5px;
   padding-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   position: relative;
 }
 
@@ -5215,7 +5231,7 @@ a.list-group-item,
   list-style-type: none;
   padding-top: 5px;
   padding-left: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: relative;
 }
 .marked-inner-html ul li:before {
