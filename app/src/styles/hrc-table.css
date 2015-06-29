@@ -203,3 +203,7 @@ th.hrc-cell.hrc-header-cell.header-cell-key-links {
 th.hrc-cell.hrc-header-cell.header-cell-no {
   text-align: right;
 }
+
+td.hrc-cell.hrc-cell-no {
+  padding-left: 0 !important;
+}

@@ -46,7 +46,7 @@ a:hover .icon-next,
 .icon-next:hover          { background-position: -50px -650px;}
 .icon-li-arrow            { background-position: 0px -700px }
 .icon-li-dot              { background-position: 0px -750px }
-.icon-information         { background-position: 0px -800px }
+.icon-information         { background-position: 0px -800px; width:20px; height:20px}
 .icon-arrow-right-sm      { background-position: 0px -850px }
 a:hover .icon-arrow-right-sm,
 .icon-arrow-right-sm:hover{ background-position: -50px -850px }
