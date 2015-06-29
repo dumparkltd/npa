@@ -1,5 +1,5 @@
 footer.hrc-footer {
-  background-color: #E7EBED;
+  background-color: #e7eef0;
 }
 
 .hrc-footer-info, .hrc-footer-parentsite {
@@ -21,12 +21,12 @@ footer.hrc-footer {
   margin: 0
 } 
 .hrc-footer-item a {
-  color: #559EB2;
+  color: #0094ab;
 }
 
 
 a.builtby {
-  color: #B6C2C7;
+  color: #a5bdc7;
   position: absolute;
   bottom: 10px;
 }

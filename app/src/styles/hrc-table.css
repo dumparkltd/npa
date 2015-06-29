@@ -12,11 +12,6 @@
   width: 225px;
 }
 
-.header-cell-links,
-.header-cell-key-links {
-  width:60px
-}
-
 .hrc-cell .cell-bar-wrap {
   display: table;
   width: 100%;
@@ -49,10 +44,14 @@
   text-align: left;
 }
 
-.hrc-cell.header-cell-key-links,
-.hrc-cell.header-cell-links {
+.explore-table .hrc-cell.hrc-header-cell.header-cell-key-links{
   width: 50px;
 }
+
+.hrc-cell.hrc-header-cell.header-cell-key-links {
+  width: 116px;
+}
+
 .hrc-cell.header-cell-key-links {
   position: relative;
   font-weight: normal;  
@@ -160,9 +159,9 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 .articles-table .header-cell-no {
   width:6%
 }
-.articles-table .header-cell-text {
+/*.articles-table .header-cell-text {
   width:47%;
-}
+}*/
 .articles-table .hrc-cell-text {
   padding:15px
 }
@@ -174,7 +173,7 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 
 th.hrc-header-cell {
   text-transform: uppercase;
-  color: #7a969d;
+  color: #7A969D;
   font-size: 12px;
 }
 
@@ -188,17 +187,12 @@ th.hrc-cell.header-cell-key-links {
   line-height: 1.4;
 }
 
-.hrc-table.articles-table td.hrc-cell.hrc-cell-text:last-child {
-  color: #405058;
-}
 
 .table.hrc-table.terms-table > tbody > tr > td {
   padding: 15px 8px 14px;
 }
 
-th.hrc-cell.hrc-header-cell.header-cell-key-links {
-  width: 116px;
-}
+
 
 th.hrc-cell.hrc-header-cell.header-cell-no {
   text-align: right;
@@ -206,4 +200,8 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 
 td.hrc-cell.hrc-cell-no {
   padding-left: 0 !important;
+}
+
+td.hrc-cell .marked-inner-html p {
+  margin-bottom: 0;
 }

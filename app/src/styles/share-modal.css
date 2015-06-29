@@ -32,11 +32,11 @@
 }
 .btn.share-modal-social,
 .btn.share-modal-social:focus {
-  background-color: #559EB2;
+  background-color: #0094ab;
   color: white;  
 }
 .btn.share-modal-social:hover {
-  background-color: #4B93A4;
+  background-color: #008399;
 }
 
 .share-modal-social span {
@@ -46,10 +46,10 @@
 }
 
 .share-modal-link {
-  background-color: #D8E0E3;
+  background-color: #dae4e7;
   width: 100%;
   height: 40px;
-  color: #559EB2;
+  color: #0094ab;
   /*copied from btn*/
   padding: 6px 12px;
   background-image: none;
@@ -70,7 +70,7 @@
 
 .share-modal-close a.btn {
   text-align: center;
-  color: #559EB2;
+  color: #0094ab;
   min-width: 50px;
   padding: 0;
   background-color:transparent;
