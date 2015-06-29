@@ -4,12 +4,12 @@
 
 .column-categories h5,
 .column-smart h5{
-  margin: 20px 0 10px;
+  margin: 26px 0 4px;
 }
 .smart-label {
   font-weight: bold;
   padding-top: 10px;
-  color: #B6C2C7;
+  color: #a5bdc7;
 }
 .page-content-action .column-categories {
   padding-top:46px

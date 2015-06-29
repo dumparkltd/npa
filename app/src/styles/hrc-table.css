@@ -74,8 +74,25 @@ span.bar-unit {
   margin-bottom: -3px;
 }
 .cell-key-item-icon {
-  margin-right: 5px;
 }
+.cell-key-item-no {
+  font-size: 14px;
+}
+
+.cell-key {
+  width: 100px;
+  display: table;
+}
+.cell-key-item {
+  display: table-row;
+}
+
+.cell-key-item span{
+  display: table-cell;
+  text-align: right;
+  padding-right: 5px;
+}
+
 
 .hrc-cell .cell-key-item-title {
   display: inline-block;
@@ -83,7 +100,7 @@ span.bar-unit {
 
 .hrc-cell .cell-key-wrap {
   position: absolute;
-  top: -10px;
+  bottom: 8px;
   left: -40px;
 }
 
@@ -144,10 +161,6 @@ span.bar-unit {
   text-align: left;
   vertical-align: top !important;
   width: 150px;
-}
-
-.cell-key-units {
-  width: 100px;
 }
 
 .hrc-cell.hrc-cell-icon {
