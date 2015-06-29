@@ -95,14 +95,34 @@ a:active .icon-snapshot,
 .icon-hrc-logo            { background-position: 0px -1500px; width: 150px; height: 50px; }
 .icon-hrc-claim           { background-position: 0px -1600px; width: 150px; height: 25px; }
 
+.page-content-smart .marked-inner-html h3#specific:before,
+.page-content-smart .marked-inner-html h3#measurable:before,
+.page-content-smart .marked-inner-html h3#assignable:before,
+.page-content-smart .marked-inner-html h3#result-oriented:before,
+.page-content-smart .marked-inner-html h3#time-bound:before {
+  position: relative;
+  height: 57px;
+  background: url('./img/NPA-sprite.png') no-repeat top left;
+  background-position: 0px -1700px;
+  width: 57px;
+  content: "";
+  vertical-align: middle;
+  margin: 5px 16px 10px 0px;
+  float: left;
+}
+
 .active .icon-smart-s,
 .icon-smart-s.active      { background-position: 0px -1700px;}
+.page-content-smart .marked-inner-html h3#measurable:before,
 .active .icon-smart-m,
 .icon-smart-m.active      { background-position: 0px -1800px;}
+.page-content-smart .marked-inner-html h3#assignable:before,
 .active .icon-smart-a,
 .icon-smart-a.active      { background-position: 0px -1900px;}
+.page-content-smart .marked-inner-html h3#result-oriented:before,
 .active .icon-smart-r,
 .icon-smart-r.active      { background-position: 0px -2000px;}
+.page-content-smart .marked-inner-html h3#time-bound:before,
 .active .icon-smart-t,
 .icon-smart-t.active      { background-position: 0px -2100px;}
 

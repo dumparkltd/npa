@@ -35,8 +35,11 @@
   background-color: #0094ab;
   color: white;  
 }
+.btn.share-modal-social:focus:hover,
+.btn.share-modal-social:active:hover,
 .btn.share-modal-social:hover {
   background-color: #008399;
+  color: white; 
 }
 
 .share-modal-social span {
