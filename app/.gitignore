@@ -1,6 +1,0 @@
-node_modules
-!src/node_modules
-build/*
-.publish
-../npm-debug.log
-npm-debug.log
