@@ -174,8 +174,15 @@ a:active .icon-snapshot,
     only screen and (min--moz-device-pixel-ratio: 1.5),
     only screen and (min-device-pixel-ratio: 1.5) {
 
-  [class^="icon-"], [class*=" icon-"] {
+  [class^="icon-"], [class*=" icon-"],
+  .marked-inner-html.custom-list-icon ul li:before,
+  .page-content-smart .marked-inner-html h3#specific:before,
+  .page-content-smart .marked-inner-html h3#measurable:before,
+  .page-content-smart .marked-inner-html h3#assignable:before,
+  .page-content-smart .marked-inner-html h3#result-oriented:before,
+  .page-content-smart .marked-inner-html h3#time-bound:before  {
     background-image: url('./img/NPA-sprite@2.png');
     background-size: 300px 2500px;
   }
+ 
 }
