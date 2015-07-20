@@ -80,7 +80,7 @@ a.indicator-preview-tile:hover .date {
 }
     
 .horizontal-bar-bg {
-  background:#fff
+  background:#dae4e7
   
 }
 .indicator-preview-tile:hover .horizontal-bar-bg {
@@ -94,7 +94,7 @@ a.indicator-preview-tile:hover .date {
   padding:0px
 }
 .indicator-preview-tile .horizontal-bar-label.align-outside {
-  background-color: #fff;
+  background-color: #dae4e7;
 }
 .indicator-preview-tile:hover .horizontal-bar-label.align-outside{
   background-color: #EDECE7
@@ -107,7 +107,7 @@ a.indicator-preview-tile:hover .date {
     text-align:right;
     background-color:transparent;
     width:100%;
-    color: #fff;
+    color: #dae4e7;
 }
 .reference-group .vertical-line-label {
   height: 73px;
@@ -154,7 +154,7 @@ li.list-item-smart {
 }
 
 .category-list-aside {
-  border-top: 1px solid white;
+  border-top: 1px solid #dae4e7;
   padding: 5px 0;
 }
 ul.hrc-category-list {
@@ -173,7 +173,7 @@ ul.hrc-category-list {
 }
 
 .recommendation-attributes {
-  border-top: 1px solid white;
+  border-top: 1px solid #dae4e7;
   padding-top: 20px;
 } 
 
