@@ -110,7 +110,6 @@ span.bar-unit {
 .hrc-table-link-row:hover {
   opacity:0.8
 }
-
 .table.hrc-table > thead > tr > th, 
 .table.hrc-table > tbody > tr > th, 
 .table.hrc-table > tfoot > tr > th, 
@@ -118,7 +117,19 @@ span.bar-unit {
 .table.hrc-table > tbody > tr > td, 
 .table.hrc-table > tfoot > tr > td {
   vertical-align: middle;
-  padding: 8px 12px;
+  padding: 8px 5px;
+}
+@media (min-width:786px){
+
+  .table.hrc-table > thead > tr > th, 
+  .table.hrc-table > tbody > tr > th, 
+  .table.hrc-table > tfoot > tr > th, 
+  .table.hrc-table > thead > tr > td, 
+  .table.hrc-table > tbody > tr > td, 
+  .table.hrc-table > tfoot > tr > td {
+    vertical-align: middle;
+    padding: 8px 12px;
+  }
 }
 .table.hrc-table > tbody > tr > td {
     border-bottom: 1px solid #dae4e7;
@@ -188,18 +199,21 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 .articles-table .hrc-cell-text {
   padding:15px
 }
-
-.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-text {
-  padding-right: 40px;
+@media (min-width:786px){
+  .table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-text {
+    padding-right: 40px;
+  }
 }
-
-
 th.hrc-header-cell {
   text-transform: uppercase;
   color: #7696a5;
-  font-size: 12px;
+  font-size: 11px;
 }
-
+@media (min-width:786px){
+  th.hrc-header-cell {
+    font-size: 12px;
+  }
+}
 th.hrc-cell.header-cell-key-links {
   text-transform: none;
 }

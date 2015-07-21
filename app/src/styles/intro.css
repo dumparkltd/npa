@@ -10,12 +10,13 @@
   font-size: 14px;
 }
 
-.intro-content {
-  margin: 30px 85px 8px
-}
-
-.intro-content p {
-  margin-bottom: 20px;
+@media (min-width:786px){
+  .intro-content {
+    margin: 30px 85px 8px
+  } 
+  .intro-content p {
+    margin-bottom: 20px;
+  }
 }
 
 .intro-read-more {
