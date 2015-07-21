@@ -11,10 +11,10 @@
   border-radius: 0;   
 }
 .header-logo,
-.header-title {
+.header-brand-title {
   float:left;
 }
-.header-intro .header-title,
+.header-intro .header-brand-title,
 .header-intro .navbar-toggle{
   display:none;
 }
@@ -84,7 +84,7 @@ button.navbar-toggle {
 .nav-group-pages li {
   padding: 0 5px;
 }
-.header-title {
+.header-brand-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -114,7 +114,7 @@ li.share-header-social, li.nav-item-share {
   .header-logo {
     padding: 27px 25px;
   }
-  .header-title {
+  .header-brand-title {
     position:relative;
     margin: 0;
   }

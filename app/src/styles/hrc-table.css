@@ -139,7 +139,19 @@ span.bar-unit {
 .hrc-table > .hrc-thead > .hrc-tr > .hrc-td, 
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td{
   vertical-align: middle;
-  padding: 8px 12px;
+  padding: 8px 5px;
+}
+@media (min-width:786px){
+
+  .table.hrc-table > thead > tr > th, 
+  .table.hrc-table > tbody > tr > th, 
+  .table.hrc-table > tfoot > tr > th, 
+  .table.hrc-table > thead > tr > td, 
+  .table.hrc-table > tbody > tr > td, 
+  .table.hrc-table > tfoot > tr > td {
+    vertical-align: middle;
+    padding: 8px 12px;
+  }
 }
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
     border-bottom: 1px solid #dae4e7;
@@ -215,7 +227,12 @@ span.bar-unit {
   font-weight: bold;
   text-transform: uppercase;
   color: #7696a5;
-  font-size: 12px;
+  font-size: 11px;
+}
+@media (min-width:786px){
+  th.hrc-header-cell {
+    font-size: 12px;
+  }
 }
 
 .hrc-cell.header-cell-key-links {
