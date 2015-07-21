@@ -11,29 +11,52 @@
 /* icons */
 .icon-hrc-logo-sm         { background-position: 0px 0px;     width: 75px;  height: 46px;}
 
-.icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
+.icon-issues              { background-position: -200px -100px;  width: 60px; height: 50px;}
 .active .icon-issues,
 .active.icon-issues,      
 a:hover .icon-issues,
-.icon-issues:hover        { background-position: -100px -100px }
+.icon-issues:hover        { background-position: -300px -100px }
 
-.icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
+.icon-groups              { background-position: -200px -200px;  width: 60px; height: 50px;}
 .active .icon-groups,
 .active.icon-groups,   
 a:hover .icon-groups,
-.icon-groups:hover        { background-position: -100px -200px}
+.icon-groups:hover        { background-position: -300px -200px}
                       
-.icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
+.icon-agencies            { background-position: -200px -300px;  width: 50px; height: 50px;}
 .active .icon-agencies,
 .active.icon-agencies,      
-.icon-agencies:hover      { background-position: -100px -300px }
+.icon-agencies:hover      { background-position: -300px -300px }
 
-.icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
+.icon-treatybodies        { background-position: -200px -400px; width: 60px; height: 50px; }
 .active .icon-treatybodies,
 .active.icon-treatybodies,     
 a:hover .icon-treatybodies,
-.icon-treatybodies:hover  { background-position: -100px -400px }
+.icon-treatybodies:hover  { background-position: -300px -400px }
+@media (min-width: 768px) {
+  .icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
+  .active .icon-issues,
+  .active.icon-issues,      
+  a:hover .icon-issues,
+  .icon-issues:hover        { background-position: -100px -100px }
 
+  .icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
+  .active .icon-groups,
+  .active.icon-groups,   
+  a:hover .icon-groups,
+  .icon-groups:hover        { background-position: -100px -200px}
+
+  .icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
+  .active .icon-agencies,
+  .active.icon-agencies,      
+  .icon-agencies:hover      { background-position: -100px -300px }
+
+  .icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
+  .active .icon-treatybodies,
+  .active.icon-treatybodies,     
+  a:hover .icon-treatybodies,
+  .icon-treatybodies:hover  { background-position: -100px -400px }
+}
 .icon-close               { background-position: 0px -500px; width: 68px; height: 68px; }
 a:hover .icon-close,
 .icon-close:hover
@@ -182,7 +205,7 @@ a:active .icon-snapshot,
   .page-content-smart .marked-inner-html h3#result-oriented:before,
   .page-content-smart .marked-inner-html h3#time-bound:before  {
     background-image: url('./img/NPA-sprite@2.png');
-    background-size: 300px 2500px;
+    background-size: 400px 2500px;
   }
  
 }
