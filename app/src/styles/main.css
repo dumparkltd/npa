@@ -38,7 +38,7 @@ html,body,#app {
   }
 body {
   padding: 0px;
-  background-color: #dae4e7;
+  background-color: #fff;
   font-family: Arial, sans-serif;
   color:#2c2c2c
 }
@@ -75,7 +75,7 @@ p.small {
 }
 h1.hrc-title {
   font-family: 'Droid serif', serif;
-  color: white;
+  color: #fff;
   font-size: 20px;
   line-height: 34px;  
   margin-bottom: 4px;
@@ -291,8 +291,8 @@ a:focus {
 
 
 ul.list-inline.list-bordered {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #dae4e7;
+  border-bottom: 1px solid #dae4e7;
   padding: 20px 0;
   margin-bottom: 40px;
 }

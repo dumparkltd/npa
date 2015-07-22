@@ -67,6 +67,7 @@
     "browserify": "^9.0.8",
     "budo": "^3.1.1",
     "catw": "^1.0.1",
+    "clean-css": "^3.3.3",
     "colors": "^1.0.3",
     "envify": "^3.4.0",
     "garnish": "^2.1.3",
