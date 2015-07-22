@@ -1,4 +1,6 @@
-
+.table.hrc-table{
+  margin-top:10px;
+}
 .hrc-cell .bar-value {
   position: absolute;
   left: 0;
@@ -56,10 +58,14 @@ span.bar-unit {
   width: 50px;
 }
 
-.hrc-cell.hrc-header-cell.header-cell-key-links {
-  width: 116px;
+.hrc-table.upr-recommendations-table .cell-key-wrap {
+  display: none;
 }
-
+@media (min-width:768px){
+ .hrc-table.upr-recommendations-table .cell-key-wrap {
+    display: block;
+  } 
+}
 .hrc-cell.header-cell-key-links {
   position: relative;
   font-weight: normal;  
@@ -116,25 +122,22 @@ span.bar-unit {
 .table.hrc-table > thead > tr > td, 
 .table.hrc-table > tbody > tr > td, 
 .table.hrc-table > tfoot > tr > td {
-  vertical-align: middle;
+  vertical-align: top;
   padding: 8px 5px;
 }
-@media (min-width:786px){
-
-  .table.hrc-table > thead > tr > th, 
-  .table.hrc-table > tbody > tr > th, 
-  .table.hrc-table > tfoot > tr > th, 
-  .table.hrc-table > thead > tr > td, 
-  .table.hrc-table > tbody > tr > td, 
-  .table.hrc-table > tfoot > tr > td {
-    vertical-align: middle;
-    padding: 8px 12px;
-  }
+.table.hrc-table.explore-table > thead > tr > th, 
+.table.hrc-table.explore-table > tbody > tr > th, 
+.table.hrc-table.explore-table > tfoot > tr > th, 
+.table.hrc-table.explore-table > thead > tr > td, 
+.table.hrc-table.explore-table > tbody > tr > td, 
+.table.hrc-table.explore-table > tfoot > tr > td {
+  vertical-align: middle;
 }
 .table.hrc-table > tbody > tr > td {
     border-bottom: 1px solid #dae4e7;
-    padding: 15px 12px 12px;
+    padding: 12px 5px 5px;
 }
+
 
 .table.hrc-table.terms-table > tbody > tr > td {
   padding: 15px 8px 14px;
@@ -161,21 +164,18 @@ span.bar-unit {
 .table > thead:first-child > tr:first-child > th:first-child,
 .table > tbody > tr > td:first-child, 
 .table.hrc-table.terms-table > tbody > tr > td:first-child {
-  padding-left: 2px;
+    padding-left: 2px !important;
 }
+.hrc-cell.hrc-cell-label,
 .hrc-cell.hrc-cell-no {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
   text-align: right;
 }
-.hrc-cell.hrc-cell-label {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px;
+.hrc-cell.hrc-cell-label {    
   text-align: left;
   vertical-align: top !important;
-  width: 150px;
 }
 
 .hrc-cell.hrc-cell-icon {
@@ -199,21 +199,13 @@ th.hrc-cell.hrc-header-cell.header-cell-no {
 .articles-table .hrc-cell-text {
   padding:15px
 }
-@media (min-width:786px){
-  .table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-text {
-    padding-right: 40px;
-  }
-}
+
 th.hrc-header-cell {
   text-transform: uppercase;
   color: #7696a5;
   font-size: 11px;
 }
-@media (min-width:786px){
-  th.hrc-header-cell {
-    font-size: 12px;
-  }
-}
+
 th.hrc-cell.header-cell-key-links {
   text-transform: none;
 }
@@ -222,6 +214,7 @@ th.hrc-cell.header-cell-key-links {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
+  min-width: 150px;
 }
 
 
@@ -236,4 +229,56 @@ td.hrc-cell.hrc-cell-no {
 
 td.hrc-cell .marked-inner-html p {
   margin-bottom: 0;
+}
+
+.hrc-cell-spacer-bar,
+.header-cell-spacer-bar {
+  display:none;
+}
+@media (min-width:992px){
+  .hrc-cell-spacer-bar,
+  .header-cell-spacer-bar {
+    display:table-cell;
+  }
+}
+
+@media (min-width:768px){
+
+  .table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-text {
+    padding-right: 40px;
+  }
+  th.hrc-header-cell {
+    font-size: 12px;
+  }
+  
+  .hrc-cell.hrc-header-cell.header-cell-key-links {
+    width: 116px;
+  }
+  .table.hrc-table > tbody > tr > td {
+      padding: 15px 12px 12px;
+  }
+  .table.hrc-table > thead > tr > th, 
+  .table.hrc-table > tbody > tr > th, 
+  .table.hrc-table > tfoot > tr > th, 
+  .table.hrc-table > thead > tr > td, 
+  .table.hrc-table > tbody > tr > td, 
+  .table.hrc-table > tfoot > tr > td {
+    vertical-align: middle;
+    padding: 8px 12px;
+  }
+
+  .hrc-cell.hrc-cell-label,
+  .hrc-cell.hrc-cell-no {
+    font-size: 1.5em;
+    line-height: 1.42857143;
+    padding: 10px;
+  }
+  .hrc-cell.hrc-cell-label {
+    width: 150px;    
+  }
+}
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: 0;
+  }
 }

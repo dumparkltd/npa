@@ -10,7 +10,7 @@
   font-size: 14px;
 }
 
-@media (min-width:786px){
+@media (min-width:768px){
   .intro-content {
     margin: 30px 85px 8px
   } 

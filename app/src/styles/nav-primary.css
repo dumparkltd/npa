@@ -13,10 +13,21 @@
   display: block;
 }
 
-.nav-primary > .container{
-  padding:0;
+.nav-primary > .container {
+  padding: 0;
 }
-
+.nav-primary > .container .row {
+  margin: 0;
+}
+.nav-primary-list-wrapper {
+  padding:0
+}
+@media (min-width: 768px) { 
+  .nav-primary-list-wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }  
+}
 .nav-primary {
   display: table;
   width: 100%;
@@ -81,8 +92,16 @@ li.nav-primary-li .title {
   font-size: 11px;
   width: 100%;
 }
+@media (min-width: 512px) { 
+  li.nav-primary-li .title {  
+    font-size: 12px;  
+  }
+}
+
 @media (min-width: 768px) { 
-  li.nav-primary-li .title {  font-size: 14px;  }
+  li.nav-primary-li .title {  
+    font-size: 14px;  
+  }
 }
 .nav-primary-li .arrow, 
 .nav-primary-li .arrow:after {
