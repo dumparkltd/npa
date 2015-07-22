@@ -12,7 +12,7 @@
 .share-modal-inner {
   position: absolute;
   top: 100px;
-  background-color: #dae4e7;
+  background-color: #fff;
   z-index: 100;
   width: 100%;
 }
@@ -49,7 +49,7 @@
 }
 
 .share-modal-link {
-  background-color: #fff;
+  background-color: #dae4e7;
   width: 100%;
   height: 40px;
   color: #0094ab;
