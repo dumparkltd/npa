@@ -8,18 +8,16 @@ footer.hrc-footer {
 
 .hrc-footer-info {
   background-color: #dae4e7;
+  padding-bottom: 60px !important;
 }
 
 .hrc-footer-item {
   vertical-align: top;
-  min-height: 180px;
-    padding: 30px 26px 0
+  padding: 30px 26px;
+  text-align: center;
 }
 
-.hrc-footer-item p {
-  font-size: 14px;
-  margin: 0
-} 
+
 .hrc-footer-item a {
   color: #0094ab;
 }
@@ -29,11 +27,26 @@ a.builtby {
   color: #a5bdc7;
   position: absolute;
   bottom: 10px;
+  right: 30px;
 }
 
 footer h4 {
   text-transform: none;
 }
+
 .hrc-footer-brand-logo {
-  text-align: right;
+  text-align: center;
+}
+@media (min-width:768px){
+  .hrc-footer-item {    
+    min-height: 180px;
+    padding: 30px 26px 0;
+    text-align: left;
+  }
+  .hrc-footer-brand-logo {
+    text-align: right;
+  }
+  a.builtby {        
+    right:initial;
+  }
 }

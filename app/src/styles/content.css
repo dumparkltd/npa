@@ -179,11 +179,15 @@ ul.hrc-category-list {
 
 .recommendation-attributes td.label-cell {
   font-weight: bold;
-  padding: 3px 10px 3px 0;
-  width: 180px;
+  padding: 3px 5px 3px 0;
   vertical-align: top;
 }
-
+@media (min-width:768px){
+  .recommendation-attributes td.label-cell {
+    padding: 3px 10px 3px 0;
+    width: 180px;   
+  }  
+}
 .recommendation-attributes td.content-cell {
   vertical-align: top;
   padding: 3px 0;
