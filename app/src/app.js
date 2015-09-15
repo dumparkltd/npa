@@ -38,22 +38,23 @@ var router = Router.create({
   location: Router.HashLocation
 })
 
-// the google spreadhseet key
-var key = '1V5SQbTVfGgTMCJa0MMPb1t93LryiiTVkZNIQ-VxEiLg'
+// the google spreadsheet key
+var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew'
+var bucket = 'npabuffer'
 
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  actions: new EntityStore({ key: key, sheet: 'actions', type:'action', loadData: loadData }),  
-  recommendations: new EntityStore({ key: key, sheet: 'recommendations', type:'recommendation', loadData: loadData }),
-  issues: new EntityStore({ key: key, sheet: 'issues', type:'issue', loadData: loadData }),
-  groups: new EntityStore({ key: key, sheet: 'groups', type:'group', loadData: loadData }),
-  agencies: new EntityStore({ key: key, sheet: 'agencies', type:'agency', loadData: loadData }),
-  treatybodies: new EntityStore({ key: key, sheet: 'treatybodies', type:'treatybody', loadData: loadData }),
-  articles: new EntityStore({ key: key, sheet: 'articles', type:'article', loadData: loadData }),
-  terms: new EntityStore({ key: key, sheet: 'terms', type:'term', loadData: loadData }),
-  sessions: new EntityStore({ key: key, sheet: 'sessions', type:'session', loadData: loadData }),
-  pages: new EntityStore({ key: key, sheet: 'pages', type:'pages', loadData: loadData })  
+  actions: new EntityStore({ key: key, bucket: bucket, sheet: 'actions', type:'action', loadData: loadData }),  
+  recommendations: new EntityStore({ key: key, bucket: bucket, sheet: 'recommendations', type:'recommendation', loadData: loadData }),
+  issues: new EntityStore({ key: key, bucket: bucket, sheet: 'issues', type:'issue', loadData: loadData }),
+  groups: new EntityStore({ key: key, bucket: bucket, sheet: 'groups', type:'group', loadData: loadData }),
+  agencies: new EntityStore({ key: key, bucket: bucket, sheet: 'agencies', type:'agency', loadData: loadData }),
+  treatybodies: new EntityStore({ key: key, bucket: bucket, sheet: 'treatybodies', type:'treatybody', loadData: loadData }),
+  articles: new EntityStore({ key: key, bucket: bucket, sheet: 'articles', type:'article', loadData: loadData }),
+  terms: new EntityStore({ key: key, bucket: bucket, sheet: 'terms', type:'term', loadData: loadData }),
+  sessions: new EntityStore({ key: key, bucket: bucket, sheet: 'sessions', type:'session', loadData: loadData }),
+  pages: new EntityStore({ key: key, bucket: bucket, sheet: 'pages', type:'pages', loadData: loadData })  
   
 }
 
