@@ -18,9 +18,8 @@ var actions         = require("actions"),
     routes          = require("routes"),
     loadData        = require('data/load-data')
 //stores
-var RouteStore          = require("stores/route-store"),
-    EntityStore          = require("stores/entity-store")
-    
+var RouteStore      = require("stores/route-store"),
+    EntityStore     = require("stores/entity-store") 
 
 //helpers
 var _               = require('lodash')
@@ -30,7 +29,7 @@ var log             = require('debug')('src:app')
 
 
 //TODO set with config | environment variable
-// localStorage.setItem("debug", "*");
+localStorage.setItem("debug", "*");
 
 var router = Router.create({
   routes: routes,
@@ -38,9 +37,11 @@ var router = Router.create({
 })
 
 // the google spreadsheet key
-// var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' // PRODUCTIVE
+// PRODUCTION
+// var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
 
-var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw' //  TEST
+// TEST
+var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
 var bucket = 'npabuffer'
 var isProxy = false        
 
@@ -79,8 +80,3 @@ router.run(
     );
   }
 );
-
-// boilerplate logging
-flux.on("dispatch", function(type, payload) {
-//  console.log("Dispatch:", type, payload);
-});
