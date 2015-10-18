@@ -55,16 +55,46 @@ var entityStoreConfig = {
 // initialise stores
 var stores = {
   routes: new RouteStore({ router: router }),
-  actions:          new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'actions', type:'action'})),  
-  recommendations:  new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'recommendations', type:'recommendation'})),  
-  issues:           new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'issues', type:'issue'})),  
-  groups:           new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'groups', type:'group'})),  
-  agencies:         new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'agencies', type:'agency'})),  
-  treatybodies:     new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'treatybodies', type:'treatybody'})),  
-  articles:         new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'articles', type:'article'})),  
-  terms:            new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'terms', type:'term'})),  
-  sessions:         new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'sessions', type:'session'})),  
-  pages:            new EntityStore(_.extend({},entityStoreConfig,{ sheet: 'pages', type:'page'}))  
+  actions:          new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'actions',
+    type:'action', 
+    title:{single:'Action',plural:'Actions'}})),  
+  recommendations:  new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'recommendations', 
+    type:'recommendation', 
+    title:{single:'Recommendation',plural:'Recommendations'}})),  
+  issues:           new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'issues', 
+    type:'issue', 
+    title:{single:'Issue',plural:'Issues'}})),  
+  groups:           new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'groups', 
+    type:'group', 
+    title:{single:'Group',plural:'Groups'}})),  
+  agencies:         new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'agencies', 
+    type:'agency', 
+    title:{single:'Agency',plural:'Agencies'}})),  
+  treatybodies:     new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'treatybodies', 
+    type:'treatybody', 
+    title:{single:'Treatybody',plural:'Treatybodies'}})),  
+  articles:         new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'articles', 
+    type:'article', 
+    title:{single:'Article',plural:'Article'}})),  
+  terms:            new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'terms', 
+    type:'term', 
+    title:{single:'Term',plural:'Terms'}})),  
+  sessions:         new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'sessions', 
+    type:'session', 
+    title:{single:'Session',plural:'Sessions'}})),  
+  pages:            new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'pages', 
+    type:'page', 
+    title:{single:'Page',plural:'Pages'}}))  
 }
 
 log('init flux...')
