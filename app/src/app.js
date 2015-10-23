@@ -16,7 +16,7 @@ window.Tabletop     = Tabletop
 //fluxxor
 var actions         = require("actions"),
     routes          = require("routes"),
-    loadData        = require('data/load-data')
+    loadData        = require('utils/load-data')
 //stores
 var RouteStore      = require("stores/route-store"),
     EntityStore     = require("stores/entity-store") 
