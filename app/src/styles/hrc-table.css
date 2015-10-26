@@ -1,4 +1,3 @@
-
 .hrc-cell .bar-value {
   position: absolute;
   left: 0;
@@ -111,45 +110,65 @@ span.bar-unit {
   opacity:0.8
 }
 
-.table.hrc-table > thead > tr > th, 
-.table.hrc-table > tbody > tr > th, 
-.table.hrc-table > tfoot > tr > th, 
-.table.hrc-table > thead > tr > td, 
-.table.hrc-table > tbody > tr > td, 
-.table.hrc-table > tfoot > tr > td {
+
+
+.hrc-table {
+  display:table;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hrc-thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.hrc-tbody {
+  display: table-row-group;
+}
+.hrc-tr {
+  display: table-row;
+}
+.hrc-td {
+  display:table-cell;  
+}
+
+.hrc-table>.hrc-thead:first-child>.hrc-tr:first-child>.hrc-td {
+    border-top: 0;
+}
+
+.hrc-table > .hrc-thead > .hrc-tr > .hrc-td, 
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td{
   vertical-align: middle;
   padding: 8px 12px;
 }
-.table.hrc-table > tbody > tr > td {
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
     border-bottom: 1px solid #dae4e7;
     padding: 15px 12px 12px;
 }
 
-.table.hrc-table.terms-table > tbody > tr > td {
+.hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td {
   padding: 15px 8px 14px;
 }
 
-.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-bar,
-.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-ratio-bar {
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell.hrc-cell-bar,
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell.hrc-cell-ratio-bar {
   padding: 15px 0px 12px;
 }
 
 
-.table > thead:first-child > tr:first-child > th, 
-.table > thead:first-child > tr:first-child > td {
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td {
   border-bottom: 1px solid #dae4e7;
   border-left: 1px solid #dae4e7;
 }
-.table > thead:first-child > tr:first-child > th:first-child, 
-.table > thead:first-child > tr:first-child > th.header-cell-key-links, 
-.table > thead:first-child > tr:first-child > th.header-cell-links, 
-.table > thead:first-child > tr:first-child > th.header-cell-spacer-bar, 
-.table > thead:first-child > tr:first-child > td:first-child { 
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-key-links, 
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-links, 
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-spacer-bar, 
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td:first-child { 
   border-left: 0;
 }
-.table > thead:first-child > tr:first-child > th:first-child,
-.table > tbody > tr > td:first-child, 
-.table.hrc-table.terms-table > tbody > tr > td:first-child {
+.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td:first-child,
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child, 
+.hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child {
   padding-left: 2px;
 }
 .hrc-cell.hrc-cell-no {
@@ -171,55 +190,48 @@ span.bar-unit {
   text-align: center;
 }
 
-
-.hrc-table.upr-recommendations-table .hrc-cell .cell-key-wrap {
+.hrc-table.recommendations-table .hrc-cell .cell-key-wrap {
   left: 20px;
 }
-
-td.hrc-cell.hrc-cell-key-links {
+.hrc-cell.hrc-header-cell.header-cell-no,
+.hrc-cell.hrc-cell-key-links {
   text-align: right;
 }
 .articles-table .header-cell-no,
-th.hrc-cell.hrc-header-cell.header-cell-no {
+.hrc-header-cell.header-cell-no {
   width:6%
 }
-
 
 .articles-table .hrc-cell-text {
   padding:15px
 }
 
-.table.hrc-table > tbody > tr > td.hrc-cell.hrc-cell-text {
+.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell.hrc-cell-text {
   padding-right: 40px;
 }
 
 
-th.hrc-header-cell {
+.hrc-header-cell {
+  font-weight: bold;
   text-transform: uppercase;
   color: #7696a5;
   font-size: 12px;
 }
 
-th.hrc-cell.header-cell-key-links {
+.hrc-cell.header-cell-key-links {
   text-transform: none;
 }
 
-.hrc-table.explore-table td.hrc-cell.hrc-cell-text {
+.hrc-table.explore-table .hrc-td.hrc-cell.hrc-cell-text {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
 }
 
-
-
-th.hrc-cell.hrc-header-cell.header-cell-no {
-  text-align: right;
-}
-
-td.hrc-cell.hrc-cell-no {
+.hrc-cell.hrc-cell-no {
   padding-left: 0 !important;
 }
 
-td.hrc-cell .marked-inner-html p {
+.hrc-cell .marked-inner-html p {
   margin-bottom: 0;
 }

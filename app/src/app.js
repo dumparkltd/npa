@@ -1,37 +1,30 @@
-if (process.env.NODE_ENV === "development") {
-  //
-  // window.LiveReloadOptions = { host: 'localhost' }
-  // console.log('test')
-  // require('livereload-js')
-}
-
-//main
+// react
 var React           = require("react"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
+// flux 
+var actions         = require("actions"),
+    routes          = require("routes")
+    
+//stores
+var RouteStore      = require("stores/route-store"),
+    EntityStore     = require("stores/entity-store") 
+
+//utils
+var loadData        = require('utils/load-data')
+
+// tabletop
 var Tabletop        = require('tabletop').Tabletop
 window.Tabletop     = Tabletop
 
-//fluxxor
-var actions         = require("actions"),
-    routes          = require("routes"),
-    loadData        = require('data/load-data')
-//stores
-var RouteStore          = require("stores/route-store"),
-    EntityStore          = require("stores/entity-store")
-    
-
 //helpers
-var insertCSS       = require('insert-css')
-var fs              = require('fs')
-
-//logging
+var _               = require('lodash')
 var log             = require('debug')('src:app')
 
 
 //TODO set with config | environment variable
-// localStorage.setItem("debug", "*");
+//localStorage.setItem("debug", "*");
 
 var router = Router.create({
   routes: routes,
@@ -39,29 +32,72 @@ var router = Router.create({
 })
 
 // the google spreadsheet key
-var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew'
+// PRODUCTION
+var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
+var isProxy = true        
 var bucket = 'npabuffer'
+
+
+// TEST
+//var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+//var isProxy = false        
+
+var entityStoreConfig = {
+  key : key,
+  bucket : bucket,
+  loadData : loadData, // entity store loads its data using this function
+  isProxy : isProxy
+}
 
 // initialise stores
 var stores = {
-  routes: new RouteStore({ router: router }),
-  actions: new EntityStore({ key: key, bucket: bucket, sheet: 'actions', type:'action', loadData: loadData }),  
-  recommendations: new EntityStore({ key: key, bucket: bucket, sheet: 'recommendations', type:'recommendation', loadData: loadData }),
-  issues: new EntityStore({ key: key, bucket: bucket, sheet: 'issues', type:'issue', loadData: loadData }),
-  groups: new EntityStore({ key: key, bucket: bucket, sheet: 'groups', type:'group', loadData: loadData }),
-  agencies: new EntityStore({ key: key, bucket: bucket, sheet: 'agencies', type:'agency', loadData: loadData }),
-  treatybodies: new EntityStore({ key: key, bucket: bucket, sheet: 'treatybodies', type:'treatybody', loadData: loadData }),
-  articles: new EntityStore({ key: key, bucket: bucket, sheet: 'articles', type:'article', loadData: loadData }),
-  terms: new EntityStore({ key: key, bucket: bucket, sheet: 'terms', type:'term', loadData: loadData }),
-  sessions: new EntityStore({ key: key, bucket: bucket, sheet: 'sessions', type:'session', loadData: loadData }),
-  pages: new EntityStore({ key: key, bucket: bucket, sheet: 'pages', type:'pages', loadData: loadData })  
-  
+  routes:  new RouteStore({ router: router }),
+  actions: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'actions',
+    type:'action', 
+    title:{single:'Action',plural:'Actions'}})),  
+  recommendations: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'recommendations', 
+    type:'recommendation', 
+    title:{single:'Recommendation',plural:'Recommendations'}})),  
+  issues: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'issues', 
+    type:'issue', 
+    title:{single:'Issue',plural:'Issues'}})),  
+  groups: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'groups', 
+    type:'group', 
+    title:{single:'Population Group',plural:'Population Groups'}})),  
+  agencies: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'agencies', 
+    type:'agency', 
+    title:{single:'Government Agency',plural:'Government Agencies'}})),  
+  treatybodies: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'treatybodies', 
+    type:'treatybody', 
+    title:{single:'Treaty Body',plural:'Treaty Bodies'}})),  
+  articles: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'articles', 
+    type:'article', 
+    title:{single:'Article',plural:'Article'}})),  
+  terms: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'terms', 
+    type:'term', 
+    title:{single:'Term',plural:'Terms'}})),  
+  sessions: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'sessions', 
+    type:'session', 
+    title:{single:'Session',plural:'Sessions'}})),  
+  pages: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'pages', 
+    type:'page', 
+    title:{single:'Page',plural:'Pages'}}))  
 }
 
 log('init flux...')
 var flux = new Fluxxor.Flux(stores, actions.methods);
-log('flux initialised')
 
+// run application
 router.run(
   function(Handler) {
     log('rendering app...')
@@ -71,8 +107,3 @@ router.run(
     );
   }
 );
-
-// boilerplate logging
-flux.on("dispatch", function(type, payload) {
-//  console.log("Dispatch:", type, payload);
-});
