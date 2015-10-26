@@ -1,35 +1,30 @@
-if (process.env.NODE_ENV === "development") {
-  //
-  // window.LiveReloadOptions = { host: 'localhost' }
-  // console.log('test')
-  // require('livereload-js')
-}
-
-//main
+// react
 var React           = require("react"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
-var Tabletop        = require('tabletop').Tabletop
-window.Tabletop     = Tabletop
-
-//fluxxor
+// flux 
 var actions         = require("actions"),
-    routes          = require("routes"),
-    loadData        = require('utils/load-data')
+    routes          = require("routes")
+    
 //stores
 var RouteStore      = require("stores/route-store"),
     EntityStore     = require("stores/entity-store") 
 
+//utils
+var loadData        = require('utils/load-data')
+
+// tabletop
+var Tabletop        = require('tabletop').Tabletop
+window.Tabletop     = Tabletop
+
 //helpers
 var _               = require('lodash')
-
-//logging
 var log             = require('debug')('src:app')
 
 
 //TODO set with config | environment variable
-localStorage.setItem("debug", "*");
+//localStorage.setItem("debug", "*");
 
 var router = Router.create({
   routes: routes,
@@ -38,60 +33,61 @@ var router = Router.create({
 
 // the google spreadsheet key
 // PRODUCTION
-// var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
+var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
+var bucket = 'npabuffer'
+var isProxy = true        
 
 // TEST
-var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
-var bucket = 'npabuffer'
-var isProxy = false        
+//var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+//var isProxy = false        
 
 var entityStoreConfig = {
   key : key,
   bucket : bucket,
-  loadData : loadData,
+  loadData : loadData, // entity store loads its data using this function
   isProxy : isProxy
 }
 
 // initialise stores
 var stores = {
-  routes: new RouteStore({ router: router }),
-  actions:          new EntityStore(_.extend({},entityStoreConfig,{ 
+  routes:  new RouteStore({ router: router }),
+  actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
     title:{single:'Action',plural:'Actions'}})),  
-  recommendations:  new EntityStore(_.extend({},entityStoreConfig,{ 
+  recommendations: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'recommendations', 
     type:'recommendation', 
     title:{single:'Recommendation',plural:'Recommendations'}})),  
-  issues:           new EntityStore(_.extend({},entityStoreConfig,{ 
+  issues: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'issues', 
     type:'issue', 
     title:{single:'Issue',plural:'Issues'}})),  
-  groups:           new EntityStore(_.extend({},entityStoreConfig,{ 
+  groups: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'groups', 
     type:'group', 
-    title:{single:'Group',plural:'Groups'}})),  
-  agencies:         new EntityStore(_.extend({},entityStoreConfig,{ 
+    title:{single:'Population Group',plural:'Population Groups'}})),  
+  agencies: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'agencies', 
     type:'agency', 
-    title:{single:'Agency',plural:'Agencies'}})),  
-  treatybodies:     new EntityStore(_.extend({},entityStoreConfig,{ 
+    title:{single:'Government Agency',plural:'Government Agencies'}})),  
+  treatybodies: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'treatybodies', 
     type:'treatybody', 
-    title:{single:'Treatybody',plural:'Treatybodies'}})),  
-  articles:         new EntityStore(_.extend({},entityStoreConfig,{ 
+    title:{single:'Treaty Body',plural:'Treaty Bodies'}})),  
+  articles: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'articles', 
     type:'article', 
     title:{single:'Article',plural:'Article'}})),  
-  terms:            new EntityStore(_.extend({},entityStoreConfig,{ 
+  terms: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'terms', 
     type:'term', 
     title:{single:'Term',plural:'Terms'}})),  
-  sessions:         new EntityStore(_.extend({},entityStoreConfig,{ 
+  sessions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'sessions', 
     type:'session', 
     title:{single:'Session',plural:'Sessions'}})),  
-  pages:            new EntityStore(_.extend({},entityStoreConfig,{ 
+  pages: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'pages', 
     type:'page', 
     title:{single:'Page',plural:'Pages'}}))  
@@ -99,8 +95,8 @@ var stores = {
 
 log('init flux...')
 var flux = new Fluxxor.Flux(stores, actions.methods);
-log('flux initialised')
 
+// run application
 router.run(
   function(Handler) {
     log('rendering app...')
