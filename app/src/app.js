@@ -34,8 +34,9 @@ var router = Router.create({
 // the google spreadsheet key
 // PRODUCTION
 var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
-var bucket = 'npabuffer'
 var isProxy = true        
+var bucket = 'npabuffer'
+
 
 // TEST
 //var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
