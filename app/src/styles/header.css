@@ -1,10 +1,10 @@
 /*navbar*/
-.navbar-tew > .container {
+.hrc-navbar > .container {
   width: 100% !important;
   max-width: 100% !important;
 }
 
-.navbar-tew {
+.hrc-navbar {
   background-color: #3C515E;
   margin-bottom: 0px;
   border: 0;
@@ -46,19 +46,40 @@ button.navbar-toggle {
 }
 
 
-
-
+.navbar-collapse {
+  overflow: hidden;
+}
+.collapse {
+  display: none;
+}
+.collapse.in {
+    display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+     transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+     transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+     transition-timing-function: ease;
+}
 .hrc-title-link .hrc-subtitle {
   color: #dae4e7;
   display:none;
 }
-.navbar-tew .navbar-right a {
+.hrc-navbar .navbar-right a {
   padding: 5px 1px;
 }
-.navbar-tew.navbar-default .navbar-nav > li > a {
+.hrc-navbar.navbar-default .navbar-nav > li > a {
   color: #fff;
 }
-.navbar-tew.navbar-default .navbar-nav > li > a:hover{
+.hrc-navbar.navbar-default .navbar-nav > li > a:hover{
   color: #d9e3e6;  
   background: none;
 }
