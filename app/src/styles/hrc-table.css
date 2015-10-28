@@ -138,7 +138,11 @@ span.bar-unit {
 .hrc-td {
   display:table-cell;  
 }
-
+@media (max-width: 767px) {
+  .hrc-td.visible-xs {
+      display: table-cell !important;
+  }
+}
 .hrc-table>.hrc-thead:first-child>.hrc-tr:first-child>.hrc-td {
     border-top: 0;
 }
@@ -217,12 +221,11 @@ span.bar-unit {
 .articles-table .hrc-cell-text {
   padding:15px
 }
-
-.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell.hrc-cell-text {
-  padding-right: 40px;
+@media (min-width:768px){
+  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell.hrc-cell-text {
+    padding-right: 40px;
+  }
 }
-
-
 .hrc-header-cell {
   font-weight: bold;
   text-transform: uppercase;

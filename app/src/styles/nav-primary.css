@@ -19,6 +19,22 @@
 .nav-primary > .container .row {
   margin: 0;
 }
+.nav-primary > .container .col-xs-1, 
+.nav-primary > .container .col-xs-2, 
+.nav-primary > .container .col-xs-3, 
+.nav-primary > .container .col-xs-4, 
+.nav-primary > .container .col-xs-5, 
+.nav-primary > .container .col-xs-6, 
+.nav-primary > .container .col-xs-7, 
+.nav-primary > .container .col-xs-8, 
+.nav-primary > .container .col-xs-9, 
+.nav-primary > .container .col-xs-10, 
+.nav-primary > .container .col-xs-11, 
+.nav-primary > .container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .nav-primary-list-wrapper {
   padding:0
 }
