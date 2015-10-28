@@ -90,9 +90,9 @@ body {
   color:#2c2c2c;
   font-size: 13px
 }
-.home {
+/*.home {
   border-left: 2px solid #363636; 
-}
+}*/
 @media (min-width:768px){
   .home {
     border-left: 12px solid #363636; 
@@ -371,7 +371,19 @@ ul.list-inline.list-bordered {
 .nav-control {
   position: absolute;
   top: -21px;
-  right: 15px;
+  right: 0;
+}
+.nav-control .btn {
+  padding: 6px 2px;
+}
+@media (min-width:768px){
+  .nav-control { 
+    top: -21px;
+    right: 15px;
+  }
+  .nav-control .btn {
+    padding: 6px 12px;
+  }
 }
 
 .hrc-nav-carousel .btn,

@@ -192,9 +192,15 @@ ul.hrc-category-list {
   vertical-align: top;
   padding: 3px 0;
 }
-
 a.smart-information {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+    position: absolute;
+    top: -3px;
+    right: 9px;
+}
+@media (min-width:768px){
+  a.smart-information {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
