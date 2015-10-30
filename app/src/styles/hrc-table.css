@@ -11,12 +11,13 @@
 .hrc-cell-spacer-bar,
 .header-cell-bar,
 .header-cell-ratio-bar {
-  width: 244px;
+  min-width: 244px;
 }
 
 .hrc-cell .cell-bar-wrap {
-  display: table;
-  width: 244px;
+    display: table;
+    width: 100%;
+    padding-right: 30px;
 }
 
 .hrc-cell .bar-label {
@@ -29,8 +30,7 @@
 
 .hrc-cell .bar {
   position: relative;
-  display: table-cell;
-  width: 184px;
+  display: table-cell;  
 }
 
 .hrc-cell .bar-value {
@@ -44,14 +44,15 @@
 span.bar-unit {
   height: 20px;
   display: inline-block;
-  margin-right: 1px;
+  border-right: 1px solid white;
   top: 5px;
   position: relative;
 }
 
 .hrc-cell .bar-label.bar-label-value-total {
-  display: inline-block;
-  text-align: left;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
 }
 
 .explore-table .hrc-cell.hrc-header-cell.header-cell-key-links{
