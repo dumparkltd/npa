@@ -17,7 +17,15 @@
 .hrc-cell .cell-bar-wrap {
     display: table;
     width: 100%;
+}
+.hrc-cell .cell-ratio-bar-wrap {
     padding-right: 30px;
+}
+
+@media (min-width:768px){
+  .hrc-cell .cell-bar-wrap {
+      padding-right: 30px;
+  }
 }
 
 .hrc-cell .bar-label {
@@ -44,10 +52,15 @@
 span.bar-unit {
   height: 20px;
   display: inline-block;
-  border-right: 1px solid white;
   top: 5px;
   position: relative;
 }
+@media (min-width:768px){
+  span.bar-unit {
+    border-right: 1px solid white;
+  }
+}
+
 
 .hrc-cell .bar-label.bar-label-value-total {
     text-align: left;
@@ -55,6 +68,9 @@ span.bar-unit {
     position: absolute;
 }
 
+.explore-table .hrc-cell.hrc-header-cell.header-cell-links{
+  width: 30px;
+}
 .explore-table .hrc-cell.hrc-header-cell.header-cell-key-links{
   width: 50px;
 }
@@ -124,7 +140,14 @@ span.bar-unit {
   display:table;
   width: 100%;
   margin-bottom: 20px;
+  table-layout:fixed
 }
+@media (max-width: 767px){
+  .hrc-table.visible-xs {
+    display:table !important
+  }
+}
+
 .hrc-thead{
   display: table-header-group;
   vertical-align: middle;
@@ -247,7 +270,6 @@ span.bar-unit {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
-  min-width: 150px;
 }
 
 .hrc-cell.hrc-cell-no {
