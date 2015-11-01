@@ -145,27 +145,27 @@ a:active .icon-snapshot,
 
 .page-content-smart .marked-inner-html h3#specific:before,
 .active .icon-smart-s,
-.icon-smart-s.active 
+.icon-smart-s.active, 
 .active .icon-smart-sm-s,
 .icon-smart-sm-s.active   { background-position: -200px -1700px;}
 .page-content-smart .marked-inner-html h3#measurable:before,
 .active .icon-smart-m,
-.icon-smart-m.active
+.icon-smart-m.active,
 .active .icon-smart-sm-m,
 .icon-smart-sm-m.active   { background-position: -200px -1800px;}
 .page-content-smart .marked-inner-html h3#assignable:before,
 .active .icon-smart-a,
-.icon-smart-a.active
+.icon-smart-a.active,
 .active .icon-smart-sm-a,
 .icon-smart-sm-a.active   { background-position: -200px -1900px;}
 .page-content-smart .marked-inner-html h3#result-oriented:before,
 .active .icon-smart-r,
-.icon-smart-r.active
+.icon-smart-r.active,
 .active .icon-smart-sm-r,
 .icon-smart-sm-r.active   { background-position: -200px -2000px;}
 .page-content-smart .marked-inner-html h3#time-bound:before,
 .active .icon-smart-t,
-.icon-smart-t.active
+.icon-smart-t.active,
 .active .icon-smart-t-sm,
 .icon-smart-sm-t.active   { background-position: -200px -2100px;}
 
@@ -180,15 +180,13 @@ a:active .icon-snapshot,
 .icon-smart-t, 
 .icon-smart-sm-t           { background-position: -250px -2100px; width:36px; height:36px}
 
-
-.icon-accepted,
+.icon-accepted             { background-position: 0px -2200px;    width:36px; height:36px}
+.icon-rejected             { background-position: -50px -2200px;  width:36px; height:36px}
 .icon-accepted-sm          { background-position: 0px -2250px;    width:15px; height:15px}
-.icon-rejected,
 .icon-rejected-sm          { background-position: -50px -2250px;  width:15px; height:15px}
 
 @media (min-width: 768px) {
-  .icon-accepted             { background-position: 0px -2200px;    width:36px; height:36px}
-  .icon-rejected             { background-position: -50px -2200px;  width:36px; height:36px}
+
   .page-content-smart .marked-inner-html h3#specific:before,
   .page-content-smart .marked-inner-html h3#measurable:before,
   .page-content-smart .marked-inner-html h3#assignable:before,
