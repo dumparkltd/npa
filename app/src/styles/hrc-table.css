@@ -226,14 +226,14 @@
 }
 
 
-/*cell bar, ratio bar*/
+/*cell bar, stacked bar*/
 .hrc-cell-bar,
-.hrc-cell-ratio-bar {
+.hrc-cell-stacked-bar {
   padding: 15px 0px 12px;
 }
 
 .hrc-cell-bar .bar-value,
-.hrc-cell-ratio-bar .bar-value {
+.hrc-cell-stacked-bar .bar-value {
   position: absolute;
   left: 0;
   display: block;
@@ -243,11 +243,11 @@
 
 
 .hrc-cell-bar .cell-bar-wrap,
-.hrc-cell-ratio-bar .cell-bar-wrap {
+.hrc-cell-stacked-bar .cell-bar-wrap {
     display: table;
     width: 100%;
 }
-.hrc-cell-ratio-bar .cell-ratio-bar-wrap {
+.hrc-cell-stacked-bar .cell-stacked-bar-wrap {
     padding-right: 30px;
 }
 @media (min-width:768px){
@@ -256,7 +256,7 @@
   }
 }
 .hrc-cell-bar .bar-label,
-.hrc-cell-ratio-bar .bar-label {
+.hrc-cell-stacked-bar .bar-label {
   display: table-cell;
   width: 30px;
   text-align: right;
@@ -264,12 +264,12 @@
   font-weight:bold;
 }
 .hrc-cell-bar .bar,
-.hrc-cell-ratio-bar .bar {
+.hrc-cell-stacked-bar .bar {
   position: relative;
   display: table-cell;  
 }
 .hrc-cell-bar .bar-value,
-.hrc-cell-ratio-bar .bar-value {
+.hrc-cell-stacked-bar .bar-value {
   position: absolute;
   left: 0;
   display: block;
@@ -277,7 +277,7 @@
   top: 5px;
 }
 .hrc-cell-bar .bar-unit,
-.hrc-cell-ratio-bar .bar-unit {
+.hrc-cell-stacked-bar .bar-unit {
   height: 20px;
   display: inline-block;
   top: 5px;
@@ -285,13 +285,13 @@
 }
 @media (min-width:768px){
   .hrc-cell-bar .bar-unit,
-  .hrc-cell-ratio-bar .bar-unit {    
+  .hrc-cell-stacked-bar .bar-unit {    
     border-right: 1px solid white;
   }
 }
 
 .hrc-cell-bar .bar-label.bar-label-value-total,
-.hrc-cell-ratio-bar .bar-label.bar-label-value-total {
+.hrc-cell-stacked-bar .bar-label.bar-label-value-total {
     text-align: left;
     display: inline-block;
     position: absolute;
