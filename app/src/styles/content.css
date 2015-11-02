@@ -1,7 +1,21 @@
 .content-main {
   margin-top: 28px;
 }
-
+.col-content-main{
+  margin-bottom:50px;
+}
+.col-content-aside{
+  margin-bottom:50px;
+}
+@media (min-width:768px){
+  .col-content-main,
+  .col-content-aside{
+    margin-bottom:10px;
+  }  
+  .page-content-action .column-categories {
+    padding-top:46px
+  }
+}
 .column-categories h5,
 .column-smart h5{
   margin: 26px 0 4px;
@@ -11,9 +25,7 @@
   padding-top: 10px;
   color: #7696a5;
 }
-.page-content-action .column-categories {
-  padding-top:46px
-}
+
 
 .group-label {
   font-size: 13px;
@@ -179,18 +191,28 @@ ul.hrc-category-list {
 
 .recommendation-attributes td.label-cell {
   font-weight: bold;
-  padding: 3px 10px 3px 0;
-  width: 180px;
+  padding: 3px 5px 3px 0;
   vertical-align: top;
 }
-
+@media (min-width:768px){
+  .recommendation-attributes td.label-cell {
+    padding: 3px 10px 3px 0;
+    width: 180px;   
+  }  
+}
 .recommendation-attributes td.content-cell {
   vertical-align: top;
   padding: 3px 0;
 }
-
 a.smart-information {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+    position: absolute;
+    top: -3px;
+    right: 9px;
+}
+@media (min-width:768px){
+  a.smart-information {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }

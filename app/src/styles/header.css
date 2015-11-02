@@ -1,58 +1,210 @@
 /*navbar*/
-.navbar-tew > .container {
+.hrc-navbar > .container {
   width: 100% !important;
+  max-width: 100% !important;
 }
 
-.navbar-tew {
+.hrc-navbar {
   background-color: #3C515E;
   margin-bottom: 0px;
   border: 0;
   border-radius: 0;   
 }
-.header-logo.navbar-brand {
-  padding: 27px 25px;
+.header-logo,
+.header-brand-title {
+  float:left;
 }
-.header-claim {
-  padding: 36px 25px;
+.header-intro .header-brand-title,
+.header-intro .navbar-toggle{
+  display:none;
+}
+button.navbar-toggle {
+  position: absolute;
+  right: 0;
+  margin: 15px 10px;
+  float: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  z-index:2
+}
+.navbar-default .navbar-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 0px;
+  background: none;
+  border: none;
+  background-color: #84A0AE;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
 }
 
-.navbar-tew .header-logo {
-  height: 100px;
-  border-right: 1px solid #34444b;
-}
 
-li.hrc-title-item {
-  height: 100px;
-  padding-left: 30px;
+.navbar-collapse {
+  overflow: hidden;
 }
-
-.navbar li.hrc-title-item > a {
+.collapse {
+  display: none;
+}
+.collapse.in {
+    display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+     transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+     transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+     transition-timing-function: ease;
+}
+.hrc-title-link .hrc-subtitle {
+  color: #dae4e7;
+  display:none;
+}
+.hrc-navbar .navbar-right a {
+  padding: 5px 1px;
+}
+.hrc-navbar.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.hrc-navbar.navbar-default .navbar-nav > li > a:hover{
+  color: #d9e3e6;  
+  background: none;
+}
+.navbar-brand {
   padding: 0;
 }
 
-li.hrc-title-item .hrc-subtitle {
-  color: #d9e3e6;
-  font-size: 13px;
+.header-logo {
+  padding: 11px 6px;
+  border-right: 1px solid #34444b;
+  z-index: 2;
+  position: relative;
 }
-
-.navbar-tew .navbar-right a {
-    padding: 5px 1px;
+.hrc-title-link {
+  display: table-cell;
+  padding-top: 5px;
+  vertical-align: middle;
+  height: 50px;
 }
-.navbar-tew.navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-.navbar-tew.navbar-default .navbar-nav > li > a:hover{
-color: #d9e3e6;  background: none;
-}
-
 .nav-group.nav-group-share {
-  padding-right:30px;
-
+  padding-right:0;
 }
 .nav-group {
-  padding: 34px 10px;
+  padding: 0;
+}
+.nav-group-pages li {
+  padding: 0 5px;
+}
+.header-brand-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 65px;
+  width: 100%;
+  z-index: 1;
 }
 
-.nav-group-pages li {
-  padding: 0 8px;
+li.share-header-social, li.nav-item-share {
+   display: inline-block;
 }
+
+@media (min-width: 768px) {
+
+  .navbar>.container .navbar-brand, 
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+  }  
+  .navbar-brand {
+    height: 100px;
+  }
+  .header-logo {
+    padding: 27px 5px;
+  }  
+  .header-brand-title {
+    position:relative;
+    margin: 0;
+    width:auto;
+    padding: 0;
+  }
+  .hrc-title-link {
+    height: 100px;
+    padding: 20px 5px 0 5px;
+    display: block;
+  }
+
+  .hrc-title-link .hrc-subtitle {    
+    font-size: 13px;
+    display:block;
+  }
+ 
+  .nav-group.nav-group-share {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    margin-right: 0;
+    padding-right: 8px;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  .nav-group.nav-group-pages {
+    position: absolute;
+    right: 0;
+    top: 19px;
+    margin-right: 0;
+    padding-right: 2px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  .nav-group {
+    padding: 34px 10px;
+  }
+  .nav-group-pages li {
+    padding: 0 8px;
+  }
+  h1.hrc-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:992px) {
+  .header-logo {
+    padding: 27px 25px;
+  }
+  .hrc-title-link {
+    padding: 20px 10px 0 30px;
+  }  
+  .nav-group.nav-group-share {
+    padding-right: 30px;
+    position: static;
+    right: initial;
+    top: initial;
+    padding-top: 34px;
+    margin-right: -15px;
+    font-size: inherit;
+  }
+  .nav-group.nav-group-pages {
+    margin-right: 0;
+    position: static;
+    right: initial;
+    top: initial;
+    padding: 34px 2px;
+    font-size: inherit;
+  }  
+  h1.hrc-title {
+    font-size: 20px;
+  }
+}
+

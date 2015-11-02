@@ -9,35 +9,65 @@
 
 
 /* icons */
-.icon-hrc-logo-sm         { background-position: 0px 0px;     width: 75px;  height: 46px;}
-
-.icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
+.icon-hrc-logo-sm         { background-position: -100px 0;     width: 46px;  height: 28px;}
+@media (min-width: 768px) {
+.icon-hrc-logo-sm         { background-position: 0 0;     width: 75px;  height: 46px;}
+}
+.icon-issues              { background-position: -200px -100px;  width: 60px; height: 50px;}
 .active .icon-issues,
 .active.icon-issues,      
 a:hover .icon-issues,
-.icon-issues:hover        { background-position: -100px -100px }
+.icon-issues:hover        { background-position: -300px -100px }
 
-.icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
+.icon-groups              { background-position: -200px -200px;  width: 60px; height: 50px;}
 .active .icon-groups,
 .active.icon-groups,   
 a:hover .icon-groups,
-.icon-groups:hover        { background-position: -100px -200px}
+.icon-groups:hover        { background-position: -300px -200px}
                       
-.icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
+.icon-agencies            { background-position: -200px -300px;  width: 50px; height: 50px;}
 .active .icon-agencies,
 .active.icon-agencies,      
-.icon-agencies:hover      { background-position: -100px -300px }
+.icon-agencies:hover      { background-position: -300px -300px }
 
-.icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
+.icon-treatybodies        { background-position: -200px -400px; width: 60px; height: 50px; }
 .active .icon-treatybodies,
 .active.icon-treatybodies,     
 a:hover .icon-treatybodies,
-.icon-treatybodies:hover  { background-position: -100px -400px }
-
-.icon-close               { background-position: 0px -500px; width: 68px; height: 68px; }
+.icon-treatybodies:hover  { background-position: -300px -400px }
+.icon-close               { background-position: -200px -500px; width: 42px; height: 42px; }
 a:hover .icon-close,
 .icon-close:hover
-                          { background-position: -100px -500px; }
+                          { background-position: -300px -500px; }
+@media (min-width: 768px) {
+  .icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
+  .active .icon-issues,
+  .active.icon-issues,      
+  a:hover .icon-issues,
+  .icon-issues:hover        { background-position: -100px -100px }
+
+  .icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
+  .active .icon-groups,
+  .active.icon-groups,   
+  a:hover .icon-groups,
+  .icon-groups:hover        { background-position: -100px -200px}
+
+  .icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
+  .active .icon-agencies,
+  .active.icon-agencies,      
+  .icon-agencies:hover      { background-position: -100px -300px }
+
+  .icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
+  .active .icon-treatybodies,
+  .active.icon-treatybodies,     
+  a:hover .icon-treatybodies,
+  .icon-treatybodies:hover  { background-position: -100px -400px }
+  .icon-close               { background-position: 0px -500px; width: 68px; height: 68px; }
+  a:hover .icon-close,
+  .icon-close:hover
+                            { background-position: -100px -500px; }  
+}
+
 .icon-previous            { background-position: 0px -600px; width: 13px; }
 a:hover .icon-previous, 
 .icon-previous:hover      { background-position: -50px -600px;}
@@ -95,58 +125,59 @@ a:active .icon-snapshot,
 .icon-hrc-logo            { background-position: 0px -1500px; width: 150px; height: 50px; }
 .icon-hrc-claim           { background-position: 0px -1600px; width: 150px; height: 25px; }
 
+
+
 .page-content-smart .marked-inner-html h3#specific:before,
 .page-content-smart .marked-inner-html h3#measurable:before,
 .page-content-smart .marked-inner-html h3#assignable:before,
 .page-content-smart .marked-inner-html h3#result-oriented:before,
 .page-content-smart .marked-inner-html h3#time-bound:before {
   position: relative;
-  height: 57px;
+  width:36px; 
+  height:36px;
   background: url('./img/NPA-sprite.png') no-repeat top left;
-  background-position: 0px -1700px;
-  width: 57px;
+  background-position: -200px -1700px;
   content: "";
   vertical-align: middle;
   margin: 5px 16px 10px 0px;
   float: left;
 }
 
+.page-content-smart .marked-inner-html h3#specific:before,
 .active .icon-smart-s,
-.icon-smart-s.active      { background-position: 0px -1700px;}
-.page-content-smart .marked-inner-html h3#measurable:before,
-.active .icon-smart-m,
-.icon-smart-m.active      { background-position: 0px -1800px;}
-.page-content-smart .marked-inner-html h3#assignable:before,
-.active .icon-smart-a,
-.icon-smart-a.active      { background-position: 0px -1900px;}
-.page-content-smart .marked-inner-html h3#result-oriented:before,
-.active .icon-smart-r,
-.icon-smart-r.active      { background-position: 0px -2000px;}
-.page-content-smart .marked-inner-html h3#time-bound:before,
-.active .icon-smart-t,
-.icon-smart-t.active      { background-position: 0px -2100px;}
-
-.icon-smart-s             { background-position: -100px -1700px; width:54px; height:54px}
-.icon-smart-m             { background-position: -100px -1800px; width:54px; height:54px}
-.icon-smart-a             { background-position: -100px -1900px; width:54px; height:54px}
-.icon-smart-r             { background-position: -100px -2000px; width:54px; height:54px}
-.icon-smart-t             { background-position: -100px -2100px; width:54px; height:54px}
-
+.icon-smart-s.active, 
 .active .icon-smart-sm-s,
 .icon-smart-sm-s.active   { background-position: -200px -1700px;}
+.page-content-smart .marked-inner-html h3#measurable:before,
+.active .icon-smart-m,
+.icon-smart-m.active,
 .active .icon-smart-sm-m,
 .icon-smart-sm-m.active   { background-position: -200px -1800px;}
+.page-content-smart .marked-inner-html h3#assignable:before,
+.active .icon-smart-a,
+.icon-smart-a.active,
 .active .icon-smart-sm-a,
 .icon-smart-sm-a.active   { background-position: -200px -1900px;}
+.page-content-smart .marked-inner-html h3#result-oriented:before,
+.active .icon-smart-r,
+.icon-smart-r.active,
 .active .icon-smart-sm-r,
 .icon-smart-sm-r.active   { background-position: -200px -2000px;}
+.page-content-smart .marked-inner-html h3#time-bound:before,
+.active .icon-smart-t,
+.icon-smart-t.active,
 .active .icon-smart-t-sm,
 .icon-smart-sm-t.active   { background-position: -200px -2100px;}
 
+.icon-smart-s, 
 .icon-smart-sm-s           { background-position: -250px -1700px; width:36px; height:36px}
+.icon-smart-m, 
 .icon-smart-sm-m           { background-position: -250px -1800px; width:36px; height:36px}
+.icon-smart-a, 
 .icon-smart-sm-a           { background-position: -250px -1900px; width:36px; height:36px}
+.icon-smart-r, 
 .icon-smart-sm-r           { background-position: -250px -2000px; width:36px; height:36px}
+.icon-smart-t, 
 .icon-smart-sm-t           { background-position: -250px -2100px; width:36px; height:36px}
 
 .icon-accepted             { background-position: 0px -2200px;    width:36px; height:36px}
@@ -154,6 +185,37 @@ a:active .icon-snapshot,
 .icon-accepted-sm          { background-position: 0px -2250px;    width:15px; height:15px}
 .icon-rejected-sm          { background-position: -50px -2250px;  width:15px; height:15px}
 
+@media (min-width: 768px) {
+
+  .page-content-smart .marked-inner-html h3#specific:before,
+  .page-content-smart .marked-inner-html h3#measurable:before,
+  .page-content-smart .marked-inner-html h3#assignable:before,
+  .page-content-smart .marked-inner-html h3#result-oriented:before,
+  .page-content-smart .marked-inner-html h3#time-bound:before {  
+    width:57px; height:57px
+  }
+  .page-content-smart .marked-inner-html h3#specific:before,
+  .active .icon-smart-s,
+  .icon-smart-s.active      { background-position: 0px -1700px;}
+  .page-content-smart .marked-inner-html h3#measurable:before,
+  .active .icon-smart-m,
+  .icon-smart-m.active      { background-position: 0px -1800px;}
+  .page-content-smart .marked-inner-html h3#assignable:before,
+  .active .icon-smart-a,
+  .icon-smart-a.active      { background-position: 0px -1900px;}
+  .page-content-smart .marked-inner-html h3#result-oriented:before,
+  .active .icon-smart-r,
+  .icon-smart-r.active      { background-position: 0px -2000px;}
+  .page-content-smart .marked-inner-html h3#time-bound:before,
+  .active .icon-smart-t,
+  .icon-smart-t.active      { background-position: 0px -2100px;}
+
+  .icon-smart-s             { background-position: -100px -1700px; width:54px; height:54px}
+  .icon-smart-m             { background-position: -100px -1800px; width:54px; height:54px}
+  .icon-smart-a             { background-position: -100px -1900px; width:54px; height:54px}
+  .icon-smart-r             { background-position: -100px -2000px; width:54px; height:54px}
+  .icon-smart-t             { background-position: -100px -2100px; width:54px; height:54px}
+}
 .icon-arrow-link           { background-position: 0px -2300px;  width:21px; height:35px}
 
 .icon-arrow-tall           { background-position: 0px -2350px;  width:30px; height:120px}
@@ -182,7 +244,7 @@ a:active .icon-snapshot,
   .page-content-smart .marked-inner-html h3#result-oriented:before,
   .page-content-smart .marked-inner-html h3#time-bound:before  {
     background-image: url('./img/NPA-sprite@2.png');
-    background-size: 300px 2500px;
+    background-size: 400px 2500px;
   }
  
 }
