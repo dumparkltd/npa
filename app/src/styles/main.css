@@ -97,14 +97,22 @@ body {
 /*.home {
   border-left: 2px solid #363636; 
 }*/
-.home {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 212px;
+.hrc-app {
+  position: relative;
+  min-height: 100%;
+
+}
+
+.page-wrapper {
+  padding-bottom: 250px;
+}
+
+.route-intro .page-wrapper {
+  padding-bottom: 50px;
 }
 
 @media (min-width:768px){
-  .home {
+  .hrc-app {
     border-left: 12px solid #363636; 
   }
 }
