@@ -2,6 +2,8 @@
 
 html,body,#app {   
   min-width:300px;
+  position: relative;
+  height: 100%;  
 }
 .container {
   max-width: 958px !important; 
@@ -93,6 +95,12 @@ body {
 /*.home {
   border-left: 2px solid #363636; 
 }*/
+.home {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 212px;
+}
+
 @media (min-width:768px){
   .home {
     border-left: 12px solid #363636; 
@@ -102,10 +110,7 @@ body {
   text-align:center;
   margin: 50px 0
 }
-footer.hrc-footer {
-  width: 100%;
-  min-height: 180px;
-}
+
 p {
   font-size:13px;
   line-height:1.5;

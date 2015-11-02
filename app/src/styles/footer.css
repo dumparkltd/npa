@@ -1,4 +1,9 @@
 footer.hrc-footer {
+  width: 100%;
+  min-height: 180px;
+  position:absolute;
+  top: 100%;
+  margin-top: -180px;
   background-color: #e7eef0;
 }
 
