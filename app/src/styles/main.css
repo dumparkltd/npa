@@ -1,5 +1,7 @@
 /*own style overrides*/
-
+*:focus {
+    border: 1px solid red;
+}
 html,body,#app {   
   min-width:300px;
   position: relative;
@@ -352,7 +354,7 @@ a:focus {
 }
 .marked-inner-html ul li:before {
   position: absolute;
-  margin: 7px 0 0 -5px;
+  margin: 7px 0 0 -15px;
   height: 15px;
   background: url('./img/NPA-sprite.png') no-repeat 0px -750px;
   width: 17px;
