@@ -1,7 +1,21 @@
 .content-main {
   margin-top: 28px;
 }
-
+.col-content-main{
+  margin-bottom:50px;
+}
+.col-content-aside{
+  margin-bottom:50px;
+}
+@media (min-width:768px){
+  .col-content-main,
+  .col-content-aside{
+    margin-bottom:10px;
+  }  
+  .page-content-action .column-categories {
+    padding-top:46px
+  }
+}
 .column-categories h5,
 .column-smart h5{
   margin: 26px 0 4px;
@@ -11,9 +25,7 @@
   padding-top: 10px;
   color: #7696a5;
 }
-.page-content-action .column-categories {
-  padding-top:46px
-}
+
 
 .group-label {
   font-size: 13px;
