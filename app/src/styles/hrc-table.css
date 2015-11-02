@@ -3,6 +3,9 @@
   display:table;
   width: 100%;
   margin-bottom: 20px;
+  table-layout:auto
+}
+.hrc-table.explore-table {
   table-layout:fixed
 }
 @media (min-width: 420px){
@@ -81,12 +84,10 @@
 }
 @media (min-width:768px){  
   .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
-      padding: 15px 12px 12px;
+    padding: 15px 12px 12px;
   }
   .hrc-table > .hrc-thead > .hrc-tr > .hrc-th, 
-  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-th, 
-  .hrc-table > .hrc-thead > .hrc-tr > .hrc-td, 
-  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
+  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-th {
     vertical-align: middle;
     padding: 8px 12px;
   }
@@ -115,7 +116,7 @@
     width: 60%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .explore-table .header-cell-text {
       width: 30%;
   }  
@@ -140,26 +141,28 @@
   font-size: 12px;
   text-transform: none;
 }
+.actions-table .header-cell-key-links {
+  width: 30px;
+}
 .header-cell-key-links .cell-key-wrap {
   position: absolute;
   bottom: 8px;
   left: -40px;
 }
 .actions-table .header-cell-key-links .cell-key-wrap {
-  left: -60px;
+  position: relative;
+  left: initial;    
+  bottom: initial;
+  text-align: center;
 }
 .recommendations-table .header-cell-key-links .cell-key-wrap {
   left: 12px;
   display: none;
 }
 @media (min-width:768px){  
-  .actions-table .header-cell-key-links,
   .recommendations-table .header-cell-key-links {
     width: 110px;
   }  
-  .actions-table .header-cell-key-links .cell-key-wrap {
-    left: 0px;
-  }
   .recommendations-table .header-cell-key-links .cell-key-wrap {
     display: block;
   } 
@@ -187,7 +190,6 @@
 .header-cell-key-links .cell-key-item-no {
   font-size: 14px;
   text-align: right;
-  padding-right: 5px;  
 }
 .header-cell-key-links .cell-key-item-title {
   text-align: left; 
@@ -336,10 +338,7 @@
 .hrc-cell.hrc-cell-key-links {
   text-align: right;
 }
-.articles-table .header-cell-no,
-.hrc-header-cell.header-cell-no {
-  width:6%
-}
+
 @media (min-width:768px){
   .hrc-cell.hrc-cell-label,
   .hrc-cell.hrc-cell-no {
@@ -347,17 +346,18 @@
     line-height: 1.42857143;
     padding: 10px;
   }
-  .hrc-cell.hrc-cell-label {
-    width: 150px;    
-  }
 }
 
 /*cell icon*/
 .hrc-cell.hrc-cell-icon {
   text-align: center;
-  min-width: 60px;
 }
 
+@media (min-width:420px){
+  .hrc-cell.hrc-cell-icon {
+    min-width: 60px;
+  }
+}
 /*cell spacer*/
 
 .hrc-cell-spacer-bar,
