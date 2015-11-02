@@ -33,9 +33,11 @@
 .hrc-tr {
   display: table-row;
 }
-.hrc-table-link-row {
-  cursor:pointer
+a.hrc-table-link-row,
+a.hrc-table-link-row:hover{
+    color: #2c2c2c;
 }
+
 .hrc-table-link-row:hover {
   opacity:0.8
 }
