@@ -8,6 +8,9 @@
 .hrc-table.explore-table {
   table-layout:fixed
 }
+.articles-table .hrc-table.hrc-table-nested {
+    margin: -10px -15px;
+}
 @media (min-width: 420px){
   .hrc-table.hrc-table-nested {
     width:auto
@@ -82,15 +85,21 @@
 .hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child {
   padding-left: 2px;
 }
+.articles-table.hrc-table > .hrc-tbody > .hrc-tr >.hrc-td.hrc-cell-no {
+    vertical-align: top;
+}
 @media (min-width:768px){  
   .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
     padding: 15px 12px 12px;
   }
-  .hrc-table > .hrc-thead > .hrc-tr > .hrc-th, 
-  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-th {
+  .hrc-table > .hrc-thead > .hrc-tr > .hrc-td, 
+  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td{
     vertical-align: middle;
     padding: 8px 12px;
-  }
+  }  
+  .articles-table.hrc-table > .hrc-tbody > .hrc-tr >.hrc-td.hrc-cell-no {
+      vertical-align: middle;
+  }  
 }
 
 

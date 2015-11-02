@@ -1,9 +1,9 @@
 footer.hrc-footer {
   width: 100%;
-  min-height: 180px;
+  min-height: 200px;
   position:absolute;
   top: 100%;
-  margin-top: -180px;
+  margin-top: -200px;
   background-color: #e7eef0;
 }
 
@@ -18,8 +18,7 @@ footer.hrc-footer {
 
 .hrc-footer-item {
   vertical-align: top;
-  padding: 30px 26px;
-  text-align: center;
+  padding: 30px 26px;  
 }
 
 
@@ -32,26 +31,18 @@ a.builtby {
   color: #a5bdc7;
   position: absolute;
   bottom: 10px;
-  right: 30px;
 }
 
 footer h4 {
   text-transform: none;
 }
 
-.hrc-footer-brand-logo {
-  text-align: center;
-}
 @media (min-width:768px){
   .hrc-footer-item {    
-    min-height: 180px;
-    padding: 30px 26px 0;
+    min-height: 200px;
     text-align: left;
   }
   .hrc-footer-brand-logo {
     text-align: right;
-  }
-  a.builtby {        
-    right:initial;
   }
 }
