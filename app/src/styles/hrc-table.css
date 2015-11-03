@@ -9,8 +9,16 @@
   table-layout:fixed
 }
 .articles-table .hrc-table.hrc-table-nested {
-    margin: -10px -15px;
 }
+
+.hrc-table.hrc-table-nested > .hrc-tbody > .hrc-tr > .hrc-td {
+  border-bottom: none;
+  padding: 12px 5px 5px;
+}
+.hrc-table.hrc-table-nested > .hrc-tbody > .hrc-tr > .hrc-td:first-child{
+  padding-left: 0;
+}
+
 @media (min-width: 420px){
   .hrc-table.hrc-table-nested {
     width:auto
