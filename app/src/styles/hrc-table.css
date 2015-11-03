@@ -33,9 +33,9 @@
 .hrc-tr {
   display: table-row;
 }
-a.hrc-table-link-row,
-a.hrc-table-link-row:hover{
+.hrc-table-link-row{
     color: #2c2c2c;
+    cursor: pointer;
 }
 
 .hrc-table-link-row:hover {
@@ -45,6 +45,8 @@ a.hrc-table-link-row:hover{
 /*cells*/
 .hrc-td {
   display:table-cell;  
+  text-align: left;
+  position: relative;
 }
 @media (max-width: 767px) {
   .hrc-td.visible-xs {
@@ -71,18 +73,19 @@ a.hrc-table-link-row:hover{
 .hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td {
   padding: 15px 8px 14px;
 }
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td {
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td {
   border-top: 0;
   border-bottom: 1px solid #dae4e7;
   border-left: 1px solid #dae4e7;
 }
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-key-links, 
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-links, 
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td.header-cell-spacer-bar, 
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td:first-child { 
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td.header-cell-key-links, 
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td.header-cell-links, 
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td.header-cell-spacer-bar, 
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td:first-child,  
+.hrc-table.articles-table > .hrc-thead > .hrc-tr:first-child > .hrc-td:last-child { 
   border-left: 0;
 }
-.hrc-table > .hrc-thead:first-child > .hrc-tr:first-child > .hrc-td:first-child,
+.hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td:first-child,
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child, 
 .hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child {
   padding-left: 2px;
@@ -110,13 +113,15 @@ a.hrc-table-link-row:hover{
 /* header cells ------------------------------------------------------------- */
 
 .hrc-header-cell {
-  font-weight: bold;
-  text-transform: uppercase;
   color: #7696a5;
   font-size: 11px;
 }
+.hrc-header-cell .hrc-th-title{
+  font-weight: bold;
+  text-transform: uppercase;    
+}
 @media (min-width:786px){
-  .hrc-header-cell {
+  .hrc-header-cell{
     font-size: 12px;
   }
 }
@@ -140,18 +145,17 @@ a.hrc-table-link-row:hover{
 
 /*cell links */
 .header-cell-links{
-  width: 30px;
+  width: 40px;
 }
+
 
 
 /*cell key links*/
 .header-cell-key-links{
   width: 50px;
   position: relative;
-  font-weight: normal;  
-  font-size: 12px;
-  text-transform: none;
 }
+
 .actions-table .header-cell-key-links {
   width: 30px;
 }
@@ -180,34 +184,54 @@ a.hrc-table-link-row:hover{
 }
 
 
-.header-cell-key-links .cell-key {
+.cell-key {
   display: table;
+  font-weight: normal;  
+  font-size: 12px;
+  text-transform: none;  
 }
-.header-cell-key-links .cell-key-item {
+.cell-key-item {
   display: table-row
 }
-.header-cell-key-links .cell-key-item-no,
-.header-cell-key-links .cell-key-item-block, 
-.header-cell-key-links .cell-key-item-title{
+.cell-key-item-no,
+.cell-key-item-block, 
+.cell-key-item-title{
   display: table-cell;
 }
 
-.header-cell-key-links .cell-key-item-block {
+.cell-key-item-block {
   width: 8px;
   height: 15px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
 }
-.header-cell-key-links .cell-key-item-no {
+.cell-key-item-no {
   font-size: 14px;
   text-align: right;
 }
-.header-cell-key-links .cell-key-item-title {
+.cell-key-item-title {
   text-align: left; 
   padding-left: 5px;  
 }
 
-
+.explore-table .cell-key {
+    position: absolute;
+    left: 100%;
+    bottom: 8px;
+    width: 120px;
+    margin-left: -50px;
+} 
+.recommendations-table .cell-key {
+    position: absolute;
+    left: 100%;
+    bottom: 8px;
+    width: 120px;
+}
+@media (min-width:768px){  
+  .recommendations-table .header-cell-links {
+    width: 110px;
+  }
+}
 
  /*cell icon*/
 .header-cell-icon {
@@ -293,8 +317,8 @@ a.hrc-table-link-row:hover{
 }
 .hrc-cell-bar .bar,
 .hrc-cell-stacked-bar .bar {
-  position: relative;
   display: table-cell;  
+  padding-right: 30px;
 }
 .hrc-cell-bar .bar-value,
 .hrc-cell-stacked-bar .bar-value {
@@ -346,7 +370,8 @@ a.hrc-table-link-row:hover{
   vertical-align: top !important;
 }
 .hrc-cell.hrc-header-cell.header-cell-no,
-.hrc-cell.hrc-cell-key-links {
+.hrc-cell.hrc-cell-key-links,
+.hrc-cell.hrc-cell-links {
   text-align: right;
 }
 

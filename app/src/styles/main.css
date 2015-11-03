@@ -1,6 +1,7 @@
 /*own style overrides*/
 *:focus {
     border: 1px solid red;
+    outline: 1px solid red;
 }
 html,body,#app {   
   min-width:300px;
@@ -15,6 +16,9 @@ html,body,#app {
 }
 .italic {
     font-style: italic;
+}
+caption {
+    text-align: left;
 }
 @media (min-width: 768px) {
   .container {
