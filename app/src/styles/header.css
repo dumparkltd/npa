@@ -3,7 +3,6 @@
   width: 100% !important;
   max-width: 100% !important;
 }
-
 .hrc-navbar {
   background-color: #3C515E;
   margin-bottom: 0px;
@@ -73,8 +72,10 @@ button.navbar-toggle {
   color: #dae4e7;
   display:none;
 }
-.hrc-navbar .navbar-collapse {
-  float:right
+@media (min-width: 768px) {
+  .hrc-navbar .navbar-collapse {
+    float:right
+  }
 }
 .hrc-navbar .navbar-collapse a {
   padding: 5px 1px;
@@ -83,10 +84,29 @@ button.navbar-toggle {
 .hrc-navbar.navbar-default .navbar-nav > li > a {
   color: #fff;
 }
-.hrc-navbar.navbar-default .navbar-nav > li > a:hover{
-  color: #d9e3e6;  
-  background: none;
+
+
+.hrc-navbar.navbar-default  .navbar-brand a:focus,
+.hrc-navbar.navbar-default  .navbar-brand a:hover {
+  opacity:0.8;
+  text-decoration:none;
 }
+.hrc-navbar.navbar-default .navbar-nav > li > a:focus,
+.hrc-navbar.navbar-default .navbar-nav > li > a:hover{
+  opacity:0.8;
+  text-decoration:underline
+}
+.hrc-navbar.navbar-default .navbar-nav > li > a.active,
+.hrc-navbar.navbar-default .navbar-nav > li > a.active:hover,
+.hrc-navbar.navbar-default .navbar-nav > li.active > a:hover,
+.hrc-navbar.navbar-default .navbar-nav > li.active > a{
+  opacity:0.8;
+  text-decoration:underline;
+  color: #fff;  
+  background:none;
+  
+}
+
 .navbar-brand {
   padding: 0;
 }

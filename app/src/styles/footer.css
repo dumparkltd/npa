@@ -7,9 +7,9 @@ footer.hrc-footer {
   background-color: #e7eef0;
 }
 
-.hrc-footer-info, .hrc-footer-parentsite {
+a.icon-hrc-logo-claim:hover, a.icon-hrc-logo-claim:focus {
+    opacity: 0.8;
 }
-
 
 .hrc-footer-info {
   background-color: #dae4e7;

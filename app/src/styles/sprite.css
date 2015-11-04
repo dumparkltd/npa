@@ -16,76 +16,108 @@
 .icon-issues              { background-position: -200px -100px;  width: 60px; height: 50px;}
 .active .icon-issues,
 .active.icon-issues,      
+a:focus .icon-issues,
 a:hover .icon-issues,
+.icon-issues:focus,
 .icon-issues:hover        { background-position: -300px -100px }
 
 .icon-groups              { background-position: -200px -200px;  width: 60px; height: 50px;}
 .active .icon-groups,
 .active.icon-groups,   
 a:hover .icon-groups,
+a:focus .icon-groups,
+.icon-groups:focus,
 .icon-groups:hover        { background-position: -300px -200px}
                       
 .icon-agencies            { background-position: -200px -300px;  width: 50px; height: 50px;}
 .active .icon-agencies,
-.active.icon-agencies,      
+.active.icon-agencies, 
+a:hover .icon-agencies, 
+a:focus .icon-agencies, 
+.icon-agencies:focus, 
 .icon-agencies:hover      { background-position: -300px -300px }
 
 .icon-treatybodies        { background-position: -200px -400px; width: 60px; height: 50px; }
 .active .icon-treatybodies,
 .active.icon-treatybodies,     
 a:hover .icon-treatybodies,
+a:focus .icon-treatybodies,
+.icon-treatybodies:focus,
 .icon-treatybodies:hover  { background-position: -300px -400px }
 .icon-close               { background-position: -200px -500px; width: 42px; height: 42px; }
+a:focus .icon-close,
 a:hover .icon-close,
-.icon-close:hover
-                          { background-position: -300px -500px; }
+.icon-close:focus,
+.icon-close:hover         { background-position: -300px -500px; }
+
 @media (min-width: 768px) {
   .icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
   .active .icon-issues,
   .active.icon-issues,      
   a:hover .icon-issues,
+  a:focus .icon-issues,
+  .icon-issues:focus,
   .icon-issues:hover        { background-position: -100px -100px }
 
   .icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
   .active .icon-groups,
   .active.icon-groups,   
   a:hover .icon-groups,
+  a:focus .icon-groups,
+  .icon-groups:focus,
   .icon-groups:hover        { background-position: -100px -200px}
 
   .icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
   .active .icon-agencies,
   .active.icon-agencies,      
+  a:hover .icon-agencies,      
+  a:focus .icon-agencies,      
+  .icon-agencies:focus,      
   .icon-agencies:hover      { background-position: -100px -300px }
 
   .icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
   .active .icon-treatybodies,
   .active.icon-treatybodies,     
   a:hover .icon-treatybodies,
+  a:focus .icon-treatybodies,
+  .icon-treatybodies:focus,
   .icon-treatybodies:hover  { background-position: -100px -400px }
   .icon-close               { background-position: 0px -500px; width: 68px; height: 68px; }
   a:hover .icon-close,
+  a:focus .icon-close,
+  .icon-close:focus,
   .icon-close:hover
                             { background-position: -100px -500px; }  
 }
 
 .icon-previous            { background-position: 0px -600px; width: 13px; }
 a:hover .icon-previous, 
+a:focus .icon-previous, 
+.icon-previous:focus, 
 .icon-previous:hover      { background-position: -50px -600px;}
 .icon-next                { background-position: 0px -650px; width: 13px; }
 a:hover .icon-next, 
+a:focus .icon-next, 
+.icon-next:focus, 
 .icon-next:hover          { background-position: -50px -650px;}
 .icon-li-arrow            { background-position: 0px -700px }
 .icon-li-dot              { background-position: 0px -750px }
 .icon-information         { background-position: 0px -800px; width:20px; height:20px}
 .icon-arrow-right-sm      { background-position: 0px -850px }
 a:hover .icon-arrow-right-sm,
+a:focus .icon-arrow-right-sm,
+.icon-arrow-right-sm:focus,
 .icon-arrow-right-sm:hover{ background-position: -50px -850px }
 
 .icon-barchart            { background-position: 0px -900px; width: 30px; height: 21px; }
+a:focus .icon-barchart,
 a:hover .icon-barchart,
+.icon-barchart:focus,
 .icon-barchart:hover      { background-position: 0px -900px }
 .icon-linechart           { background-position: 0px -950px; width: 30px; height: 21px; }
 a:hover .icon-linechart,
+a:focus .icon-linechart,
+.icon-linechart:focus,
 .icon-linechart:hover     { background-position: 0px -950px; }
                       
 .icon-menu                { background-position: 0px -1000px }
@@ -98,10 +130,15 @@ a:hover .icon-linechart,
 .icon-social-facebook-sm  { background-position: -100px -1050px; width: 18px; height: 20px;  margin-top: -5px; }
 .icon-social-share        { background-position: -100px -1100px; width: 20px; height: 20px;  margin-top: -5px; }
 .icon-social-twitter-sm   { background-position: -100px -1150px; width: 23px; height: 20px;  margin-top: -5px; }
+a:focus .icon-social-facebook-sm,
 a:hover .icon-social-facebook-sm { background-position: -150px -1050px;}
+a:focus .icon-social-share,
 a:hover .icon-social-share       { background-position: -150px -1100px;}
+a:focus .icon-social-twitter-sm,
 a:hover .icon-social-twitter-sm  { background-position: -150px -1150px; }
 
+a:focus .icon-timeline,
+.icon-timeline:focus,
 a:hover .icon-timeline,
 .icon-timeline:hover,
 .icon-timeline            { background-position: 0px -1200px; width: 76px; height: 40px; }
@@ -246,5 +283,4 @@ a:active .icon-snapshot,
     background-image: url('./img/NPA-sprite@2.png');
     background-size: 400px 2500px;
   }
- 
 }

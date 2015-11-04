@@ -1,8 +1,4 @@
 /*own style overrides*/
-*:focus {
-    border: 1px solid red;
-    outline: 1px solid red;
-}
 html,body,#app {   
   min-width:300px;
   position: relative;
@@ -258,7 +254,6 @@ button,a {
 a{
   color: #0094ab;
 }
-a.btn:focus,
 a.btn {
   background-color: #ecebe6;
   color: #0094ab;
@@ -270,17 +265,17 @@ p a em {
   font-style: normal;
 }
 a:hover,
+a:focus{
+  color: #008399;
+}
 a.btn:hover,
-a.btn:focus:hover
-{
+a.btn:focus,
+a.btn:focus:hover {
   color: #008399;
   text-decoration:none
 }
-a:focus{
-  text-decoration:none;
-  color: #008399;
-}
-a:focus {
+a:focus,
+*:focus {
   outline: 0;
 }
 .btn.active {

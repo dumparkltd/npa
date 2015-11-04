@@ -39,11 +39,12 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.btn.share-modal-social,
-.btn.share-modal-social:focus {
+.btn.share-modal-social {
   background-color: #0094ab;
   color: #fff;  
 }
+
+.btn.share-modal-social:focus,
 .btn.share-modal-social:focus:hover,
 .btn.share-modal-social:active:hover,
 .btn.share-modal-social:hover {

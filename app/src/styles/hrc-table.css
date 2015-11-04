@@ -46,8 +46,9 @@
     cursor: pointer;
 }
 
+.hrc-table-link-row:focus, 
 .hrc-table-link-row:hover {
-  opacity:0.8
+  background-color:#dae4e7
 }
 
 /*cells*/
@@ -69,13 +70,13 @@
 .hrc-table.explore-table > tfoot > tr > td {
   vertical-align: middle;
 }
-.hrc-table > .hrc-thead > .hrc-tr > .hrc-td, 
-.hrc-table > .hrc-tbody > .hrc-tr > .hrc-td{
+.hrc-table > .hrc-thead > .hrc-tr > .hrc-td{
   vertical-align: middle;
   padding: 8px 5px;
 }
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
   border-bottom: 1px solid #dae4e7;
+  vertical-align: middle;
   padding: 12px 5px 5px;
 }
 .hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td {
@@ -96,7 +97,7 @@
 .hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td:first-child,
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child, 
 .hrc-table.terms-table > .hrc-tbody > .hrc-tr > .hrc-td:first-child {
-  padding-left: 2px;
+  padding-left: 5px;
 }
 .articles-table.hrc-table > .hrc-tbody > .hrc-tr >.hrc-td.hrc-cell-no {
     vertical-align: top;
