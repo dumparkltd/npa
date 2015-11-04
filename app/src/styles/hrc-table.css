@@ -74,6 +74,10 @@
   vertical-align: middle;
   padding: 8px 5px;
 }
+.hrc-table > tbody > .hrc-tr.hrc-table-link-row:hover > .hrc-td,
+.hrc-table > tbody > .hrc-tr.hrc-table-link-row:focus > .hrc-td {
+  border-bottom: 1px solid #fff;
+}
 .hrc-table > tbody > .hrc-tr > .hrc-td {
   border-bottom: 1px solid #dae4e7;
   vertical-align: middle;
