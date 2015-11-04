@@ -158,7 +158,6 @@
 }
 
 
-
 /*cell key links*/
 .header-cell-key-links{
   width: 50px;
@@ -368,6 +367,7 @@
   font-weight: bold;
   padding: 5px;
   text-align: right;
+  white-space: nowrap;
 }
 
 .hrc-cell-no {
