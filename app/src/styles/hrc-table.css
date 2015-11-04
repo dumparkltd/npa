@@ -331,6 +331,8 @@
 .hrc-cell-stacked-bar .bar {
   display: table-cell;  
   padding-right: 30px;
+  position: relative;
+  
 }
 .hrc-cell-bar .bar-value,
 .hrc-cell-stacked-bar .bar-value {
