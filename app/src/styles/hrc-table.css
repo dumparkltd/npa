@@ -13,7 +13,7 @@
 
 .hrc-table.hrc-table-nested > tbody > .hrc-tr > .hrc-td {
   border-bottom: none;
-  padding: 12px 5px 5px;
+  padding: 12px 5px 10px;
 }
 .hrc-table.hrc-table-nested > tbody > .hrc-tr > .hrc-td:first-child{
   padding-left: 0;
@@ -81,10 +81,10 @@
 .hrc-table > tbody > .hrc-tr > .hrc-td {
   border-bottom: 1px solid #dae4e7;
   vertical-align: middle;
-  padding: 12px 5px 5px;
+  padding: 12px 5px 10px;
 }
 .hrc-table.terms-table > tbody > .hrc-tr > .hrc-td {
-  padding: 15px 8px 14px;
+  padding: 15px 8px 13px;
 }
 .hrc-table > thead > .hrc-tr:first-child > .hrc-td {
   border-top: 0;
@@ -108,7 +108,7 @@
 }
 @media (min-width:768px){  
   .hrc-table > tbody > .hrc-tr > .hrc-td {
-    padding: 15px 12px 12px;
+    padding: 15px 12px 13px;
   }
   .hrc-table > thead > .hrc-tr > .hrc-td, 
   .hrc-table > tbody > .hrc-tr > .hrc-td{
@@ -291,9 +291,10 @@
 
 
 /*cell bar, stacked bar*/
-.hrc-cell-bar,
-.hrc-cell-stacked-bar {
-  padding: 15px 0px 12px;
+.hrc-table>tbody>.hrc-tr>.hrc-td.hrc-cell-bar,
+.hrc-table>tbody>.hrc-tr>.hrc-td.hrc-cell-stacked-bar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hrc-cell-bar .bar-value,
@@ -326,41 +327,55 @@
   text-align: right;
   padding: 5px;
   font-weight:bold;
+  vertical-align:middle
 }
 .hrc-cell-bar .bar,
 .hrc-cell-stacked-bar .bar {
   display: table-cell;  
-  padding-right: 30px;
+  padding: 5px 5px 5px 0;
   position: relative;
-  
+  vertical-align:middle
 }
 .hrc-cell-bar .bar-value,
 .hrc-cell-stacked-bar .bar-value {
-  position: absolute;
-  left: 0;
   display: block;
   height: 20px;
-  top: 5px;
 }
 .hrc-cell-bar .bar-unit,
 .hrc-cell-stacked-bar .bar-unit {
   height: 20px;
   display: inline-block;
-  top: 5px;
-  position: relative;
+  position:relative;
+  top:3px
 }
 @media (min-width:768px){
+  .hrc-cell-bar .bar-value,
+  .hrc-cell-stacked-bar .bar-value,
+  .hrc-cell-bar .bar-unit,
+  .hrc-cell-stacked-bar .bar-unit {
+    position:relative;
+    top:3px
+  }  
+  .hrc-cell-bar .bar,
+  .hrc-cell-stacked-bar .bar {
+    display: table-cell;  
+    padding-right:30px;
+    position: relative;
+    vertical-align:middle
+  }  
   .hrc-cell-bar .bar-unit,
   .hrc-cell-stacked-bar .bar-unit {    
     border-right: 1px solid white;
   }
+  
 }
 
 .hrc-cell-bar .bar-label.bar-label-value-total,
 .hrc-cell-stacked-bar .bar-label.bar-label-value-total {
     text-align: left;
-    display: inline-block;
+    display: inline;
     position: absolute;
+    top: 3px;
 }
 
 
