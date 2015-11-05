@@ -297,14 +297,7 @@
   padding-right: 0;
 }
 
-.hrc-cell-bar .bar-value,
-.hrc-cell-stacked-bar .bar-value {
-  position: absolute;
-  left: 0;
-  display: block;
-  height: 20px;
-  top: 0;
-}
+
 
 
 .hrc-cell-bar .cell-bar-wrap,
@@ -336,17 +329,21 @@
   position: relative;
   vertical-align:middle
 }
+
 .hrc-cell-bar .bar-value,
 .hrc-cell-stacked-bar .bar-value {
+  position: absolute;
+  left: 0;
   display: block;
   height: 20px;
+  top: 3px;
 }
 .hrc-cell-bar .bar-unit,
 .hrc-cell-stacked-bar .bar-unit {
   height: 20px;
   display: inline-block;
   position:relative;
-  top:3px
+  top:2px
 }
 @media (min-width:768px){
   .hrc-cell-bar .bar-value,
@@ -354,7 +351,7 @@
   .hrc-cell-bar .bar-unit,
   .hrc-cell-stacked-bar .bar-unit {
     position:relative;
-    top:3px
+    top:2px
   }  
   .hrc-cell-bar .bar,
   .hrc-cell-stacked-bar .bar {
