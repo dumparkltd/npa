@@ -8,7 +8,7 @@
     "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run min-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
     "assets": "cp src/index.html build/ && cp src/img/* build/img",
-    "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",    
+    "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
     "build-css": "cat src/styles/*.css > build/bundle.css",
     "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
     "ready-deploy": "npm run build && npm run assets",
@@ -45,9 +45,10 @@
     "marked": "^0.3.3",
     "react": "^0.13.3",
     "react-bootstrap": "^0.26.4",
+    "react-g-analytics": "^0.1.7",
     "react-router": "^0.13.4",
     "tabletop": "git://github.com/timwis/tabletop",
-    "traverse": "^0.6.6",    
+    "traverse": "^0.6.6",
     "url": "^0.10.3"
   },
   "devDependencies": {
