@@ -43,6 +43,7 @@
     "fluxxor": "^1.5.2",
     "lodash": "^3.5.0",
     "marked": "^0.3.3",
+    "moment": "^2.10.6",
     "react": "^0.13.3",
     "react-bootstrap": "^0.26.4",
     "react-g-analytics": "^0.1.7",
