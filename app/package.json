@@ -46,8 +46,10 @@
     "moment": "^2.10.6",
     "react": "^0.13.3",
     "react-bootstrap": "^0.26.4",
+    "react-dom": "^0.1.0",
     "react-g-analytics": "^0.1.7",
     "react-router": "^0.13.4",
+    "react-widgets": "^2.8.1",
     "tabletop": "git://github.com/timwis/tabletop",
     "traverse": "^0.6.6",
     "url": "^0.10.3"
