@@ -5,7 +5,7 @@
   margin-bottom: 20px;
   table-layout:auto
 }
-.hrc-table.explore-table {
+.explore-table .hrc-table {
   table-layout:fixed
 }
 .articles-table .hrc-table.hrc-table-nested {
