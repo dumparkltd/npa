@@ -210,11 +210,6 @@ a:focus,
 *:focus {
   outline: 0;
 }
-.btn.active {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
 
 .btn:focus, input:focus {
   outline: none !important
@@ -226,6 +221,7 @@ a:focus,
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background-color:#dae4e7;
 }
 
 
