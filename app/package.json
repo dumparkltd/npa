@@ -39,10 +39,12 @@
   },
   "homepage": "https://github.com/hrcnz/npa",
   "dependencies": {
+    "aliasify": "^1.8.0",
     "debug": "^2.1.2",
     "fluxxor": "^1.5.2",
     "lodash": "^3.5.0",
     "marked": "^0.3.3",
+    "pdfmake-browserified": "^0.1.4",
     "react": "^0.13.3",
     "react-bootstrap": "^0.26.4",
     "react-g-analytics": "0.1.7",
