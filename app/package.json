@@ -1,7 +1,7 @@
 {
   "name": "npa",
-  "version": "1.0.0",
-  "description": "'filter indicators for tracking equality at work'",
+  "version": "1.1.0",
+  "description": "'nz nationalplan of action'",
   "main": "src/app.js",
   "scripts": {
     "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
