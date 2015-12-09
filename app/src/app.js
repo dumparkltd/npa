@@ -41,7 +41,10 @@ var bucket = 'npabuffer'
 
 
 // TEST
-var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+//var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+//var isProxy = false        
+// V2
+var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
 var isProxy = false        
 
 var entityStoreConfig = {
