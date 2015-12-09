@@ -319,7 +319,8 @@
   display: table-cell;  
   padding: 5px 5px 5px 0;
   position: relative;
-  vertical-align:middle
+  vertical-align:middle;
+  height:35px
 }
 
 .hrc-cell-bar .bar-value,
@@ -328,7 +329,7 @@
   left: 0;
   display: block;
   height: 20px;
-  top: 2px;
+  top: 3px;
 }
 .hrc-cell-bar .bar-unit,
 .hrc-cell-stacked-bar .bar-unit {
