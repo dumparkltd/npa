@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run min-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
-    "assets": "cp src/index.html build/ && cp src/img/* build/img",
+    "assets": "cp src/index.html build/ && cp -r src/img/* build/img",
     "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
     "build-css": "cat src/styles/*.css > build/bundle.css",
     "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
