@@ -1,10 +1,22 @@
-/*navbar*/
+.hrc-header {
+    background-color: #3C515E;
+}
 
+/*navbar*/
 nav .container {
     position: static;
 }
+nav.nav-primary {
+    position: relative;
+}
+.nav-primary a.btn:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .hrc-navbar {
-  background-color: #3C515E;
+  background-color: #3C515E; /* override bootstrap default */
   margin-bottom: 0px;
   border: 0;
   border-radius: 0;   
@@ -146,10 +158,6 @@ li.share-header-social, li.nav-item-share {
 
 @media (min-width: 768px) {
 
-  .navbar>.container .navbar-brand, 
-  .navbar>.container-fluid .navbar-brand {
-    margin-left: 0;
-  }  
   .navbar-brand {
     height: 100px;
   }
