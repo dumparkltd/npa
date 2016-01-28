@@ -1,80 +1,80 @@
 
-/*nav-primary*/
-.nav-primary-container {
+/*nav-categories*/
+.nav-categories-container {
   width: 100%;
   background-color: #e7eef0
 }
 
-.nav-primary-row:before {
+.nav-categories-row:before {
   display: block;
 }
 
-.nav-primary:before {
+.nav-categories:before {
   display: block;
 }
 
-.nav-primary > .container {
+.nav-categories > .container {
   padding: 0;
 }
-.nav-primary > .container .row {
+.nav-categories > .container .row {
   margin: 0;
 }
-.nav-primary > .container .col-xs-1, 
-.nav-primary > .container .col-xs-2, 
-.nav-primary > .container .col-xs-3, 
-.nav-primary > .container .col-xs-4, 
-.nav-primary > .container .col-xs-5, 
-.nav-primary > .container .col-xs-6, 
-.nav-primary > .container .col-xs-7, 
-.nav-primary > .container .col-xs-8, 
-.nav-primary > .container .col-xs-9, 
-.nav-primary > .container .col-xs-10, 
-.nav-primary > .container .col-xs-11, 
-.nav-primary > .container .col-xs-12 {
+.nav-categories > .container .col-xs-1, 
+.nav-categories > .container .col-xs-2, 
+.nav-categories > .container .col-xs-3, 
+.nav-categories > .container .col-xs-4, 
+.nav-categories > .container .col-xs-5, 
+.nav-categories > .container .col-xs-6, 
+.nav-categories > .container .col-xs-7, 
+.nav-categories > .container .col-xs-8, 
+.nav-categories > .container .col-xs-9, 
+.nav-categories > .container .col-xs-10, 
+.nav-categories > .container .col-xs-11, 
+.nav-categories > .container .col-xs-12 {
     padding-left: 0;
     padding-right: 0;
 }
 
-.nav-primary-list-wrapper {
+.nav-categories-list-wrapper {
   padding:0
 }
 @media (min-width: 768px) { 
-  .nav-primary-list-wrapper {
+  .nav-categories-list-wrapper {
     padding-right: 15px;
     padding-left: 15px;
   }  
 }
-.nav-primary {
+.nav-categories {
   display: table;
   width: 100%;
   background-color: #e7eef0;
 }
-.nav-primary-label {
+.nav-categories-label {
   padding-top: 20px;
   color: #7696a5;
 }
 
 
-.nav-primary-list {
+.nav-categories-list {
   margin-bottom: 0px;
   font-size: 0    
 }
-.nav-primary-list.intro-ul {
+.nav-categories-list.intro-ul {
   border-left:0
 }
 
-li.nav-primary-li {
+li.nav-categories-li {
   text-align: center;
   padding:0;
   border-left: 1px solid #fff;  
   position:relative;
   vertical-align: top;
 }
-li.nav-primary-li:last-child { 
+li.nav-categories-li:last-child { 
   border-right: 1px solid #fff;
 }
 
-li.nav-primary-li a.btn {
+li.nav-categories-li a.btn {
   width: 100%;
   text-decoration: none;
   color: #3C5462;  
@@ -87,40 +87,40 @@ li.nav-primary-li a.btn {
   white-space: normal;
 }
 @media (min-width: 768px) { 
-  li.nav-primary-li a.btn {
+  li.nav-categories-li a.btn {
     padding: 6px 0 20px;
   }
 }
-li.nav-primary-li.active a, 
-li.nav-primary-li a:hover, 
-li.nav-primary-li.active a:hover:focus, 
-li.nav-primary-li a:hover:focus, 
-li.nav-primary-li a:active, 
-li.nav-primary-li.active a:focus,
-li.nav-primary-li a:focus {
+li.nav-categories-li.active a, 
+li.nav-categories-li a:hover, 
+li.nav-categories-li.active a:hover:focus, 
+li.nav-categories-li a:hover:focus, 
+li.nav-categories-li a:active, 
+li.nav-categories-li.active a:focus,
+li.nav-categories-li a:focus {
   background-color: #dae4e7;  
   color: #34444B;
 }
 
-li.nav-primary-li .title {
+li.nav-categories-li .title {
   padding-top: 10px;  
   font-weight: bold;
   font-size: 11px;
   width: 100%;
 }
 @media (min-width: 512px) { 
-  li.nav-primary-li .title {  
+  li.nav-categories-li .title {  
     font-size: 12px;  
   }
 }
 
 @media (min-width: 768px) { 
-  li.nav-primary-li .title {  
+  li.nav-categories-li .title {  
     font-size: 14px;  
   }
 }
-.nav-primary-li .arrow, 
-.nav-primary-li .arrow:after {
+.nav-categories-li .arrow, 
+.nav-categories-li .arrow:after {
   position: absolute;
   display: block;
   width: 0;
@@ -128,11 +128,11 @@ li.nav-primary-li .title {
   border-color: transparent;
   border-style: solid;
 }
-.nav-primary-li.active .arrow {
+.nav-categories-li.active .arrow {
   border-width: 11px;
 }
 
-.nav-primary-li.active .arrow {
+.nav-categories-li.active .arrow {
   bottom: -11px;
   left: 50%;
   margin-left: -11px;
