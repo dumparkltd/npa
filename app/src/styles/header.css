@@ -1,7 +1,7 @@
 /*navbar*/
-.hrc-navbar > .container {
-  width: 100% !important;
-  max-width: 100% !important;
+
+nav .container {
+    position: static;
 }
 .hrc-navbar {
   background-color: #3C515E;
@@ -72,9 +72,11 @@ button.navbar-toggle {
   color: #dae4e7;
   display:none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
   .hrc-navbar .navbar-collapse {
-    float:right
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 .hrc-navbar .navbar-collapse a {
@@ -133,10 +135,7 @@ button.navbar-toggle {
   padding: 0 5px;
 }
 .header-brand-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0px 65px;
+  padding: 0px 8px;
   width: 100%;
   z-index: 1;
 }
@@ -175,18 +174,12 @@ li.share-header-social, li.nav-item-share {
   }
  
   .nav-group.nav-group-share {
-    position: absolute;
-    right: 0;
-    top: 45px;
     margin-right: 0;
     padding-right: 8px;
     padding-top: 5px;
     font-size: 12px;
   }
   .nav-group.nav-group-pages {
-    position: absolute;
-    right: 0;
-    top: 19px;
     margin-right: 0;
     padding-right: 2px;
     padding-top: 5px;
@@ -212,19 +205,13 @@ li.share-header-social, li.nav-item-share {
   }  
   .nav-group.nav-group-share {
     padding-right: 30px;
-    position: static;
-    right: initial;
-    top: initial;
-    padding-top: 34px;
+    padding-top: 8px;
     margin-right: -15px;
     font-size: inherit;
   }
   .nav-group.nav-group-pages {
     margin-right: 0;
-    position: static;
-    right: initial;
-    top: initial;
-    padding: 34px 2px;
+    padding: 8px 2px;
     font-size: inherit;
   }  
   h1.hrc-title {
