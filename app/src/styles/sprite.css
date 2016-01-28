@@ -15,7 +15,7 @@
 }
 .icon-issues              { background-position: -200px -100px;  width: 60px; height: 50px;}
 .active .icon-issues,
-.active.icon-issues,      
+.active.icon-issues,
 a:focus .icon-issues,
 a:hover .icon-issues,
 .icon-issues:focus,
@@ -23,23 +23,23 @@ a:hover .icon-issues,
 
 .icon-groups              { background-position: -200px -200px;  width: 60px; height: 50px;}
 .active .icon-groups,
-.active.icon-groups,   
+.active.icon-groups,
 a:hover .icon-groups,
 a:focus .icon-groups,
 .icon-groups:focus,
 .icon-groups:hover        { background-position: -300px -200px}
-                      
+
 .icon-agencies            { background-position: -200px -300px;  width: 50px; height: 50px;}
 .active .icon-agencies,
-.active.icon-agencies, 
-a:hover .icon-agencies, 
-a:focus .icon-agencies, 
-.icon-agencies:focus, 
+.active.icon-agencies,
+a:hover .icon-agencies,
+a:focus .icon-agencies,
+.icon-agencies:focus,
 .icon-agencies:hover      { background-position: -300px -300px }
 
 .icon-treatybodies        { background-position: -200px -400px; width: 60px; height: 50px; }
 .active .icon-treatybodies,
-.active.icon-treatybodies,     
+.active.icon-treatybodies,
 a:hover .icon-treatybodies,
 a:focus .icon-treatybodies,
 .icon-treatybodies:focus,
@@ -53,7 +53,7 @@ a:hover .icon-close,
 @media (min-width: 768px) {
   .icon-issues              { background-position: 0px -100px;  width: 100px; height: 80px;}
   .active .icon-issues,
-  .active.icon-issues,      
+  .active.icon-issues,
   a:hover .icon-issues,
   a:focus .icon-issues,
   .icon-issues:focus,
@@ -61,7 +61,7 @@ a:hover .icon-close,
 
   .icon-groups              { background-position: 0px -200px;  width: 100px; height: 80px;}
   .active .icon-groups,
-  .active.icon-groups,   
+  .active.icon-groups,
   a:hover .icon-groups,
   a:focus .icon-groups,
   .icon-groups:focus,
@@ -69,15 +69,15 @@ a:hover .icon-close,
 
   .icon-agencies            { background-position: 0px -300px;  width: 80px; height: 80px;}
   .active .icon-agencies,
-  .active.icon-agencies,      
-  a:hover .icon-agencies,      
-  a:focus .icon-agencies,      
-  .icon-agencies:focus,      
+  .active.icon-agencies,
+  a:hover .icon-agencies,
+  a:focus .icon-agencies,
+  .icon-agencies:focus,
   .icon-agencies:hover      { background-position: -100px -300px }
 
   .icon-treatybodies        { background-position: 0px -400px; width: 100px; height: 80px; }
   .active .icon-treatybodies,
-  .active.icon-treatybodies,     
+  .active.icon-treatybodies,
   a:hover .icon-treatybodies,
   a:focus .icon-treatybodies,
   .icon-treatybodies:focus,
@@ -87,18 +87,18 @@ a:hover .icon-close,
   a:focus .icon-close,
   .icon-close:focus,
   .icon-close:hover
-                            { background-position: -100px -500px; }  
+                            { background-position: -100px -500px; }
 }
 
 .icon-previous            { background-position: 0px -600px; width: 13px; }
-a:hover .icon-previous, 
-a:focus .icon-previous, 
-.icon-previous:focus, 
+a:hover .icon-previous,
+a:focus .icon-previous,
+.icon-previous:focus,
 .icon-previous:hover      { background-position: -50px -600px;}
 .icon-next                { background-position: 0px -650px; width: 13px; }
-a:hover .icon-next, 
-a:focus .icon-next, 
-.icon-next:focus, 
+a:hover .icon-next,
+a:focus .icon-next,
+.icon-next:focus,
 .icon-next:hover          { background-position: -50px -650px;}
 .icon-li-arrow            { background-position: 0px -700px }
 .icon-li-dot              { background-position: 0px -750px }
@@ -123,7 +123,7 @@ a:hover .icon-linechart,
 a:focus .icon-linechart,
 .icon-linechart:focus,
 .icon-linechart:hover     { background-position: 0px -950px; }
-                      
+
 .icon-menu                { background-position: 0px -1000px }
 .icon-menu-open           { background-position: -50px -1000px }
 
@@ -134,12 +134,7 @@ a:focus .icon-linechart,
 .icon-social-facebook-sm  { background-position: -100px -1050px; width: 18px; height: 20px;  margin-top: -5px; }
 .icon-social-share        { background-position: -100px -1100px; width: 20px; height: 20px;  margin-top: -5px; }
 .icon-social-twitter-sm   { background-position: -100px -1150px; width: 23px; height: 20px;  margin-top: -5px; }
-a:focus .icon-social-facebook-sm,
-a:hover .icon-social-facebook-sm { background-position: -150px -1050px;}
-a:focus .icon-social-share,
-a:hover .icon-social-share       { background-position: -150px -1100px;}
-a:focus .icon-social-twitter-sm,
-a:hover .icon-social-twitter-sm  { background-position: -150px -1150px; }
+
 
 a:focus .icon-timeline,
 .icon-timeline:focus,
@@ -151,9 +146,9 @@ a.active .icon-timeline,
 a:active .icon-timeline,
 .icon-timeline.active,
 .icon-timeline:active     { background-position: -100px -1200px }
-                      
+
 a:hover .icon-snapshot,
-.icon-snapshot:hover,                      
+.icon-snapshot:hover,
 .icon-snapshot            { background-position: 0px -1250px; width: 76px; height: 40px; }
 a.active .icon-snapshot,
 a:active .icon-snapshot,
@@ -174,7 +169,7 @@ a:active .icon-snapshot,
 .page-content-smart .marked-inner-html h3#result-oriented:before,
 .page-content-smart .marked-inner-html h3#time-bound:before {
   position: relative;
-  width:36px; 
+  width:36px;
   height:36px;
   background: url('./img/NPA-sprite.png') no-repeat top left;
   background-position: -200px -1700px;
@@ -186,7 +181,7 @@ a:active .icon-snapshot,
 
 .page-content-smart .marked-inner-html h3#specific:before,
 .active .icon-smart-s,
-.icon-smart-s.active, 
+.icon-smart-s.active,
 .active .icon-smart-sm-s,
 .icon-smart-sm-s.active   { background-position: -200px -1700px;}
 .page-content-smart .marked-inner-html h3#measurable:before,
@@ -210,15 +205,15 @@ a:active .icon-snapshot,
 .active .icon-smart-t-sm,
 .icon-smart-sm-t.active   { background-position: -200px -2100px;}
 
-.icon-smart-s, 
+.icon-smart-s,
 .icon-smart-sm-s           { background-position: -250px -1700px; width:36px; height:36px}
-.icon-smart-m, 
+.icon-smart-m,
 .icon-smart-sm-m           { background-position: -250px -1800px; width:36px; height:36px}
-.icon-smart-a, 
+.icon-smart-a,
 .icon-smart-sm-a           { background-position: -250px -1900px; width:36px; height:36px}
-.icon-smart-r, 
+.icon-smart-r,
 .icon-smart-sm-r           { background-position: -250px -2000px; width:36px; height:36px}
-.icon-smart-t, 
+.icon-smart-t,
 .icon-smart-sm-t           { background-position: -250px -2100px; width:36px; height:36px}
 
 .icon-accepted             { background-position: 0px -2200px;    width:36px; height:36px}
@@ -232,7 +227,7 @@ a:active .icon-snapshot,
   .page-content-smart .marked-inner-html h3#measurable:before,
   .page-content-smart .marked-inner-html h3#assignable:before,
   .page-content-smart .marked-inner-html h3#result-oriented:before,
-  .page-content-smart .marked-inner-html h3#time-bound:before {  
+  .page-content-smart .marked-inner-html h3#time-bound:before {
     width:57px; height:57px
   }
   .page-content-smart .marked-inner-html h3#specific:before,
