@@ -11,10 +11,13 @@
   .col-content-main,
   .col-content-aside{
     margin-bottom:10px;
-  }  
+  }
   .page-content-action .column-categories {
     padding-top:46px
   }
+}
+.content-main h5{
+  color: #263238;
 }
 .column-categories h5,
 .column-smart h5{
@@ -45,14 +48,14 @@ ul.hrc-category-list {
   margin: 0 10px 0 0;
 }
 
-.hrc-category-list > li:last-child {    
+.hrc-category-list > li:last-child {
   border-right: 0;
 }
 
 .recommendation-attributes {
   border-top: 1px solid #dae4e7;
   padding-top: 20px;
-} 
+}
 
 .recommendation-attributes td.label-cell {
   font-weight: bold;
@@ -62,8 +65,8 @@ ul.hrc-category-list {
 @media (min-width:768px){
   .recommendation-attributes td.label-cell {
     padding: 3px 10px 3px 0;
-    width: 180px;   
-  }  
+    width: 180px;
+  }
 }
 .recommendation-attributes td.content-cell {
   vertical-align: top;

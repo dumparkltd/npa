@@ -2,9 +2,6 @@
 /*nav-primary*/
 .nav-mode {
   background-color: #029BE5;
-  -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
 }
 
 .nav-primary-container {
@@ -26,16 +23,23 @@
 }
 
 .nav-mode .nav-primary-row a.btn:hover,
-.nav-mode .nav-primary-row a.btn.active {
+.nav-mode .nav-primary-row a.btn.active,
+.nav-primary-group a.btn:hover,
+.nav-primary-group a.btn.active{
   background-color: #0383C9;
   color: #ffffff;
+}
+
+.nav-primary-group a.btn {
+  padding: 12px 12px;
+  font-weight: 700;
 }
 
 .nav-primary:before {
   display: block;
 }
 
-.nav-primary {
+.page-wrapper {
   -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
@@ -75,7 +79,7 @@
 .nav-primary {
   display: table;
   width: 100%;
-  background-color: #e7eef0;
+  background-color: #029BE5;
 }
 .nav-primary-label {
   padding-top: 20px;
@@ -124,9 +128,6 @@ li.nav-primary-li.active a:focus,
 li.nav-primary-li a:focus {
   background-color: #69A41E;
   color: #FFFFFF;
-  -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
 }
 
 li.nav-primary-li .title {
