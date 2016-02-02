@@ -89,7 +89,7 @@ h2.header-type-large{
 
 h3 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.3;
 }
 .page-lead-header {
@@ -259,7 +259,9 @@ a:focus,
   position: relative;
   margin: 2px 8px 0 0px;
   height: 15px;
-  background: url('./img/NPA-sprite.png') no-repeat 0px -700px;
+  background: none;
+  background-image: url('./img/svg-icons/icon_arrow-green.svg');
+  background-repeat: no-repeat;
   width: 17px;
   content: "";
   vertical-align: middle;

@@ -39,10 +39,10 @@
   display: block;
 }
 
-.page-wrapper {
-  -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+.hrc-header {
+  -moz-box-shadow:    0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  box-shadow:         0 10px 10px -10px rgba(0, 0, 0, 0.4);
 }
 
 .nav-primary > .container {
