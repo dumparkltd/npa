@@ -9,7 +9,8 @@ var actions         = require("actions"),
     
 //stores
 var RouteStore      = require("stores/route-store"),
-    EntityStore     = require("stores/entity-store") 
+    EntityStore     = require("stores/entity-store"), 
+    PrintStore     = require("stores/print-store") 
 
 //utils
 var loadData        = require('utils/load-data')
@@ -42,6 +43,9 @@ var bucket = 'npabuffer'
 // TEST
 var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
 var isProxy = false        
+// V2
+//var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
+//var isProxy = false        
 
 var entityStoreConfig = {
   key : key,
@@ -53,6 +57,7 @@ var entityStoreConfig = {
 // initialise stores
 var stores = {
   routes:  new RouteStore({ router: router }),
+  printer:  new PrintStore({  }),
   actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
