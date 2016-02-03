@@ -1,5 +1,21 @@
 .intro {
-  color:#3C5462
+  color:#3C5462;
+}
+
+
+h4.intro-explore {
+  margin: 60px 0 20px 0;
+  font-weight: normal;
+}
+
+.intro .background-blue {
+  background-color: #0383C9;
+  color: #fff;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.intro .background-light-blue {
+  background-color: #EAF0F4;
 }
 
 .intro-lead {
@@ -10,10 +26,15 @@
   font-size: 14px;
 }
 
+.intro .nav-primary {
+  background: none;
+  padding-bottom: 60px;
+}
+
 @media (min-width:768px){
   .intro-content {
-    margin: 30px 85px 8px
-  } 
+    margin: 60px 85px 8px
+  }
   .intro-content p {
     margin-bottom: 20px;
   }
@@ -49,5 +70,54 @@
 }
 
 .intro-stats.row {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.intro-issue-select li.nav-categories-li a.btn {
+  padding: 0px;
+}
+
+.intro-issue-select li.nav-categories-li span {
+  margin: 10px;
+}
+
+.intro-issue-select .btn:hover,
+.intro-issue-select .btn:focus,
+.intro-issue-select .btn:focus:hover {
+  background: #69A41E;
+  box-shadow: none;
+}
+
+.intro-issue-select .title {
+  background-color: #69A41E;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.intro .arrow,
+.intro .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.intro .arrow {
+  border-width: 11px;
+}
+
+.intro .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #0383C9;
+  border-bottom-width: 0;
+}
+
+.intro-explore-all .intro-explore-btn a{
+  width: 100%;
+}
+
+.intro-explore-text {
+  color: #78909C;
 }

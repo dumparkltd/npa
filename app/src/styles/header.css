@@ -1,22 +1,87 @@
-/*navbar*/
-.hrc-navbar > .container {
-  width: 100% !important;
-  max-width: 100% !important;
+.hrc-header {
+    background-color: #3C515E;
 }
+
+/*navbar*/
+nav .container {
+    position: static;
+}
+nav.nav-primary {
+    position: relative;
+}
+.nav-primary a.btn:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .hrc-navbar {
-  background-color: #3C515E;
+  background-color: #029BE5; /* override bootstrap default */
   margin-bottom: 0px;
   border: 0;
-  border-radius: 0;   
+  border-radius: 0;
+  border-bottom: 1px solid #0383C9;
 }
 .header-logo,
 .header-brand-title {
   float:left;
 }
+
 .header-intro .header-brand-title,
 .header-intro .navbar-toggle{
-  display:none;
+  padding: 80px 0 0 0;
+  text-align: center;
+  float:none;
+  height: auto;
 }
+.header-intro .navbar-header {
+  float: none;
+}
+
+.header-intro .navbar-collapse {
+  z-index: 10;
+}
+.header-intro .nav-primary {
+  display: none;
+}
+
+.header-intro h1.hrc-title,
+.header-intro div.hrc-subtitle  {
+  font-size: 32px;
+}
+@media (max-width:768px){
+  .header-intro h1.hrc-title,
+  .header-intro div.hrc-subtitle  {
+    font-size: 20px;
+  }
+  .header-intro .header-brand-title,
+  .header-intro .navbar-toggle{
+    padding: 0px 10px;
+    padding: 40px 0 0 0;
+  }
+}
+@media (max-width:320px){
+  .header-intro h1.hrc-title,
+  .header-intro div.hrc-subtitle  {
+    font-size: 14px;
+  }
+  .header-intro .header-brand-title {
+    padding: 0px 10px;
+    text-align: left;
+  }
+  .header-intro .navbar-toggle{
+    padding: 0 0 0 0;
+    text-align: left;
+  }
+  .container > .navbar-collapse {
+    margin-top: 60px;
+  }
+  .intro-content {
+    padding: 40px 0;
+  }
+
+}
+
 button.navbar-toggle {
   position: absolute;
   right: 0;
@@ -34,12 +99,12 @@ button.navbar-toggle {
   border-radius: 0px;
   background: none;
   border: none;
-  background-color: #84A0AE;
+  background-color: #FFF;
 }
 .navbar-toggle .icon-bar+.icon-bar {
   margin-top: 4px;
 }
-.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
@@ -48,6 +113,11 @@ button.navbar-toggle {
 .navbar-collapse {
   overflow: hidden;
 }
+
+.hrc-header .container .navbar-collapse {
+  margin-right: 0;
+}
+
 .collapse {
   display: none;
 }
@@ -69,16 +139,19 @@ button.navbar-toggle {
      transition-timing-function: ease;
 }
 .hrc-title-link .hrc-subtitle {
-  color: #dae4e7;
+  color: #fff;
+  font-weight:300;
   display:none;
 }
 @media (min-width: 768px) {
   .hrc-navbar .navbar-collapse {
-    float:right
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 .hrc-navbar .navbar-collapse a {
-  padding: 5px 1px;
+  padding: 10px 8px;
 }
 
 .hrc-navbar.navbar-default .navbar-nav > li > a {
@@ -88,23 +161,19 @@ button.navbar-toggle {
 
 .hrc-navbar.navbar-default  .navbar-brand a:focus,
 .hrc-navbar.navbar-default  .navbar-brand a:hover {
-  opacity:0.8;
   text-decoration:none;
 }
 .hrc-navbar.navbar-default .navbar-nav > li > a:focus,
 .hrc-navbar.navbar-default .navbar-nav > li > a:hover{
-  opacity:0.8;
-  text-decoration:underline
+  color: #fff;
+  background-color: #0383C9;
 }
 .hrc-navbar.navbar-default .navbar-nav > li > a.active,
 .hrc-navbar.navbar-default .navbar-nav > li > a.active:hover,
 .hrc-navbar.navbar-default .navbar-nav > li.active > a:hover,
 .hrc-navbar.navbar-default .navbar-nav > li.active > a{
-  opacity:0.8;
-  text-decoration:underline;
-  color: #fff;  
-  background:none;
-  
+  color: #fff;
+  background-color: #0383C9;
 }
 
 .navbar-brand {
@@ -123,20 +192,34 @@ button.navbar-toggle {
   vertical-align: middle;
   height: 50px;
 }
+
+@media (max-width: 320px) {
+  .hrc-title-link {
+    width: 300px;
+  }
+}
 .nav-group.nav-group-share {
   padding-right:0;
+}
+.nav-item-share a{
+  font-weight: 700;
 }
 .nav-group {
   padding: 0;
 }
 .nav-group-pages li {
-  padding: 0 5px;
+  border-right: 1px solid #0383C9;
 }
+.nav-group-pages li a{
+  font-weight: 700;
+}
+
+
 .header-brand-title {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0px 65px;
+  padding: 0px 10px;
   width: 100%;
   z-index: 1;
 }
@@ -145,18 +228,22 @@ li.share-header-social, li.nav-item-share {
    display: inline-block;
 }
 
+.navbar-brand {
+  height: auto;
+}
+
 @media (min-width: 768px) {
 
-  .navbar>.container .navbar-brand, 
+  .navbar>.container .navbar-brand,
   .navbar>.container-fluid .navbar-brand {
     margin-left: 0;
-  }  
+  }
   .navbar-brand {
-    height: 100px;
+    height: 110px;
   }
   .header-logo {
     padding: 27px 5px;
-  }  
+  }
   .header-brand-title {
     position:relative;
     margin: 0;
@@ -164,29 +251,23 @@ li.share-header-social, li.nav-item-share {
     padding: 0;
   }
   .hrc-title-link {
-    height: 100px;
+    height: 120px;
     padding: 20px 5px 0 5px;
     display: block;
   }
 
-  .hrc-title-link .hrc-subtitle {    
-    font-size: 13px;
+  .hrc-title-link .hrc-subtitle {
+    font-size: 24px;
     display:block;
   }
- 
+
   .nav-group.nav-group-share {
-    position: absolute;
-    right: 0;
-    top: 45px;
     margin-right: 0;
     padding-right: 8px;
     padding-top: 5px;
     font-size: 12px;
   }
   .nav-group.nav-group-pages {
-    position: absolute;
-    right: 0;
-    top: 19px;
     margin-right: 0;
     padding-right: 2px;
     padding-top: 5px;
@@ -194,9 +275,6 @@ li.share-header-social, li.nav-item-share {
   }
   .nav-group {
     padding: 34px 10px;
-  }
-  .nav-group-pages li {
-    padding: 0 8px;
   }
   h1.hrc-title {
     font-size: 18px;
@@ -208,14 +286,17 @@ li.share-header-social, li.nav-item-share {
     padding: 27px 25px;
   }
   .hrc-title-link {
-    padding: 20px 10px 0 30px;
-  }  
+    padding: 25px 10px 0px 15px;
+  }
+  .header-intro .hrc-title-link {
+    padding: 0;
+  }
   .nav-group.nav-group-share {
     padding-right: 30px;
     position: static;
     right: initial;
     top: initial;
-    padding-top: 34px;
+    padding-top: 0;
     margin-right: -15px;
     font-size: inherit;
   }
@@ -224,11 +305,10 @@ li.share-header-social, li.nav-item-share {
     position: static;
     right: initial;
     top: initial;
-    padding: 34px 2px;
+    padding: 0 2px;
     font-size: inherit;
-  }  
+  }
   h1.hrc-title {
     font-size: 20px;
   }
 }
-

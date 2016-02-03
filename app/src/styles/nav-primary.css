@@ -1,5 +1,9 @@
 
 /*nav-primary*/
+.nav-mode {
+  background-color: #029BE5;
+}
+
 .nav-primary-container {
   width: 100%;
   background-color: #e7eef0
@@ -9,8 +13,36 @@
   display: block;
 }
 
+.nav-mode .nav-primary-row a.btn {
+  padding: 14px 12px;
+  border-left: 1px solid #0383C9;
+}
+
+.nav-mode .nav-primary-row a.btn:last-of-type {
+    border-right: 1px solid #0383C9;
+}
+
+.nav-mode .nav-primary-row a.btn:hover,
+.nav-mode .nav-primary-row a.btn.active,
+.nav-primary-group a.btn:hover,
+.nav-primary-group a.btn.active{
+  background-color: #0383C9;
+  color: #ffffff;
+}
+
+.nav-primary-group a.btn {
+  padding: 12px 12px;
+  font-weight: 700;
+}
+
 .nav-primary:before {
   display: block;
+}
+
+.hrc-header {
+  -moz-box-shadow:    0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  box-shadow:         0 10px 10px -10px rgba(0, 0, 0, 0.4);
 }
 
 .nav-primary > .container {
@@ -19,17 +51,17 @@
 .nav-primary > .container .row {
   margin: 0;
 }
-.nav-primary > .container .col-xs-1, 
-.nav-primary > .container .col-xs-2, 
-.nav-primary > .container .col-xs-3, 
-.nav-primary > .container .col-xs-4, 
-.nav-primary > .container .col-xs-5, 
-.nav-primary > .container .col-xs-6, 
-.nav-primary > .container .col-xs-7, 
-.nav-primary > .container .col-xs-8, 
-.nav-primary > .container .col-xs-9, 
-.nav-primary > .container .col-xs-10, 
-.nav-primary > .container .col-xs-11, 
+.nav-primary > .container .col-xs-1,
+.nav-primary > .container .col-xs-2,
+.nav-primary > .container .col-xs-3,
+.nav-primary > .container .col-xs-4,
+.nav-primary > .container .col-xs-5,
+.nav-primary > .container .col-xs-6,
+.nav-primary > .container .col-xs-7,
+.nav-primary > .container .col-xs-8,
+.nav-primary > .container .col-xs-9,
+.nav-primary > .container .col-xs-10,
+.nav-primary > .container .col-xs-11,
 .nav-primary > .container .col-xs-12 {
     padding-left: 0;
     padding-right: 0;
@@ -38,16 +70,16 @@
 .nav-primary-list-wrapper {
   padding:0
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .nav-primary-list-wrapper {
     padding-right: 15px;
     padding-left: 15px;
-  }  
+  }
 }
 .nav-primary {
   display: table;
   width: 100%;
-  background-color: #e7eef0;
+  background-color: #029BE5;
 }
 .nav-primary-label {
   padding-top: 20px;
@@ -57,7 +89,7 @@
 
 .nav-primary-list {
   margin-bottom: 0px;
-  font-size: 0    
+  font-size: 0
 }
 .nav-primary-list.intro-ul {
   border-left:0
@@ -66,18 +98,14 @@
 li.nav-primary-li {
   text-align: center;
   padding:0;
-  border-left: 1px solid #fff;  
   position:relative;
   vertical-align: top;
-}
-li.nav-primary-li:last-child { 
-  border-right: 1px solid #fff;
 }
 
 li.nav-primary-li a.btn {
   width: 100%;
   text-decoration: none;
-  color: #3C5462;  
+  color: #3C5462;
   display: block;
   background-color:transparent;
   padding: 2px 0 5px;
@@ -86,40 +114,40 @@ li.nav-primary-li a.btn {
   min-height: 100px;
   white-space: normal;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   li.nav-primary-li a.btn {
     padding: 6px 0 20px;
   }
 }
-li.nav-primary-li.active a, 
-li.nav-primary-li a:hover, 
-li.nav-primary-li.active a:hover:focus, 
-li.nav-primary-li a:hover:focus, 
-li.nav-primary-li a:active, 
+li.nav-primary-li.active a,
+li.nav-primary-li a:hover,
+li.nav-primary-li.active a:hover:focus,
+li.nav-primary-li a:hover:focus,
+li.nav-primary-li a:active,
 li.nav-primary-li.active a:focus,
 li.nav-primary-li a:focus {
-  background-color: #dae4e7;  
-  color: #34444B;
+  background-color: #69A41E;
+  color: #FFFFFF;
 }
 
 li.nav-primary-li .title {
-  padding-top: 10px;  
+  padding-top: 10px;
   font-weight: bold;
   font-size: 11px;
   width: 100%;
 }
-@media (min-width: 512px) { 
-  li.nav-primary-li .title {  
-    font-size: 12px;  
+@media (min-width: 512px) {
+  li.nav-primary-li .title {
+    font-size: 12px;
   }
 }
 
-@media (min-width: 768px) { 
-  li.nav-primary-li .title {  
-    font-size: 14px;  
+@media (min-width: 768px) {
+  li.nav-primary-li .title {
+    font-size: 14px;
   }
 }
-.nav-primary-li .arrow, 
+.nav-primary-li .arrow,
 .nav-primary-li .arrow:after {
   position: absolute;
   display: block;
@@ -136,6 +164,6 @@ li.nav-primary-li .title {
   bottom: -11px;
   left: 50%;
   margin-left: -11px;
-  border-top-color: #dae4e7;
+  border-top-color: #69A41E;
   border-bottom-width: 0;
 }
