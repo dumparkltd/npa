@@ -2,6 +2,8 @@
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
   vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 

@@ -1,26 +1,15 @@
-/* SPRITE */
-[class^="icon-"], [class*=" icon-"] {
-  display: inline-block;
- background: url('./img/NPA-sprite.png') no-repeat top left;
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  background-position: center;
-}
-
-
 /* icons */
 .icon-hrc-logo-sm         { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 46px;  height: 28px;}
 @media (min-width: 768px) {
-.icon-hrc-logo-sm         { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 75px;  height: 46px; }
-
+  .icon-hrc-logo-sm       { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 75px;  height: 46px; }
+}
 .icon-issues              { background-image: url('./img/svg-icons/icon_issue-inactive.svg'); width: 60px; height: 50px;}
 .active .icon-issues,
 .active.icon-issues,
 a:focus .icon-issues,
 a:hover .icon-issues,
 .icon-issues:focus,
-.icon-issues:hover        { background-image: url('./img/svg-icons/icon_logo-active.svg'); }
+.icon-issues:hover        { background-image: url('./img/svg-icons/icon_issue-active.svg'); }
 
 .icon-groups              { background-image: url('./img/svg-icons/icon_group-inactive.svg'); width: 60px; height: 50px;}
 .active .icon-groups,
@@ -175,13 +164,13 @@ a:focus .icon-arrow-right-sm,
 
 .icon-hrc-logo            { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 150px; height: 50px; }
 
-.icon-accepted             { background: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
-.icon-rejected             { background: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
-.icon-accepted-sm          { background: url('./img/svg-icons/icon_rec-yes.svg'); width:15px; height:15px}
-.icon-rejected-sm          { background: url('./img/svg-icons/icon_rec-no.svg'); width:15px; height:15px}
+.icon-accepted            { background: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
+.icon-rejected            { background: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
+.icon-accepted-sm         { background: url('./img/svg-icons/icon_rec-yes.svg'); width:15px; height:15px}
+.icon-rejected-sm         { background: url('./img/svg-icons/icon_rec-no.svg'); width:15px; height:15px}
 
-.icon-accepted-inactive    { background: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
-.icon-rejected-inactive    { background: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
+.icon-accepted-inactive   { background: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
+.icon-rejected-inactive   { background: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
 
 
 .page-content-smart .marked-inner-html h3#specific:before,
@@ -224,15 +213,15 @@ a:focus .icon-arrow-right-sm,
 .icon-smart-sm-t.active   { background-image: url('./img/svg-icons/icon_time-yes.svg');}
 
 .icon-smart-s,
-.icon-smart-sm-s           { background-image: url('./img/svg-icons/icon_specific-no.svg'); width:36px; height:36px}
+.icon-smart-sm-s          { background-image: url('./img/svg-icons/icon_specific-no.svg'); width:36px; height:36px}
 .icon-smart-m,
-.icon-smart-sm-m           { background-image: url('./img/svg-icons/icon_measurable-no.svg'); width:36px; height:36px}
+.icon-smart-sm-m          { background-image: url('./img/svg-icons/icon_measurable-no.svg'); width:36px; height:36px}
 .icon-smart-a,
-.icon-smart-sm-a           { background-image: url('./img/svg-icons/icon_assignable-no.svg'); width:36px; height:36px}
+.icon-smart-sm-a          { background-image: url('./img/svg-icons/icon_assignable-no.svg'); width:36px; height:36px}
 .icon-smart-r,
-.icon-smart-sm-r           { background-image: url('./img/svg-icons/icon_result-no.svg'); width:36px; height:36px}
+.icon-smart-sm-r          { background-image: url('./img/svg-icons/icon_result-no.svg'); width:36px; height:36px}
 .icon-smart-t,
-.icon-smart-sm-t           { background-image: url('./img/svg-icons/icon_time-no.svg'); width:36px; height:36px}
+.icon-smart-sm-t          { background-image: url('./img/svg-icons/icon_time-no.svg'); width:36px; height:36px}
 
 @media (min-width: 768px) {
 
