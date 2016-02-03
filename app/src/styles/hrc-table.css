@@ -74,7 +74,7 @@
 }
 .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td {
   border-bottom: 1px solid #dae4e7;
-  vertical-align: middle;
+  vertical-align: middle;  
 }
 .hrc-table > .hrc-thead > .hrc-tr:first-child > .hrc-td {
   border-top: 0;
