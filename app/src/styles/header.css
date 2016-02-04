@@ -27,13 +27,7 @@ nav.nav-primary {
   float:left;
 }
 
-.header-intro .header-brand-title,
-.header-intro .navbar-toggle{
-  padding: 80px 0 0 0;
-  text-align: center;
-  float:none;
-  height: auto;
-}
+
 .header-intro .navbar-header {
   float: none;
 }
@@ -45,10 +39,16 @@ nav.nav-primary {
   display: none;
 }
 
-.header-intro h1.hrc-title,
-.header-intro div.hrc-subtitle  {
-  font-size: 32px;
+h1.hrc-title {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 0;
 }
+
+
+
 @media (max-width:768px){
   .header-intro h1.hrc-title,
   .header-intro div.hrc-subtitle  {
@@ -60,9 +60,17 @@ nav.nav-primary {
     padding: 40px 0 0 0;
   }
 }
-@media (max-width:320px){
+
+
+  .container > .navbar-collapse {
+    margin-top: 60px;
+  }
+  .intro-content {
+    padding: 40px 0;
+  }
   .header-intro h1.hrc-title,
-  .header-intro div.hrc-subtitle  {
+  .header-intro div.hrc-subtitle,
+  div.hrc-subtitle  {
     font-size: 14px;
   }
   .header-intro .header-brand-title {
@@ -73,14 +81,7 @@ nav.nav-primary {
     padding: 0 0 0 0;
     text-align: left;
   }
-  .container > .navbar-collapse {
-    margin-top: 60px;
-  }
-  .intro-content {
-    padding: 40px 0;
-  }
 
-}
 
 button.navbar-toggle {
   position: absolute;
@@ -141,15 +142,8 @@ button.navbar-toggle {
 .hrc-title-link .hrc-subtitle {
   color: #fff;
   font-weight:300;
-  display:none;
 }
-@media (min-width: 768px) {
-  .hrc-navbar .navbar-collapse {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
+
 .hrc-navbar .navbar-collapse a {
   padding: 10px 8px;
 }
@@ -201,6 +195,10 @@ button.navbar-toggle {
 .nav-group.nav-group-share {
   padding-right:0;
 }
+.nav-group.nav-group-share a{
+  padding: 10px 4px;
+}
+
 .nav-item-share a{
   font-weight: 700;
 }
@@ -233,7 +231,13 @@ li.share-header-social, li.nav-item-share {
 }
 
 @media (min-width: 768px) {
-
+  .header-intro h1.hrc-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .header-intro div.hrc-subtitle  {
+    font-size: 32px;
+  }
   .navbar>.container .navbar-brand,
   .navbar>.container-fluid .navbar-brand {
     margin-left: 0;
@@ -263,14 +267,13 @@ li.share-header-social, li.nav-item-share {
 
   .nav-group.nav-group-share {
     margin-right: 0;
-    padding-right: 8px;
-    padding-top: 5px;
+    padding: 0px 8px 0 4px;
     font-size: 12px;
   }
   .nav-group.nav-group-pages {
     margin-right: 0;
     padding-right: 2px;
-    padding-top: 5px;
+    padding-top: 0px;
     font-size: 13px;
   }
   .nav-group {
@@ -279,6 +282,29 @@ li.share-header-social, li.nav-item-share {
   h1.hrc-title {
     font-size: 18px;
   }
+  .hrc-navbar .navbar-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .container > .navbar-collapse {
+    margin-top: inherit;
+  }
+  .intro-content {
+    padding: inherit;
+  }
+
+  .header-intro .header-brand-title,
+  .header-intro .navbar-toggle{
+    padding: 80px 0 0 0;
+    text-align: center;
+    float:none;
+    height: auto;
+  }
+
+
+
 }
 
 @media (min-width:992px) {

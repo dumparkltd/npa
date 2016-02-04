@@ -121,3 +121,13 @@ h4.intro-explore {
 .intro-explore-text {
   color: #78909C;
 }
+
+@media (max-width: 767px) {
+  li.nav-categories-li .title {
+    min-height: 70px
+  }
+
+  .intro-explore-btn a.btn {
+    padding: 10px 0;
+  }
+}
