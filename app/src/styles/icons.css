@@ -1,4 +1,14 @@
-/* icons */
+/* icons.css *********************************************  */
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
 .icon-hrc-logo-sm         { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 46px;  height: 28px;}
 @media (min-width: 768px) {
   .icon-hrc-logo-sm       { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 75px;  height: 46px; }
@@ -67,12 +77,14 @@ a:hover .icon-filter,
 
 .active .icon-filter       { background-image: url('./img/svg-icons/icon_filter-close.svg'); }
 
-.icon-magnifier               { background-image: url('./img/svg-icons/icon_magnifier.svg'); width: 25px; height: 25px; }
+.icon-magnifier               { background-image: url('./img/svg-icons/icon_magnifier.svg'); width: 20px; height: 20px; }
 a:focus .icon-magnifier,
 a:hover .icon-magnifier,
 .icon-magnifier:focus,
 .icon-magnifier:hover         { background-image: url('./img/svg-icons/icon_magnifier.svg'); }
-
+@media (min-width: 768px) {
+  .icon-magnifier            { width: 25px; height: 25px; }
+}
 @media (min-width: 768px) {
   .icon-issues              { background-image: url('./img/svg-icons/icon_issue-inactive.svg'); width: 100px; height: 80px;}
   .active .icon-issues,
@@ -112,11 +124,7 @@ a:hover .icon-magnifier,
   .icon-close:focus,
   .icon-close:hover         { background-image: url('./img/svg-icons/icon_close-large.svg'); }
 
-  .icon-magnifier               { background-image: url('./img/svg-icons/icon_magnifier.svg'); width: 25px; height: 25px; }
-  a:focus .icon-magnifier,
-  a:hover .icon-magnifier,
-  .icon-magnifier:focus,
-  .icon-magnifier:hover         { background-image: url('./img/svg-icons/icon_magnifier.svg'); }
+  .icon-magnifier            { width: 25px; height: 25px; }
 }
 
 .icon-previous            { background-image: url('./img/svg-icons/icon_arrow-right.svg');
@@ -164,8 +172,8 @@ a:focus .icon-arrow-right-sm,
 .icon-social-linkedin     { background-image: url('./img/svg-icons/icon_linkedin.svg'); }
 .icon-social-twitter      { background-image: url('./img/svg-icons/icon_twitter.svg'); }
 
-.icon-social-facebook-sm  { background-image: url('./img/svg-icons/icon_facebook.svg'); width: 18px; height: 20px;  margin-top: -5px; }
-.icon-social-twitter-sm   { background-image: url('./img/svg-icons/icon_twitter.svg'); width: 23px; height: 20px;  margin-top: -5px; }
+.icon-social-facebook-sm  { background-image: url('./img/svg-icons/icon_facebook.svg'); width: 20px; height: 20px; }
+.icon-social-twitter-sm   { background-image: url('./img/svg-icons/icon_twitter.svg'); width: 20px; height: 20px; }
 
 
 .icon-hrc-logo            { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 150px; height: 50px; }

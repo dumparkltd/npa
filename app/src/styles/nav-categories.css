@@ -1,5 +1,5 @@
+/*nav-categories.css ********************************************* */
 
-/*nav-categories*/
 .nav-categories-container {
   width: 100%;
   background-color: #e7eef0
@@ -13,37 +13,6 @@
   display: block;
 }
 
-.nav-categories > .container {
-  padding: 0;
-}
-.nav-categories > .container .row {
-  margin: 0;
-}
-.nav-categories > .container .col-xs-1,
-.nav-categories > .container .col-xs-2,
-.nav-categories > .container .col-xs-3,
-.nav-categories > .container .col-xs-4,
-.nav-categories > .container .col-xs-5,
-.nav-categories > .container .col-xs-6,
-.nav-categories > .container .col-xs-7,
-.nav-categories > .container .col-xs-8,
-.nav-categories > .container .col-xs-9,
-.nav-categories > .container .col-xs-10,
-.nav-categories > .container .col-xs-11,
-.nav-categories > .container .col-xs-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.nav-categories-list-wrapper {
-  padding:0
-}
-@media (min-width: 768px) {
-  .nav-categories-list-wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 .nav-categories {
   display: table;
   width: 100%;
@@ -52,18 +21,11 @@
   -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
 }
-.nav-categories-label {
-  padding-top: 20px;
-  color: #7696a5;
-}
 
 
 .nav-categories-list {
   margin-bottom: 0px;
   font-size: 0
-}
-.nav-categories-list.intro-ul {
-  border-left:0
 }
 
 li.nav-categories-li {
