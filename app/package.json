@@ -42,7 +42,7 @@
     "debug": "^2.1.2",
     "fluxxor": "^1.7.3",
     "jquery": "^2.1.4",
-    "lodash": "^4.2.0",
+    "lodash": "^3.10.1",
     "marked": "^0.3.3",
     "moment": "^2.10.6",
     "pdfmake": "https://github.com/rdoc101/pdfmake",
