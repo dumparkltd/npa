@@ -57,8 +57,10 @@ h1.hrc-title,
   }
 
 }*/
-.navbar-header {
+.container > .navbar-header { /*override bootstrap*/
     min-height: 50px;
+    margin-right:0;
+    margin-left:0;
 }
 
 .navbar-brand {
