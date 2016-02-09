@@ -103,6 +103,15 @@ h1.hrc-title {
   }
   
   .header-intro h1.hrc-title {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  .header-intro .hrc-subtitle  {
+    font-size: 28px;
+  }  
+}
+@media (min-width:992px) {  
+  .header-intro h1.hrc-title {
     font-size: 32px;
     margin-bottom: 16px;
   }
@@ -114,7 +123,7 @@ h1.hrc-title {
 
 }
 
-@media (min-width:992px) {
+
   .header-intro .hrc-title-link {
     padding: 0;
   }
