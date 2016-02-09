@@ -7,12 +7,10 @@
   width: 50px;
   height: 50px;
   vertical-align: middle;
+   max-width: 100%;
 }
 
-.icon-hrc-logo-sm         { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 46px;  height: 28px;}
-@media (min-width: 768px) {
-  .icon-hrc-logo-sm       { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 75px;  height: 46px; }
-}
+.icon-hrc-logo            { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 220px; height: 135px; }
 .icon-issues              { background-image: url('./img/svg-icons/icon_issue-inactive.svg'); width: 60px; height: 50px;}
 .active .icon-issues,
 .active.icon-issues,
@@ -176,7 +174,7 @@ a:focus .icon-arrow-right-sm,
 .icon-social-twitter-sm   { background-image: url('./img/svg-icons/icon_twitter.svg'); width: 20px; height: 20px; }
 
 
-.icon-hrc-logo            { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 150px; height: 50px; }
+
 
 .icon-accepted            { background: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
 .icon-rejected            { background: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
