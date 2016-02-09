@@ -47,15 +47,19 @@ li.nav-categories-li:last-child a.btn{
 /*    padding: 6px 0 20px;    */
   }
 }
-li.nav-categories-li.active a,
 li.nav-categories-li a:hover,
+li.nav-categories-li a:hover:focus, 
+li.nav-categories-li.active a,
 li.nav-categories-li.active a:hover:focus,
-li.nav-categories-li a:hover:focus,
 li.nav-categories-li a:active,
 li.nav-categories-li.active a:focus,
 li.nav-categories-li a:focus {
   background-color: #69A41E;
   color: #FFF;  
+}
+.intro li.nav-categories-li a:hover,
+.intro li.nav-categories-li a:hover:focus {
+  background-color: #598E0C;
 }
 
 
@@ -63,6 +67,17 @@ li.nav-categories-li .title-wrap {
   display:table;
   width:100%;
 }
+
+.intro li.nav-categories-li .title-wrap {
+  background: #69A41E;
+  color: #fff;
+  border-top: 1px solid #EAF0F4;
+  width: 101%;
+}
+.intro li.nav-categories-li a:hover .title-wrap {
+  background: #598E0C;
+}
+
 li.nav-categories-li .title {
   font-weight: bold;
   font-size: 12px;

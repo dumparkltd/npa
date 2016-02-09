@@ -17,39 +17,26 @@
   border-bottom: 1px solid #0383C9;
 }
 
-.header-intro .navbar-header {
-  float: none;
-}
-
-.header-intro .header-brand-title {
-  padding: 10px;
-  text-align: left;
-}
 .header-intro .navbar-collapse {
   z-index: 10;
 }
-.header-intro .nav-primary {
-  display: none;
-}
-h1.hrc-title,
-.hrc-subtitle  {
+h1.hrc-title{
   font-size: 14px;
-}
-h1.hrc-title {
   color: #fff;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 0;
-  font-weight: bold;
+  font-weight: bold;  
 }
-.hrc-subtitle {
+.hrc-subtitle  {
+  font-size: 12px;
   color: #fff;
   font-weight:lighter;
 }
 
 .container > .navbar-header { /*override bootstrap*/
-    min-height: 50px;
-    margin-right:0;
-    margin-left:0;
+  min-height: 50px;
+  margin-right:0;
+  margin-left:0;
 }
 
 .navbar-brand {
@@ -65,7 +52,7 @@ h1.hrc-title {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0px 50px 0 12px;
+  padding: 0 50px 0 12px;
   width: 100%;
 }
 
@@ -79,52 +66,31 @@ h1.hrc-title {
     position:relative;
     margin: 0;
     width:auto;    
-    padding: 36px 15px;
+    padding: 30px 15px 20px;
   }
   .hrc-title-link {    
     padding: 5px 0; 
   }
-  h1.hrc-title,
-  .hrc-subtitle {
+  h1.hrc-title{  
     font-size: 24px;
-    display:block;    
+    margin-bottom: 6px;
+  }
+  .hrc-subtitle {
+    font-size: 20px;
   }
   
-
   .intro-content {
     padding: inherit;
   }
-
-  .header-intro .header-brand-title{
-    padding: 55px 0 35px;
-    text-align: center;
-    float:none;
-    height: auto;
-  }
-  
-  .header-intro h1.hrc-title {
-    font-size: 28px;
-    margin-bottom: 14px;
-  }
-  .header-intro .hrc-subtitle  {
-    font-size: 28px;
-  }  
 }
 @media (min-width:992px) {  
-  .header-intro h1.hrc-title {
-    font-size: 32px;
-    margin-bottom: 16px;
+  h1.hrc-title {
+    font-size: 28px;  
   }
-  .header-intro .hrc-subtitle  {
-    font-size: 32px;
+  .hrc-subtitle  {
+    font-size: 24px;
   }  
-
-
-
 }
 
 
-  .header-intro .hrc-title-link {
-    padding: 0;
-  }
-}
+
