@@ -52,11 +52,6 @@ ul.nav-primary-list {
   display: block;
 }
 
-.hrc-header {
-  -moz-box-shadow:    0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         0 10px 10px -10px rgba(0, 0, 0, 0.4);
-}
 @media (min-width: 768px) {
   .nav-primary-list a.btn {
     font-size: 14px;

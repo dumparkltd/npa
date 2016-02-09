@@ -270,5 +270,5 @@ a:focus .icon-arrow-right-sm,
 }
 
 .icon-arrow-link           { background-image: url('./img/svg-icons/icon_arrow-right.svg'); width:12px; height: 20px; }
-.icon-arrow-tall           { background-image: url('./img/svg-icons/icon_arrow-intro.svg');  width:30px; height:120px; }
+.icon-arrow-tall           { background-image: url('./img/svg-icons/icon_arrow-intro.svg');  width:30px; height:90px; }
 .icon_arrow-green          { background-image: url('./img/svg-icons/icon_arrow-green.svg'); width: 17px; height: 12px; }

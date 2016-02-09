@@ -118,7 +118,9 @@ button.navbar-toggle {
   }
 
   .hrc-header .container .navbar-collapse {
-    margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin:0;
   }
   li.nav-item-share {
     margin-right: -6px;
@@ -127,7 +129,7 @@ button.navbar-toggle {
 
 @media (min-width:992px) {
   .nav-group.nav-group-share {
-    padding-right: 12px;
+    padding-right: 15px;
     position: static;
     right: initial;
     top: initial;

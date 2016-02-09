@@ -1,6 +1,11 @@
 /* header.css *********************************************  */
 .hrc-header {
   background-color: #029BE5;
+  position:relative;
+  z-index:1; /* make sure shadow is visible on following divs */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 }
 
 /*navbar*/
@@ -106,9 +111,8 @@ h1.hrc-title,
     padding: inherit;
   }
 
-  .header-intro .header-brand-title,
-  .header-intro .navbar-toggle{
-    padding: 80px 0 0 0;
+  .header-intro .header-brand-title{
+    padding: 55px 0 35px;
     text-align: center;
     float:none;
     height: auto;

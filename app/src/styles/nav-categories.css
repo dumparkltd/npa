@@ -3,10 +3,7 @@
 
 nav.nav-categories {
   width: 100%;
-  background-color: #e7eef0;
-  -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  background-color: #EAF0F4;  
 }
 
 ul.nav-categories-list {
@@ -33,7 +30,7 @@ li.nav-categories-li a.btn {
   overflow: hidden;
   vertical-align: top;
   white-space: normal;
-  border-right: 1px solid #e7eef0;
+  border-right: 1px solid #EAF0F4;
 }
 li.nav-categories-li:last-child a.btn{
   border-right: none;
@@ -58,19 +55,22 @@ li.nav-categories-li a:active,
 li.nav-categories-li.active a:focus,
 li.nav-categories-li a:focus {
   background-color: #69A41E;
-  color: #FFF;
-  -moz-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);  
+  color: #FFF;  
 }
 
 
+li.nav-categories-li .title-wrap {
+  display:table;
+  width:100%;
+}
 li.nav-categories-li .title {
   font-weight: bold;
   font-size: 12px;
   height: 36px;
   line-height: 14px;
-  padding: 4px 8px;
+  padding: 4px;
+  display:table-cell;
+  vertical-align:middle
 }
 @media (min-width: 512px) {
   li.nav-categories-li .title {
