@@ -35,13 +35,13 @@ h1.hrc-title,
 .hrc-subtitle  {
   font-size: 14px;
 }
-.hrc-title-link h1.hrc-title {
+h1.hrc-title {
   color: #fff;
   margin-bottom: 0px;
   margin-top: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
-.hrc-title-link .hrc-subtitle {
+.hrc-subtitle {
   color: #fff;
   font-weight:lighter;
 }
