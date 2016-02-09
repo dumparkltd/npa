@@ -1,5 +1,6 @@
 // react
 var React           = require("react"),
+    ReactDOM        = require("react-dom"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
@@ -107,7 +108,7 @@ var flux = new Fluxxor.Flux(stores, actions.methods);
 router.run(
   function(Handler) {
     log('rendering app...')
-    React.render(
+    ReactDOM.render(
       React.createElement(Handler, { flux: flux }),
       document.getElementById("app")
     );
