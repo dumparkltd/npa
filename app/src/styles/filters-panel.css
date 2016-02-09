@@ -7,28 +7,23 @@
 
 .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper,
 .hrc-filter-panel.hrc-filter-active {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
-.hrc-filter-panel.hrc-filter-active {
-  margin-top: 50px;
-}
-
-@media (min-width: 980px) {
+@media (min-width: 768px) {
+  .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper,
   .hrc-filter-panel.hrc-filter-active {
-    margin-top: 0px;
+    padding: 20px 0;
   }
 }
-
-
 
 .hrc-filter-panel .filter-label,
 .hrc-filter-panel .hrc-filter-group h5 {
   color: #627A85;
   font-size: 13px;
   text-transform: capitalize;
+  display: inline-block;
 }
-
 
 .hrc-filter-panel .hrc-filter-group {
   border-bottom: none;
@@ -43,12 +38,16 @@
 .hrc-filter-panel .hrc-filter-group:last-child {
   border-left: none;
   padding-bottom: 0;
+  border-top: 1px solid #fff;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
   .hrc-filter-panel .hrc-filter-group:last-child {
     border-left: 1px solid #fff;
     padding-bottom: 15px;
+    border-top: none;
+    margin-top: inherit;
   }
 }
 
@@ -56,6 +55,7 @@
   padding-right: 15px;
 }
 
+/*Max width used for overwriting inline styles*/
 @media (max-width: 360px) {
   .hrc-filter-panel .col-sm-12 .hrc-filter-component {
     width: 100%!important;
@@ -114,6 +114,14 @@
 
 .hrc-filter-panel .rw-i-calendar::before {
   content: '';
+}
+
+.hrc-filter-panel .rw-datetimepicker .rw-btn {
+  margin-right: 5px;
+}
+
+.hrc-filter-panel .rw-datetimepicker .rw-select {
+  width: auto;
 }
 
 .hrc-filter-panel .rw-btn-calendar,
@@ -204,14 +212,14 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
-  .hrc-filter-panel .row {
-    margin-left: -5px;
-  }
+.hrc-filter-panel .row {
+  margin-left: 0px;
 }
 
-@media (min-width: 800px) {
-  .hrc-filter-panel .row {
-    margin-left: -15px;
-  }
+.hrc-filter-panel .rw-widget > .rw-select {
+  border-left: none;
+}
+
+.hrc-filter-panel .rw-datetimepicker input.rw-input {
+  box-shadow: none;
 }
