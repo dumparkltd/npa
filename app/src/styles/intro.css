@@ -1,48 +1,56 @@
+/* intro.css *********************************************  */
 .intro {
   color:#3C5462;
 }
 
-
-h4.intro-explore {
-  margin: 60px 0 20px 0;
-  font-weight: normal;
+h3.intro-explore {
+   margin: 55px 0 10px 0; 
 }
 
-.intro .background-blue {
-  background-color: #0383C9;
-  color: #fff;
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2) inset;
-}
-
-.intro .background-light-blue {
-  background-color: #EAF0F4;
+@media (max-width:785px){
+  h3.intro-explore { 
+    font-size: 18px;
+    margin: 30px 0 10px 0; 
+  }
 }
 
 .intro-lead {
+  background-color: #0383C9;
+  color: #fff;
   font-size: 16px;
 }
-
-.intro-sub-lead {
-  font-size: 14px;
+.intro-lead .arrow {  
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -11px;
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  
+  border-color: #0383C9 transparent transparent transparent;
+  border-bottom-width: 0;
+  border-width: 11px 11px 0;
+  border-style: solid;    
 }
 
-.intro .nav-primary {
-  background: none;
-  padding-bottom: 60px;
+.intro-content {
+  margin: 20px 0;
+}
+.intro-content p{
+  margin: 0;
 }
 
 @media (min-width:768px){
   .intro-content {
-    margin: 60px 85px 8px
-  }
-  .intro-content p {
-    margin-bottom: 20px;
+    margin: 35px 0;
   }
 }
 
-.intro-read-more {
-  margin-top: 20px;
+.intro-stats {
+    margin-bottom: 30px;
 }
+
 .stat-large {
   font-weight: bold;
   font-size: 39px;
@@ -69,55 +77,50 @@ h4.intro-explore {
   display: table;
 }
 
-.intro-stats.row {
-  margin-bottom: 60px;
+
+.intro-category-explore {
+  background-color: #EAF0F4;
+  padding-bottom: 20px;
 }
 
-.intro-issue-select li.nav-categories-li a.btn {
-  padding: 0px;
-}
 
-.intro-issue-select li.nav-categories-li span {
-  margin: 10px;
+.intro-explore-buttons {
+    margin-bottom: 35px;
 }
-
-.intro-issue-select .btn:hover,
-.intro-issue-select .btn:focus,
-.intro-issue-select .btn:focus:hover {
-  background: #69A41E;
-  box-shadow: none;
+.intro-explore-buttons a.btn {  
+  min-width: 135px;
+  font-size: 12px;
+  height: 36px;
+  line-height: 14px;
+  padding: 4px;  
+  display:table;
 }
-
-.intro-issue-select .title {
-  background-color: #69A41E;
-  color: #fff;
-  padding: 10px 15px;
+.intro-explore-buttons a.btn .btn-inner{  
+  display:table-cell;
+  vertical-align: middle;
 }
-
-.intro .arrow,
-.intro .arrow:after {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-}
-.intro .arrow {
-  border-width: 11px;
-}
-
-.intro .arrow {
-  left: 50%;
-  margin-left: -11px;
-  border-top-color: #0383C9;
-  border-bottom-width: 0;
-}
-
-.intro-explore-all .intro-explore-btn a{
-  width: 100%;
-}
-
 .intro-explore-text {
   color: #78909C;
+}
+@media (min-width: 512px) {
+  .intro-explore-buttons a.btn {
+    font-size: 14px;
+    line-height: 17px;
+    height: 46px;
+    padding: 6px 12px;
+    min-width: 180px;
+  }
+}
+@media (min-width: 768px) {
+
+  .intro-explore-buttons a.btn {    
+    padding: 12px 12px;
+    font-size: 15px;
+    line-height: 19px;  
+    height: 43px;
+    min-width: 200px;    
+  }
+  .intro-explore-text.row {
+    margin-bottom: 30px;
+  }
 }

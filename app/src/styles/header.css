@@ -1,20 +1,14 @@
+/* header.css *********************************************  */
 .hrc-header {
-    background-color: #3C515E;
+  background-color: #029BE5;
+  position:relative;
+  z-index:1; /* make sure shadow is visible on following divs */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 }
 
 /*navbar*/
-nav .container {
-    position: static;
-}
-nav.nav-primary {
-    position: relative;
-}
-.nav-primary a.btn:last-child {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .hrc-navbar {
   background-color: #029BE5; /* override bootstrap default */
   margin-bottom: 0px;
@@ -22,210 +16,44 @@ nav.nav-primary {
   border-radius: 0;
   border-bottom: 1px solid #0383C9;
 }
-.header-logo,
-.header-brand-title {
-  float:left;
-}
-
-.header-intro .header-brand-title,
-.header-intro .navbar-toggle{
-  padding: 80px 0 0 0;
-  text-align: center;
-  float:none;
-  height: auto;
-}
-.header-intro .navbar-header {
-  float: none;
-}
 
 .header-intro .navbar-collapse {
   z-index: 10;
 }
-.header-intro .nav-primary {
-  display: none;
-}
-
-.header-intro h1.hrc-title,
-.header-intro div.hrc-subtitle  {
-  font-size: 32px;
-}
-@media (max-width:768px){
-  .header-intro h1.hrc-title,
-  .header-intro div.hrc-subtitle  {
-    font-size: 20px;
-  }
-  .header-intro .header-brand-title,
-  .header-intro .navbar-toggle{
-    padding: 0px 10px;
-    padding: 40px 0 0 0;
-  }
-}
-@media (max-width:320px){
-  .header-intro h1.hrc-title,
-  .header-intro div.hrc-subtitle  {
-    font-size: 14px;
-  }
-  .header-intro .header-brand-title {
-    padding: 0px 10px;
-    text-align: left;
-  }
-  .header-intro .navbar-toggle{
-    padding: 0 0 0 0;
-    text-align: left;
-  }
-  .container > .navbar-collapse {
-    margin-top: 60px;
-  }
-  .intro-content {
-    padding: 40px 0;
-  }
-
-}
-
-button.navbar-toggle {
-  position: absolute;
-  right: 0;
-  margin: 15px 10px;
-  float: none;
-  border: none;
-  padding: 0;
-  border-radius: 0;
-  z-index:2
-}
-.navbar-default .navbar-toggle .icon-bar {
-  display: block;
-  width: 25px;
-  height: 4px;
-  border-radius: 0px;
-  background: none;
-  border: none;
-  background-color: #FFF;
-}
-.navbar-toggle .icon-bar+.icon-bar {
-  margin-top: 4px;
-}
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}
-
-
-.navbar-collapse {
-  overflow: hidden;
-}
-
-.hrc-header .container .navbar-collapse {
-  margin-right: 0;
-}
-
-.collapse {
-  display: none;
-}
-.collapse.in {
-    display: block;
-}
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  -o-transition-property: height, visibility;
-     transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-     transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-     transition-timing-function: ease;
-}
-.hrc-title-link .hrc-subtitle {
+h1.hrc-title{
+  font-size: 14px;
   color: #fff;
-  font-weight:300;
-  display:none;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;  
 }
-@media (min-width: 768px) {
-  .hrc-navbar .navbar-collapse {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-.hrc-navbar .navbar-collapse a {
-  padding: 10px 8px;
+.hrc-subtitle  {
+  font-size: 12px;
+  color: #fff;
+  font-weight:lighter;
 }
 
-.hrc-navbar.navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-
-
-.hrc-navbar.navbar-default  .navbar-brand a:focus,
-.hrc-navbar.navbar-default  .navbar-brand a:hover {
-  text-decoration:none;
-}
-.hrc-navbar.navbar-default .navbar-nav > li > a:focus,
-.hrc-navbar.navbar-default .navbar-nav > li > a:hover{
-  color: #fff;
-  background-color: #0383C9;
-}
-.hrc-navbar.navbar-default .navbar-nav > li > a.active,
-.hrc-navbar.navbar-default .navbar-nav > li > a.active:hover,
-.hrc-navbar.navbar-default .navbar-nav > li.active > a:hover,
-.hrc-navbar.navbar-default .navbar-nav > li.active > a{
-  color: #fff;
-  background-color: #0383C9;
+.container > .navbar-header { /*override bootstrap*/
+  min-height: 50px;
+  margin-right:0;
+  margin-left:0;
 }
 
 .navbar-brand {
   padding: 0;
 }
 
-.header-logo {
-  padding: 11px 6px;
-  border-right: 1px solid #34444b;
-  z-index: 2;
-  position: relative;
-}
 .hrc-title-link {
-  display: table-cell;
-  padding-top: 5px;
-  vertical-align: middle;
-  height: 50px;
+  display: block;
+  padding: 10px 0; 
 }
-
-@media (max-width: 320px) {
-  .hrc-title-link {
-    width: 300px;
-  }
-}
-.nav-group.nav-group-share {
-  padding-right:0;
-}
-.nav-item-share a{
-  font-weight: 700;
-}
-.nav-group {
-  padding: 0;
-}
-.nav-group-pages li {
-  border-right: 1px solid #0383C9;
-}
-.nav-group-pages li a{
-  font-weight: 700;
-}
-
-
 .header-brand-title {
+  float:left;  
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0px 10px;
+  padding: 0 50px 0 12px;
   width: 100%;
-  z-index: 1;
-}
-
-li.share-header-social, li.nav-item-share {
-   display: inline-block;
 }
 
 .navbar-brand {
@@ -234,81 +62,35 @@ li.share-header-social, li.nav-item-share {
 
 @media (min-width: 768px) {
 
-  .navbar>.container .navbar-brand,
-  .navbar>.container-fluid .navbar-brand {
-    margin-left: 0;
-  }
-  .navbar-brand {
-    height: 110px;
-  }
-  .header-logo {
-    padding: 27px 5px;
-  }
   .header-brand-title {
     position:relative;
     margin: 0;
-    width:auto;
-    padding: 0;
+    width:auto;    
+    padding: 30px 15px 20px;
   }
-  .hrc-title-link {
-    height: 120px;
-    padding: 20px 5px 0 5px;
-    display: block;
+  .hrc-title-link {    
+    padding: 5px 0; 
   }
-
-  .hrc-title-link .hrc-subtitle {
+  h1.hrc-title{  
     font-size: 24px;
-    display:block;
+    margin-bottom: 6px;
   }
-
-  .nav-group.nav-group-share {
-    margin-right: 0;
-    padding-right: 8px;
-    padding-top: 5px;
-    font-size: 12px;
-  }
-  .nav-group.nav-group-pages {
-    margin-right: 0;
-    padding-right: 2px;
-    padding-top: 5px;
-    font-size: 13px;
-  }
-  .nav-group {
-    padding: 34px 10px;
-  }
-  h1.hrc-title {
-    font-size: 18px;
-  }
-}
-
-@media (min-width:992px) {
-  .header-logo {
-    padding: 27px 25px;
-  }
-  .hrc-title-link {
-    padding: 25px 10px 0px 15px;
-  }
-  .header-intro .hrc-title-link {
-    padding: 0;
-  }
-  .nav-group.nav-group-share {
-    padding-right: 30px;
-    position: static;
-    right: initial;
-    top: initial;
-    padding-top: 0;
-    margin-right: -15px;
-    font-size: inherit;
-  }
-  .nav-group.nav-group-pages {
-    margin-right: 0;
-    position: static;
-    right: initial;
-    top: initial;
-    padding: 0 2px;
-    font-size: inherit;
-  }
-  h1.hrc-title {
+  .hrc-subtitle {
     font-size: 20px;
   }
+  
+  .intro-content {
+    padding: inherit;
+  }
 }
+@media (min-width:992px) {  
+  h1.hrc-title {
+    font-size: 28px;  
+  }
+  .hrc-subtitle  {
+    font-size: 24px;
+  }  
+}
+
+
+

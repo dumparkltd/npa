@@ -1,169 +1,70 @@
 
-/*nav-primary*/
-.nav-mode {
+/*nav-primary.css ********************************************* */
+
+nav.nav-primary {
+  position: relative;
   background-color: #029BE5;
 }
-
-.nav-primary-container {
-  width: 100%;
-  background-color: #e7eef0
+ul.nav-primary-list {
+    margin-bottom: 0;
+    margin-right: -12px;
+    margin-left: -12px;
 }
 
-.nav-primary-row:before {
-  display: block;
+.nav-primary-list > li {
+  border-right: 1px solid #0383C9;
 }
-
-.nav-mode .nav-primary-row a.btn {
-  padding: 14px 12px;
+.nav-primary-list > li:first-child {
   border-left: 1px solid #0383C9;
 }
 
-.nav-mode .nav-primary-row a.btn:last-of-type {
-    border-right: 1px solid #0383C9;
+.nav-primary-list > li:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
 }
 
-.nav-mode .nav-primary-row a.btn:hover,
-.nav-mode .nav-primary-row a.btn.active,
-.nav-primary-group a.btn:hover,
-.nav-primary-group a.btn.active{
+.nav-primary-list a.btn:hover,
+.nav-primary-list a.btn.active{
   background-color: #0383C9;
   color: #ffffff;
 }
 
-.nav-primary-group a.btn {
-  padding: 12px 12px;
-  font-weight: 700;
+.nav-primary-list a.btn {  
+  font-weight: normal;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+.nav-primary-list li:last-child a.btn{
+  padding-right: 0;
+}
+.nav-categories {
+  margin-bottom: 32px;
+}
+
+.nav-primary-list .icon-magnifier{
+  margin: -3px 12px -2px;
+  
 }
 
 .nav-primary:before {
   display: block;
 }
 
-.hrc-header {
-  -moz-box-shadow:    0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         0 10px 10px -10px rgba(0, 0, 0, 0.4);
-}
-
-.nav-primary > .container {
-  padding: 0;
-}
-.nav-primary > .container .row {
-  margin: 0;
-}
-.nav-primary > .container .col-xs-1,
-.nav-primary > .container .col-xs-2,
-.nav-primary > .container .col-xs-3,
-.nav-primary > .container .col-xs-4,
-.nav-primary > .container .col-xs-5,
-.nav-primary > .container .col-xs-6,
-.nav-primary > .container .col-xs-7,
-.nav-primary > .container .col-xs-8,
-.nav-primary > .container .col-xs-9,
-.nav-primary > .container .col-xs-10,
-.nav-primary > .container .col-xs-11,
-.nav-primary > .container .col-xs-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.nav-primary-list-wrapper {
-  padding:0
-}
 @media (min-width: 768px) {
-  .nav-primary-list-wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-.nav-primary {
-  display: table;
-  width: 100%;
-  background-color: #029BE5;
-}
-.nav-primary-label {
-  padding-top: 20px;
-  color: #7696a5;
-}
-
-
-.nav-primary-list {
-  margin-bottom: 0px;
-  font-size: 0
-}
-.nav-primary-list.intro-ul {
-  border-left:0
-}
-
-li.nav-primary-li {
-  text-align: center;
-  padding:0;
-  position:relative;
-  vertical-align: top;
-}
-
-li.nav-primary-li a.btn {
-  width: 100%;
-  text-decoration: none;
-  color: #3C5462;
-  display: block;
-  background-color:transparent;
-  padding: 2px 0 5px;
-  overflow: hidden;
-  vertical-align: top;
-  min-height: 100px;
-  white-space: normal;
-}
-@media (min-width: 768px) {
-  li.nav-primary-li a.btn {
-    padding: 6px 0 20px;
-  }
-}
-li.nav-primary-li.active a,
-li.nav-primary-li a:hover,
-li.nav-primary-li.active a:hover:focus,
-li.nav-primary-li a:hover:focus,
-li.nav-primary-li a:active,
-li.nav-primary-li.active a:focus,
-li.nav-primary-li a:focus {
-  background-color: #69A41E;
-  color: #FFFFFF;
-}
-
-li.nav-primary-li .title {
-  padding-top: 10px;
-  font-weight: bold;
-  font-size: 11px;
-  width: 100%;
-}
-@media (min-width: 512px) {
-  li.nav-primary-li .title {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  li.nav-primary-li .title {
+  .nav-primary-list a.btn {
     font-size: 14px;
+    padding: 12px 12px;
+    font-weight:bold;
   }
-}
-.nav-primary-li .arrow,
-.nav-primary-li .arrow:after {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-}
-.nav-primary-li.active .arrow {
-  border-width: 11px;
-}
-
-.nav-primary-li.active .arrow {
-  bottom: -11px;
-  left: 50%;
-  margin-left: -11px;
-  border-top-color: #69A41E;
-  border-bottom-width: 0;
+  .nav-primary-list a.btn{
+  }
+  .nav-primary-list li:last-child a.btn{
+    border-right: none;
+  }
+  ul.nav-primary-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

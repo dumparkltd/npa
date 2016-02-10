@@ -1,3 +1,5 @@
+/* share-modal.css  ********************************************* */
+
 .share-modal .close-modal{
   position: fixed;
   top: 0;
@@ -10,7 +12,7 @@
 }
 
 .share-modal-inner {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #fff;
   z-index: 100;
@@ -20,7 +22,6 @@
 }
 @media (min-width:768px){
   .share-modal-inner {
-    top: 100px;
     bottom: auto;
     height: auto;
   }  

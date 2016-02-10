@@ -1,3 +1,4 @@
+/* footer.css ********************************************* */
 footer.hrc-footer {
   width: 100%;
   min-height: 200px;
@@ -8,7 +9,7 @@ footer.hrc-footer {
   color: #fff;
 }
 
-a.icon-hrc-logo-claim:hover, a.icon-hrc-logo-claim:focus {
+a.icon-hrc-logo:hover, a.icon-hrc-logo:focus {
     opacity: 0.8;
 }
 
@@ -19,7 +20,7 @@ a.icon-hrc-logo-claim:hover, a.icon-hrc-logo-claim:focus {
 
 .hrc-footer-item {
   vertical-align: top;
-  padding: 30px 26px;
+  padding: 30px 26px !important;
 }
 
 
@@ -32,9 +33,18 @@ a.builtby {
   color: #EAF0F4;
   position: absolute;
   bottom: 10px;
+  right: 10px;
 }
-
-
+footer > .container {
+    padding: 0;
+}
+.hrc-footer-row.row {
+    margin: 0;
+    padding: 0;
+}
+.hrc-footer-brand-logo {
+    text-align: left;
+}
 @media (min-width:768px){
   .hrc-footer-item {
     min-height: 200px;
@@ -42,5 +52,14 @@ a.builtby {
   }
   .hrc-footer-brand-logo {
     text-align: right;
+  }
+  a.builtby {
+    color: #EAF0F4;
+    position: absolute;
+    bottom: 10px;
+    right:initial;
+  }
+  .hrc-footer-builtby-wrap{
+    padding: 0 26px;
   }
 }

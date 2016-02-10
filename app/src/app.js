@@ -1,5 +1,6 @@
 // react
 var React           = require("react"),
+    ReactDOM        = require("react-dom"),
     Router          = require("react-router"),
     Fluxxor         = require("fluxxor")
 
@@ -40,10 +41,10 @@ var router = Router.create({
 var bucket = 'npabuffer'
 
 
-// TEST
-var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+// V2 TEST
+var key = '1kaPzwJDFmA1WyUrvb5nDE6fIKWAy_6TC3rOun-FrhcY'
 var isProxy = false        
-// V2
+// V2 DRAFT
 //var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
 //var isProxy = false        
 
@@ -86,10 +87,10 @@ var stores = {
     sheet: 'articles', 
     type:'article', 
     title:{single:'Article',plural:'Article'}})),  
-  terms: new EntityStore(_.extend({},entityStoreConfig,{ 
-    sheet: 'terms', 
-    type:'term', 
-    title:{single:'Term',plural:'Terms'}})),  
+  faq: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'faq', 
+    type:'faq', 
+    title:{single:'Question',plural:'Questions'}})),  
   sessions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'sessions', 
     type:'session', 
@@ -107,7 +108,7 @@ var flux = new Fluxxor.Flux(stores, actions.methods);
 router.run(
   function(Handler) {
     log('rendering app...')
-    React.render(
+    ReactDOM.render(
       React.createElement(Handler, { flux: flux }),
       document.getElementById("app")
     );

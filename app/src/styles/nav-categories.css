@@ -1,69 +1,10 @@
+/*nav-categories.css ********************************************* */
 
-/*nav-categories*/
-.nav-categories-container {
-  width: 100%;
-  background-color: #e7eef0
-}
-
-.nav-categories-row:before {
-  display: block;
-}
-
-.nav-categories:before {
-  display: block;
-}
-
-.nav-categories > .container {
-  padding: 0;
-}
-.nav-categories > .container .row {
-  margin: 0;
-}
-.nav-categories > .container .col-xs-1,
-.nav-categories > .container .col-xs-2,
-.nav-categories > .container .col-xs-3,
-.nav-categories > .container .col-xs-4,
-.nav-categories > .container .col-xs-5,
-.nav-categories > .container .col-xs-6,
-.nav-categories > .container .col-xs-7,
-.nav-categories > .container .col-xs-8,
-.nav-categories > .container .col-xs-9,
-.nav-categories > .container .col-xs-10,
-.nav-categories > .container .col-xs-11,
-.nav-categories > .container .col-xs-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.nav-categories-list-wrapper {
-  padding:0
-}
-@media (min-width: 768px) {
-  .nav-categories-list-wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-.nav-categories {
-  display: table;
-  width: 100%;
-  background-color: #e7eef0;
-  -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-}
-.nav-categories-label {
-  padding-top: 20px;
-  color: #7696a5;
-}
-
-
-.nav-categories-list {
+ul.nav-categories-list {
   margin-bottom: 0px;
-  font-size: 0
-}
-.nav-categories-list.intro-ul {
-  border-left:0
+  font-size: 0;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 li.nav-categories-li {
@@ -71,7 +12,6 @@ li.nav-categories-li {
   padding:0;
   position:relative;
   vertical-align: top;
-  border-right: 1px solid transparent;
 }
 
 li.nav-categories-li a.btn {
@@ -80,47 +20,82 @@ li.nav-categories-li a.btn {
   color: #3C5462;
   display: block;
   background-color:transparent;
-  padding: 2px 0 5px;
+  padding: 0;
   overflow: hidden;
   vertical-align: top;
-  min-height: 100px;
   white-space: normal;
+  border-right: 1px solid #EAF0F4;
+}
+li.nav-categories-li:last-child a.btn{
+  border-right: none;
 }
 @media (min-width: 768px) {
+  ul.nav-primary-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  ul.nav-categories-list {
+    margin: 0px;    
+  }
   li.nav-categories-li a.btn {
-    padding: 6px 0 20px;
+/*    padding: 6px 0 20px;    */
   }
 }
-li.nav-categories-li.active a,
 li.nav-categories-li a:hover,
+li.nav-categories-li a:hover:focus, 
+li.nav-categories-li.active a,
 li.nav-categories-li.active a:hover:focus,
-li.nav-categories-li a:hover:focus,
 li.nav-categories-li a:active,
 li.nav-categories-li.active a:focus,
 li.nav-categories-li a:focus {
   background-color: #69A41E;
-  color: #FFF;
-  -moz-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  color: #FFF;  
+}
+.intro li.nav-categories-li a:hover,
+.intro li.nav-categories-li a:hover:focus {
+  background-color: #598E0C;
 }
 
 
+li.nav-categories-li .title-wrap {
+  display:table;
+  width:100%;
+}
+
+.intro li.nav-categories-li .title-wrap {
+  background: #69A41E;
+  color: #fff;
+  border-top: 1px solid #EAF0F4;
+  width: 101%;
+}
+.intro li.nav-categories-li a:hover .title-wrap {
+  background: #598E0C;
+}
+
 li.nav-categories-li .title {
-  padding-top: 10px;
   font-weight: bold;
-  font-size: 11px;
-  width: 100%;
+  font-size: 12px;
+  height: 36px;
+  line-height: 14px;
+  padding: 4px;
+  display:table-cell;
+  vertical-align:middle
 }
 @media (min-width: 512px) {
   li.nav-categories-li .title {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    height: 46px;
+    padding: 6px 12px;
   }
 }
 
 @media (min-width: 768px) {
   li.nav-categories-li .title {
-    font-size: 14px;
+    height: 43px;
+    padding: 12px 12px;
+    font-size: 15px;
+    line-height: 19px;     
   }
 }
 .nav-categories-li .arrow,
