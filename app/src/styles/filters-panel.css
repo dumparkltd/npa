@@ -8,8 +8,11 @@
   color: #627A85;
   font-size: 13px;
   text-transform: capitalize;
+  margin-top: 10px;
 }
-
+.hrc-filter-panel .filter-label {
+    display: inline-block;
+}
 .hrc-filter-panel .hrc-filter-group {
   padding-bottom: 20px;
   border-right: none;
@@ -54,6 +57,8 @@
       margin: 0 0 24px;
       padding-right: 0;
   }
+}
+@media (min-width: 768px) {
   .hrc-filter-panel .hrc-filter-group-smart .hrc-filter-component{
     padding-right:15px;
   }
@@ -198,13 +203,15 @@
     right: 5px;
     font-size: 12px;
     font-weight: 700;
-    top: 0;
+    top: 0px;
+    
 }
-
-.hrc-filter-panel .hrc-filter-group:first-child .hrc-filter-group-reset {
-  margin: 0;
+@media (min-width: 768px) {
+  .hrc-filter-panel .hrc-filter-group-reset {
+    right: 15px;
+    margin-top: 10px;
+  }
 }
-
 .hrc-filter-panel .row {
   margin-left: 0px;
 }
