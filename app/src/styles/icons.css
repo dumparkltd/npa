@@ -67,7 +67,7 @@ a:hover .icon-download,
 .icon-download:focus,
 .icon-download:hover         { background-image: url('./img/svg-icons/icon_download.svg'); }
 
-.icon-filter               { background-image: url('./img/svg-icons/icon_filter-open.svg'); width: 50px; height: 50px; }
+.icon-filter               { background-image: url('./img/svg-icons/icon_filter-open.svg'); width: 30px; height: 30px; }
 a:focus .icon-filter,
 a:hover .icon-filter,
 .icon-filter:focus,
@@ -176,13 +176,20 @@ a:focus .icon-arrow-right-sm,
 
 
 
-.icon-accepted            { background: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
-.icon-rejected            { background: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
-.icon-accepted-sm         { background: url('./img/svg-icons/icon_rec-yes.svg'); width:15px; height:15px}
-.icon-rejected-sm         { background: url('./img/svg-icons/icon_rec-no.svg'); width:15px; height:15px}
+.hrc-filter-panel .icon-accepted            { background-image: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-rejected            { background-image: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
+.icon-accepted-sm      { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:15px; height:15px}
+.icon-rejected-sm      { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:15px; height:15px}
+.icon-accepted.active,
+.icon-accepted         { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
+.icon-rejected.active,
+.icon-rejected         { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
 
-.icon-accepted-inactive   { background: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
-.icon-rejected-inactive   { background: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
+.icon-accepted.active     { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
+.icon-rejected.active     { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
+
+.icon-accepted-inactive   { background-image: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
+.icon-rejected-inactive   { background-image: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
 
 
 .page-content-smart .marked-inner-html h3#specific:before,
@@ -202,38 +209,59 @@ a:focus .icon-arrow-right-sm,
 .active .icon-smart-s,
 .icon-smart-s.active,
 .active .icon-smart-sm-s,
-.icon-smart-sm-s.active   { background-image: url('./img/svg-icons/icon_specific-yes.svg'); }
+.icon-smart-sm-s.active,
+.hrc-filter-panel .icon-smart-sm-s.active   { background-image: url('./img/svg-icons/icon_specific-yes.svg'); }
 .page-content-smart .marked-inner-html h3#measurable:before,
 .active .icon-smart-m,
 .icon-smart-m.active,
 .active .icon-smart-sm-m,
-.icon-smart-sm-m.active   { background-image: url('./img/svg-icons/icon_measurable-yes.svg'); }
+.icon-smart-sm-m.active,
+.hrc-filter-panel .icon-smart-sm-m.active    { background-image: url('./img/svg-icons/icon_measurable-yes.svg'); }
 .page-content-smart .marked-inner-html h3#assignable:before,
 .active .icon-smart-a,
 .icon-smart-a.active,
 .active .icon-smart-sm-a,
-.icon-smart-sm-a.active   { background-image: url('./img/svg-icons/icon_assignable-yes.svg'); }
+.icon-smart-sm-a.active,
+.hrc-filter-panel .icon-smart-sm-a.active    { background-image: url('./img/svg-icons/icon_assignable-yes.svg'); }
 .page-content-smart .marked-inner-html h3#result-oriented:before,
 .active .icon-smart-r,
 .icon-smart-r.active,
 .active .icon-smart-sm-r,
-.icon-smart-sm-r.active   { background-image: url('./img/svg-icons/icon_result-yes.svg'); }
+.icon-smart-sm-r.active,
+.hrc-filter-panel .icon-smart-sm-r.active    { background-image: url('./img/svg-icons/icon_result-yes.svg'); }
 .page-content-smart .marked-inner-html h3#time-bound:before,
 .active .icon-smart-t,
 .icon-smart-t.active,
 .active .icon-smart-t-sm,
-.icon-smart-sm-t.active   { background-image: url('./img/svg-icons/icon_time-yes.svg');}
+.icon-smart-sm-t.active,
+.hrc-filter-panel .icon-smart-sm-t.active    { background-image: url('./img/svg-icons/icon_time-yes.svg');}
 
 .icon-smart-s,
-.icon-smart-sm-s          { background-image: url('./img/svg-icons/icon_specific-no.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-smart-sm-s           { background-image: url('./img/svg-icons/icon_specific.svg'); width:36px; height:36px}
 .icon-smart-m,
-.icon-smart-sm-m          { background-image: url('./img/svg-icons/icon_measurable-no.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-smart-sm-m          { background-image: url('./img/svg-icons/icon_measurable.svg'); width:36px; height:36px}
 .icon-smart-a,
-.icon-smart-sm-a          { background-image: url('./img/svg-icons/icon_assignable-no.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-smart-sm-a          { background-image: url('./img/svg-icons/icon_assignable.svg'); width:36px; height:36px}
 .icon-smart-r,
-.icon-smart-sm-r          { background-image: url('./img/svg-icons/icon_result-no.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-smart-sm-r          { background-image: url('./img/svg-icons/icon_result.svg'); width:36px; height:36px}
 .icon-smart-t,
-.icon-smart-sm-t          { background-image: url('./img/svg-icons/icon_time-no.svg'); width:36px; height:36px}
+.hrc-filter-panel .icon-smart-sm-t          { background-image: url('./img/svg-icons/icon_time.svg'); width:36px; height:36px}
+
+.icon-smart-s.inactive,
+.icon-smart-sm-s.inactive,
+.icon-smart-sm-s           { background-image: url('./img/svg-icons/icon_specific-no.svg'); width:36px; height:36px}
+.icon-smart-m.inactive,
+.icon-smart-sm-m.inactive,
+.icon-smart-sm-m           { background-image: url('./img/svg-icons/icon_measurable-no.svg'); width:36px; height:36px}
+.icon-smart-a.inactive,
+.icon-smart-sm-a.inactive,
+.icon-smart-sm-a           { background-image: url('./img/svg-icons/icon_assignable-no.svg'); width:36px; height:36px}
+.icon-smart-r.inactive,
+.icon-smart-sm-r.inactive,
+.icon-smart-sm-r           { background-image: url('./img/svg-icons/icon_result-no.svg'); width:36px; height:36px}
+.icon-smart-t.inactive,
+.icon-smart-sm-t.inactive,
+.icon-smart-sm-t           { background-image: url('./img/svg-icons/icon_time-no.svg'); width:36px; height:36px}
 
 @media (min-width: 768px) {
 
