@@ -17,6 +17,7 @@
   }
 }
 
+
 .hrc-filter-panel .filter-label,
 .hrc-filter-panel .hrc-filter-group h5 {
   color: #627A85;
@@ -54,6 +55,12 @@
 .hrc-filter-panel .hrc-filter-component {
   padding-right: 15px;
 }
+
+.hrc-filter-panel .hrc-filter-group-smart .hrc-filter-component{
+    vertical-align: top;
+    text-align: center;
+}
+
 
 /*Max width used for overwriting inline styles*/
 @media (max-width: 360px) {
@@ -186,19 +193,16 @@
   color: #0383C9;
 }
 
+
+.filter-component-icon a {
+    display: block;
+    text-align: center;
+}
+
 .hrc-filter-panel .filter-component-icon .icon {
-  margin-bottom: 10px;
+    margin: 0 auto 10px;
 }
 
-.hrc-filter-panel .filter-component-icon .icon,
-.hrc-filter-panel .filter-component-icon .filter-component-icon-text {
-  width: 100%;
-}
-
-.hrc-filter-panel .filter-component-icon .filter-component-icon-text {
-  float: left;
-  clear: both;
-}
 
 .hrc-filter-panel .hrc-filter-group-reset {
   position: absolute;
