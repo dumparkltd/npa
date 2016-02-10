@@ -159,12 +159,16 @@
 }
 
 .hrc-filter-panel-wrapper .hrc-filter-toggle {
-  color: #69A41E;
-  font-size: 13px;
+    color: #69A41E;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 0;
 }
 
 .hrc-filter-panel-wrapper {
-  padding-right: 0;
+    position: relative;
 }
 
 .hrc-filter-panel .filter-component-icon .filter-component-icon-text{
