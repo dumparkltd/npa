@@ -8,7 +8,7 @@
 
 .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper,
 .hrc-filter-panel.hrc-filter-active {
-  padding: 0 0 20px 0;
+  padding: 40px 0 40px 0;
 }
 
 @media (min-width: 768px) {
@@ -17,7 +17,6 @@
     padding: 0 0 20px 0;
   }
 }
-
 
 .hrc-filter-panel .filter-label,
 .hrc-filter-panel .hrc-filter-group h5 {
@@ -56,12 +55,6 @@
 .hrc-filter-panel .hrc-filter-component {
   padding-right: 15px;
 }
-
-.hrc-filter-panel .hrc-filter-group-smart .hrc-filter-component{
-    vertical-align: top;
-    text-align: center;
-}
-
 
 /*Max width used for overwriting inline styles*/
 @media (max-width: 360px) {
@@ -160,6 +153,7 @@
 .hrc-filter-panel-wrapper .icon-filter {
   background-color: #69A41E;
   background-size: 30px;
+  background-position: center;
   padding: 22px;
   margin-left: 15px;
 }
@@ -195,16 +189,20 @@
   color: #0383C9;
 }
 
-
-.filter-component-icon a {
-    display: block;
-    text-align: center;
-}
-
 .hrc-filter-panel .filter-component-icon .icon {
-    margin: 0 auto 10px;
+  margin-bottom: 10px;
+  background-position: center top;
 }
 
+.hrc-filter-panel .filter-component-icon .icon,
+.hrc-filter-panel .filter-component-icon .filter-component-icon-text {
+  width: 100%;
+}
+
+.hrc-filter-panel .filter-component-icon .filter-component-icon-text {
+  float: left;
+  clear: both;
+}
 
 .hrc-filter-panel .hrc-filter-group-reset {
   position: absolute;
@@ -232,4 +230,21 @@
 
 .hrc-filter-panel .rw-calendar .rw-footer {
   display: none;
+}
+
+.hrc-filter-panel .hrc-filter-toggle-bottom {
+  width: 100%;
+}
+
+.hrc-filter-panel .hrc-filter-toggle-bottom .hrc-filter-toggle {
+  margin-top: 40px;
+  background-color: #69A41E;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hrc-filter-panel .hrc-filter-toggle-bottom {
+    display: none;
+  }
 }
