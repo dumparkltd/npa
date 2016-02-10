@@ -1,19 +1,20 @@
 .hrc-filter-panel-wrapper {
   background-color: #EAF0F4;
-  -moz-box-shadow:    inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
-  box-shadow:         inset 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+}
+
+.hrc-filter-panel.hrc-filter-active {
+  clear: both;
 }
 
 .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper,
 .hrc-filter-panel.hrc-filter-active {
-  padding: 50px 0;
+  padding: 0 0 20px 0;
 }
 
 @media (min-width: 768px) {
   .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper,
   .hrc-filter-panel.hrc-filter-active {
-    padding: 20px 0;
+    padding: 0 0 20px 0;
   }
 }
 
@@ -116,7 +117,7 @@
   content: '';
 }
 
-.hrc-filter-panel .rw-datetimepicker .rw-btn {
+.hrc-filter-panel .rw-datetimepicker .rw-select .rw-btn {
   margin-right: 5px;
 }
 
@@ -142,6 +143,7 @@
   clear: none;
   float: right;
   margin: 10px;
+  cursor: pointer;
 }
 
 .hrc-filter-panel.hrc-filter-closed .hrc-filter-panel-wrapper{
@@ -222,4 +224,8 @@
 
 .hrc-filter-panel .rw-datetimepicker input.rw-input {
   box-shadow: none;
+}
+
+.hrc-filter-panel .rw-calendar .rw-footer {
+  display: none;
 }
