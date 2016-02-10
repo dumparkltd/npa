@@ -481,3 +481,9 @@ ul.list-inline.list-bordered {
   }
 
 }
+
+
+.page-tools {
+  width: 100%;
+  background-color: #EAF0F4;  
+}
