@@ -1,1 +1,80 @@
 /* search.css ********************************************* */
+
+.search-field-wrapper {
+  padding: 40px 0 20px;
+}
+
+.search-field {
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
+  width: 90%;
+  height: 50px;
+  background-size: 40px;
+  padding: 0px 0px 0px 50px;
+  color: #627A85;
+  border-bottom: 1px solid #78909C;
+  font-weight: 400;
+}
+
+.search-field-wrapper .icon-close-small {
+  border-bottom: 1px solid #78909C;
+  height: 46px;
+  background-size: 20px;
+  background-position: center left;
+  width: 10%;
+  cursor: pointer;
+}
+
+.route-search .result-types {
+  margin-bottom: 40px;
+}
+
+.route-search .result-types li {
+  display: inline-block;
+  margin: 0px 20px 10px 0;
+}
+
+.route-search .result-types a {
+  font-size: 13px;
+  color: #263238;
+}
+
+.route-search .result-types .active {
+  color: #69A41E;
+}
+
+.route-search .result-no {
+  background-color: #E1E5E6;
+  border-radius: 15px;
+  padding: 3px 8px;
+  margin-left: 5px;
+}
+
+.route-search .result-types .active .result-no {
+  color: #fff;
+  background-color: #69A41E;
+}
+
+@media (min-width: 768px) {
+  .search-field {
+    font-size: 36px;
+    width: 95%;
+    height: 50px;
+    background-size: 45px;
+    padding: 0px 0px 0px 80px;
+    font-weight: 200;
+  }
+
+  .search-field-wrapper .icon-close-small {
+    height: 46px;
+    background-size: 25px;
+    background-position: center left;
+    width: 5%;
+  }
+
+  .route-search .result-types li {
+    display: block;
+    margin: 0px 20px 10px 0;
+  }
+}

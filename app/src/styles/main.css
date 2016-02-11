@@ -485,5 +485,9 @@ ul.list-inline.list-bordered {
 
 .page-tools {
   width: 100%;
-  background-color: #EAF0F4;  
+  background-color: #EAF0F4;
+}
+
+.table-caption-highlight {
+  color: #69A41E;
 }
