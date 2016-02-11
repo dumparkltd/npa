@@ -41,7 +41,11 @@
 }
 
 .route-search .result-types .active {
-  color: #69A41E;
+  color: #0383C9;
+}
+
+.route-search .result-types .disabled {
+  color: #627A85;
 }
 
 .route-search .result-no {
@@ -53,7 +57,11 @@
 
 .route-search .result-types .active .result-no {
   color: #fff;
-  background-color: #69A41E;
+  background-color: #0383C9;
+}
+
+.route-search .result-types .disabled .result-no {
+  background-color: #E1E5E6;
 }
 
 @media (min-width: 768px) {
