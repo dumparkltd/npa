@@ -23,11 +23,11 @@
   background-size: 20px;
   background-position: center left;
   width: 10%;
-  cursor: pointer;
 }
 
 .route-search .result-types {
   margin-bottom: 40px;
+  margin-top: 25px;
 }
 
 .route-search .result-types li {
@@ -37,15 +37,30 @@
 
 .route-search .result-types a {
   font-size: 13px;
-  color: #263238;
+  color: #627A85;
+  font-weight:bold
+}
+.route-search .result-types a:focus {
+  text-decoration: none;
+}
+.route-search .result-types a:hover {
+  text-decoration:none;
+  color:#0383C9
+}
+.route-search .result-types a.active :hover {
+  color:#263238
 }
 
 .route-search .result-types .active {
   color: #0383C9;
+  pointer-events:none;
+  cursor:default;  
 }
 
 .route-search .result-types .disabled {
-  color: #627A85;
+  pointer-events:none;
+  cursor:default;
+  font-weight:normal;
 }
 
 .route-search .result-no {
@@ -54,8 +69,8 @@
   padding: 3px 8px;
   margin-left: 5px;
 }
-
-.route-search .result-types .active .result-no {
+.route-search .result-types a:hover .result-no, 
+.route-search .result-types a.active .result-no {
   color: #fff;
   background-color: #0383C9;
 }
