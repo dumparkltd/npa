@@ -11,6 +11,9 @@ body {
   color:#263238;
   font-size: 13px
 }
+input:focus {
+  outline-offset: 0;
+}
 nav .container {
   position: static;
 }
