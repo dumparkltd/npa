@@ -217,6 +217,7 @@
 
 .hrc-filter-panel-wrapper {
     position: relative;
+    min-height: 44px
 }
 
 .hrc-filter-panel .filter-component-icon .filter-component-icon-text{
