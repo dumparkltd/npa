@@ -28,6 +28,8 @@
   font-weight: bold;
   padding-top: 10px;
   color: #7696a5;
+  display: table-cell;
+  height:50px;
 }
 
 li.list-item-smart {

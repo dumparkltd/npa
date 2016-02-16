@@ -20,6 +20,16 @@
 }
  /*override default styles*/ 
  /*smart criteria*/ 
+.action-section-analysis .hrc-icons_smart-s svg circle, 
+.action-section-analysis .hrc-icons_smart-m svg circle, 
+.action-section-analysis .hrc-icons_smart-a svg circle, 
+.action-section-analysis .hrc-icons_smart-r svg circle, 
+.action-section-analysis .hrc-icons_smart-t svg circle, 
+.filter-component-icon .hrc-icons_smart-s.active svg circle, 
+.filter-component-icon .hrc-icons_smart-m.active svg circle, 
+.filter-component-icon .hrc-icons_smart-a.active svg circle, 
+.filter-component-icon .hrc-icons_smart-r.active svg circle, 
+.filter-component-icon .hrc-icons_smart-t.active svg circle, 
 .actions-table .hrc-icons_smart-s svg circle,
 .actions-table .hrc-icons_smart-m svg circle,
 .actions-table .hrc-icons_smart-a svg circle,
@@ -27,6 +37,16 @@
 .actions-table .hrc-icons_smart-t svg circle {
   fill: #69A41E !important;
 }
+.action-section-analysis .hrc-icons_smart-s svg *, 
+.action-section-analysis .hrc-icons_smart-m svg *, 
+.action-section-analysis .hrc-icons_smart-a svg *, 
+.action-section-analysis .hrc-icons_smart-r svg *, 
+.action-section-analysis .hrc-icons_smart-t svg *, 
+.filter-component-icon .hrc-icons_smart-s.active svg  *, 
+.filter-component-icon .hrc-icons_smart-m.active svg  *, 
+.filter-component-icon .hrc-icons_smart-a.active svg  *, 
+.filter-component-icon .hrc-icons_smart-r.active svg  *, 
+.filter-component-icon .hrc-icons_smart-t.active svg  *, 
 .actions-table .hrc-icons_smart-s svg *,
 .actions-table .hrc-icons_smart-m svg *,
 .actions-table .hrc-icons_smart-a svg *,
@@ -35,27 +55,20 @@
   fill: #fff !important;
 }
 
-.hrc-icons_smart-s {}
-.hrc-icons_smart-m {}
-.hrc-icons_smart-a {}
-.hrc-icons_smart-r {}
-.hrc-icons_smart-t {}
-.hrc-icons_smart-s-fail {}
-.hrc-icons_smart-m-fail {}
-.hrc-icons_smart-a-fail {}
-.hrc-icons_smart-r-fail {}
-.hrc-icons_smart-t-fail {}
-
  /*recs criteria*/ 
+ .filter-component-icon .hrc-icons_pass.active svg circle,
  .recommendations-table .hrc-icons_pass svg circle {
    fill: #029BE5 !important;
  }
+ .filter-component-icon .hrc-icons_pass.active svg *,
  .recommendations-table .hrc-icons_pass svg * {
    stroke:#fff !important;
  }
+ .filter-component-icon .hrc-icons_fail.active svg circle,
  .recommendations-table .hrc-icons_fail svg circle{
    fill: #C9D3D7 !important;
  }
+ .filter-component-icon .hrc-icons_fail.active svg *,
  .recommendations-table .hrc-icons_fail svg *{
    fill: #546E7A !important
  }
@@ -88,11 +101,11 @@ a:hover .hrc-icons_cat svg * {
 
 .hrc-icons_filter-close, 
 .hrc-icons_filter-open {
-    width: 52px;
-    height: 44px;
-    background: #69A41E;
-    padding: 12px 15px;
-    margin-left: 10px;
+  width: 52px;
+  height: 44px;
+  background: #69A41E;
+  padding: 12px 15px;
+  margin-left: 10px;
 }
 
 .hrc-icons_dropdown-open       { width: 25px; height: 25px; }
@@ -126,13 +139,18 @@ a:hover .hrc-icons_cat svg * {
 }
 
 .hrc-icons_dismiss             { width: 25px; height: 25px; }
-.hrc-icons_close               { width: 25px; height: 25px; }
+.hrc-icons_close               { width: 68px; height: 68px; }
 .hrc-icons_info                { width: 20px; height: 20px; }
 .hrc-icons_download            { width: 25px; height: 25px; }
 
 .hrc-icons_facebook            { width: 18px; height:18px}
 .hrc-icons_linkedin            { width: 18px; height:18px }
 .hrc-icons_twitter             { width: 18px; height:18px }
+.share-modal-social .hrc-icons_facebook,
+.share-modal-social .hrc-icons_linkedin,
+.share-modal-social .hrc-icons_twitter { 
+  margin-right:10px
+}
 
 .hrc-icons_link-list           { width: 12px; height: 20px; }
 .hrc-icons_link-external       { width: 30px; height: 90px; }

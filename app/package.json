@@ -52,6 +52,7 @@
     "react-dom": "^0.14.0",
     "react-g-analytics": "0.1.7",
     "react-router": "^0.13.5",
+    "react-svg-icons" : "^0.2.0",
     "react-widgets": "^3.0.0",
     "tabletop": "git://github.com/timwis/tabletop"
   },
@@ -68,5 +69,8 @@
     "reactify": "^1.1.1",
     "uglify-js": "^2.4.23",
     "watchify": "^2.6.2"
+  },
+  "react-svg-icons": {
+    "assetPath": "src/img/svg-icons/"
   }
 }

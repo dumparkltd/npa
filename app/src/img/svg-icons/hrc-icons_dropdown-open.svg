@@ -18,7 +18,7 @@
 </g>
 <g id="search">
 </g>
-<polygon id="dropdown-close" style="fill:#36474F;" points="11,0 5.5,6 0,0 "/>
+<polygon id="dropdown-open" style="fill:#36474F;" points="0,6 5.5,0 11,6 "/>
 <g id="filter-open">
 </g>
 <g id="filter-close">

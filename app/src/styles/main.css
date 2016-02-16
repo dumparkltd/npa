@@ -241,7 +241,8 @@ a:focus,
 }
 
 .marked-inner-html.custom-list-icon ul {
-  margin:0; padding:0;
+  margin:0; 
+  padding:0;
   text-align: left;
   margin-bottom: 30px;
   color: #78909C;
@@ -252,6 +253,7 @@ a:focus,
   padding-left: 0;
   margin-bottom: 6px;
   position: relative;
+  margin-left: 0;
 }
 .marked-inner-html.custom-list-icon ul li:before {
   position: relative;
@@ -270,11 +272,11 @@ a:focus,
   margin-bottom:20px
 }
 .marked-inner-html ul li {
-  list-style-type: none;
   padding-top: 5px;
-  padding-left: 18px;
+  padding-left: 0;
   margin-bottom: 6px;
   position: relative;
+  margin-left: 18px;
 }
 /*.marked-inner-html ul li:before {
   position: absolute;
@@ -334,18 +336,8 @@ ul.list-inline.list-bordered {
 .hrc-nav-carousel .btn:active:hover
 {
   background:none;
+  color: #029BE5;
 }
-
-.background-light-blue {
-  color: #627A85;
-  background-color: #EAF0F4;
-}
-
-.background-blue {
-  background-color: #0383C9;
-  color: #fff;
-}
-
 
 
 @media (min-width:768px){
