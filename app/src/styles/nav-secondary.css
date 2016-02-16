@@ -10,16 +10,16 @@
 
 .nav-group li a{
   font-weight: bold;
+  text-align: right;
 }
 
 .hrc-navbar .navbar-collapse .nav-group a {
-  padding: 8px 12px;
+  padding: 8px 15px;
+  height: 36px;
+  display: block; 
 }
 .hrc-navbar .navbar-collapse .nav-group.nav-group-share li.share-header-social a {
-  padding: 10px 3px;
-}
-.hrc-navbar .navbar-collapse .nav-group.nav-group-share li.share-header-social a [class^="icon-"], [class*=" icon-"] {
-  margin-top:-4px
+  padding: 7px 3px 0;
 }
 
 .hrc-navbar.navbar-default .navbar-nav > li > a {
@@ -40,20 +40,24 @@
 
 
 /* navbar collapse  */
-
+.expanded button.navbar-toggle {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */  
+  transform: rotate(90deg);
+}
 button.navbar-toggle {
   position: absolute;
   right: 0;
-  margin: 15px 12px;
+  padding: 16px 15px;
   float: none;
   border: none;
-  padding: 0;
+  margin: 0;
   border-radius: 0;
   z-index:2
 }
 .navbar-default .navbar-toggle .icon-bar {
   display: block;
-  width: 25px;
+  width: 22px;
   height: 2px;
   border-radius: 0px;
   background: none;
@@ -63,9 +67,12 @@ button.navbar-toggle {
 .navbar-toggle .icon-bar+.icon-bar {
   margin-top: 6px;
 }
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus:hover,
+.navbar-default .navbar-toggle:focus {
   background-color: transparent;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #0383C9;
 }
 .hrc-navbar.navbar-default .navbar-collapse {
   overflow: hidden;
@@ -131,12 +138,10 @@ button.navbar-toggle {
 
 @media (min-width:992px) {
   .nav-group.nav-group-share {
-    padding-right: 15px;
     position: static;
     right: initial;
     top: initial;
     padding-top: 0;
-    margin-right: -15px;
     font-size: inherit;
   }
   .nav-group.nav-group-pages {

@@ -257,10 +257,9 @@ a:focus,
   position: relative;
   margin: 2px 8px 0 0px;
   height: 15px;
-  background: none;
-  background-image: url('./img/svg-icons/icon_arrow-green.svg');
+  background-image: url('./img/svg-icons/hrc-icons_content-list.svg');
   background-repeat: no-repeat;
-  width: 17px;
+  width: 15px;
   content: "";
   vertical-align: middle;
   float: left;
@@ -277,15 +276,14 @@ a:focus,
   margin-bottom: 6px;
   position: relative;
 }
-.marked-inner-html ul li:before {
+/*.marked-inner-html ul li:before {
   position: absolute;
   margin: 7px 0 0 -15px;
   height: 15px;
-  background: url('./img/NPA-sprite.png') no-repeat 0px -750px;
   width: 17px;
   content: "";
   vertical-align: middle;
-}
+}*/
 .list-inline {
   margin-left:0;
 }

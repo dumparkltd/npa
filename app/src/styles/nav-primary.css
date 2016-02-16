@@ -22,7 +22,8 @@ ul.nav-primary-list {
   position: absolute;
   top: 0;
   right: 0;
-  border: none;
+  border-right: none;
+  border-left: 1px solid #0383C9;
 }
 
 .nav-primary-list a.btn:hover,
@@ -36,20 +37,11 @@ ul.nav-primary-list {
   font-size: 12px;
   padding: 8px 12px;
 }
-.nav-primary-list li:last-child a.btn{
-  padding-right: 0;
+.nav-primary-list li:last-child a.btn {
+    padding: 8px 5px;
 }
 .nav-categories {
   margin-bottom: 32px;
-}
-
-.nav-primary-list .icon-magnifier{
-  margin: -3px 12px -2px;
-  
-}
-
-.nav-primary:before {
-  display: block;
 }
 
 @media (min-width: 768px) {
@@ -58,10 +50,8 @@ ul.nav-primary-list {
     padding: 12px 12px;
     font-weight:bold;
   }
-  .nav-primary-list a.btn{
-  }
   .nav-primary-list li:last-child a.btn{
-    border-right: none;
+    padding: 12px 15px;
   }
   ul.nav-primary-list {
     margin-right: 0;
