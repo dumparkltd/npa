@@ -241,7 +241,8 @@ a:focus,
 }
 
 .marked-inner-html.custom-list-icon ul {
-  margin:0; padding:0;
+  margin:0; 
+  padding:0;
   text-align: left;
   margin-bottom: 30px;
   color: #78909C;
@@ -252,15 +253,15 @@ a:focus,
   padding-left: 0;
   margin-bottom: 6px;
   position: relative;
+  margin-left: 0;
 }
 .marked-inner-html.custom-list-icon ul li:before {
   position: relative;
   margin: 2px 8px 0 0px;
   height: 15px;
-  background: none;
-  background-image: url('./img/svg-icons/icon_arrow-green.svg');
+  background-image: url('./img/svg-icons/hrc-icons_content-list.svg');
   background-repeat: no-repeat;
-  width: 17px;
+  width: 15px;
   content: "";
   vertical-align: middle;
   float: left;
@@ -271,21 +272,20 @@ a:focus,
   margin-bottom:20px
 }
 .marked-inner-html ul li {
-  list-style-type: none;
   padding-top: 5px;
-  padding-left: 18px;
+  padding-left: 0;
   margin-bottom: 6px;
   position: relative;
+  margin-left: 18px;
 }
-.marked-inner-html ul li:before {
+/*.marked-inner-html ul li:before {
   position: absolute;
   margin: 7px 0 0 -15px;
   height: 15px;
-  background: url('./img/NPA-sprite.png') no-repeat 0px -750px;
   width: 17px;
   content: "";
   vertical-align: middle;
-}
+}*/
 .list-inline {
   margin-left:0;
 }
@@ -336,18 +336,8 @@ ul.list-inline.list-bordered {
 .hrc-nav-carousel .btn:active:hover
 {
   background:none;
+  color: #029BE5;
 }
-
-.background-light-blue {
-  color: #627A85;
-  background-color: #EAF0F4;
-}
-
-.background-blue {
-  background-color: #0383C9;
-  color: #fff;
-}
-
 
 
 @media (min-width:768px){

@@ -1,300 +1,164 @@
 /* icons.css *********************************************  */
-
-[class^="icon-"], [class*=" icon-"] {
+/* icon- class is generally used as wrapper class for inline-svg element .isvg
+/  but may also be occasionally used to set backgground svg image
+*/
+[class^="hrc-icons_"], [class*=" hrc-icons_"] {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: top left;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   vertical-align: middle;
-   max-width: 100%;
+  max-width: 100%;
 }
 
-.icon-hrc-logo            { background-image: url('./img/svg-icons/icon_logo-white.svg'); width: 220px; height: 135px; }
-.icon-issues              { background-image: url('./img/svg-icons/icon_issue-inactive.svg'); width: 60px; height: 50px;}
-.active .icon-issues,
-.active.icon-issues,
-a:focus .icon-issues,
-a:hover .icon-issues,
-.icon-issues:focus,
-.icon-issues:hover        { background-image: url('./img/svg-icons/icon_issue-active.svg'); }
+.hrc-icons_hrc-logo            { width: 220px; height: 135px; }
 
-.icon-groups              { background-image: url('./img/svg-icons/icon_group-inactive.svg'); width: 60px; height: 50px;}
-.active .icon-groups,
-.active.icon-groups,
-a:hover .icon-groups,
-a:focus .icon-groups,
-.icon-groups:focus,
-.icon-groups:hover        { background-image: url('./img/svg-icons/icon_group-active.svg'); }
-
-.icon-agencies            { background-image: url('./img/svg-icons/icon_agency-inactive.svg'); width: 50px; height: 50px;}
-.active .icon-agencies,
-.active.icon-agencies,
-a:hover .icon-agencies,
-a:focus .icon-agencies,
-.icon-agencies:focus,
-.icon-agencies:hover      { background-image: url('./img/svg-icons/icon_agency-active.svg'); }
-
-.icon-treatybodies        { background-image: url('./img/svg-icons/icon_treaty-inactive.svg'); width: 60px; height: 50px; }
-.active .icon-treatybodies,
-.active.icon-treatybodies,
-a:hover .icon-treatybodies,
-a:focus .icon-treatybodies,
-.icon-treatybodies:focus,
-.icon-treatybodies:hover  { background-image: url('./img/svg-icons/icon_treaty-active.svg'); }
-
-.icon-close-large               { background-image: url('./img/svg-icons/icon_close-large.svg'); width: 25px; height: 25px; }
-a:focus .icon-close-large,
-a:hover .icon-close-large,
-.icon-close-large:focus,
-.icon-close-large:hover         { background-image: url('./img/svg-icons/icon_close-large.svg'); }
-
-.icon-close-small               { background-image: url('./img/svg-icons/icon_close-small.svg'); width: 25px; height: 25px; }
-a:focus .icon-close-small,
-a:hover .icon-close-small,
-.icon-close-small:focus,
-.icon-close-small:hover         { background-image: url('./img/svg-icons/icon_close-small.svg'); }
-
-.icon-close               { background-image: url('./img/svg-icons/icon_close.svg'); width: 25px; height: 25px; }
-a:focus .icon-close,
-a:hover .icon-close,
-.icon-close:focus,
-.icon-close:hover         { background-image: url('./img/svg-icons/icon_close.svg'); }
-
-.icon-download               { background-image: url('./img/svg-icons/icon_download.svg'); width: 25px; height: 25px; }
-a:focus .icon-download,
-a:hover .icon-download,
-.icon-download:focus,
-.icon-download:hover         { background-image: url('./img/svg-icons/icon_download.svg'); }
-
-.icon-filter               { background-image: url('./img/svg-icons/icon_filter-open.svg'); width: 30px; height: 30px; }
-a:focus .icon-filter,
-a:hover .icon-filter,
-.icon-filter:focus,
-.icon-filter:hover         { background-image: url('./img/svg-icons/icon_filter-open.svg'); }
-
-.active .icon-filter       { background-image: url('./img/svg-icons/icon_filter-close.svg'); }
-
-.icon-magnifier               { background-image: url('./img/svg-icons/icon_magnifier.svg'); width: 20px; height: 20px; }
-a:focus .icon-magnifier,
-a:hover .icon-magnifier,
-.icon-magnifier:focus,
-.icon-magnifier:hover         { background-image: url('./img/svg-icons/icon_magnifier.svg'); }
-@media (min-width: 768px) {
-  .icon-magnifier            { width: 25px; height: 25px; }
+.actions-table .hrc-cell-icon [class^='hrc-icons'] {
+  width: 40px;
+  height: 40px;
 }
-@media (min-width: 768px) {
-  .icon-issues              { background-image: url('./img/svg-icons/icon_issue-inactive.svg'); width: 100px; height: 80px;}
-  .active .icon-issues,
-  .active.icon-issues,
-  a:hover .icon-issues,
-  a:focus .icon-issues,
-  .icon-issues:focus,
-  .icon-issues:hover        { background-image: url('./img/svg-icons/icon_issue-active.svg'); }
-
-  .icon-groups              { background-image: url('./img/svg-icons/icon_group-inactive.svg'); width: 100px; height: 80px;}
-  .active .icon-groups,
-  .active.icon-groups,
-  a:hover .icon-groups,
-  a:focus .icon-groups,
-  .icon-groups:focus,
-  .icon-groups:hover        { background-image: url('./img/svg-icons/icon_group-active.svg'); }
-
-  .icon-agencies            { background-image: url('./img/svg-icons/icon_agency-inactive.svg');width: 80px; height: 80px;}
-  .active .icon-agencies,
-  .active.icon-agencies,
-  a:hover .icon-agencies,
-  a:focus .icon-agencies,
-  .icon-agencies:focus,
-  .icon-agencies:hover      { background-image: url('./img/svg-icons/icon_agency-active.svg'); }
-
-  .icon-treatybodies        { background-image: url('./img/svg-icons/icon_treaty-inactive.svg'); width: 100px; height: 80px; }
-  .active .icon-treatybodies,
-  .active.icon-treatybodies,
-  a:hover .icon-treatybodies,
-  a:focus .icon-treatybodies,
-  .icon-treatybodies:focus,
-  .icon-treatybodies:hover  { background-image: url('./img/svg-icons/icon_treaty-active.svg'); }
-
-  .icon-close               { background-image: url('./img/svg-icons/icon_close-large.svg'); width: 60px; height: 60px; }
-  a:hover .icon-close,
-  a:focus .icon-close,
-  .icon-close:focus,
-  .icon-close:hover         { background-image: url('./img/svg-icons/icon_close-large.svg'); }
-
-  .icon-magnifier            { width: 25px; height: 25px; }
+ /*override default styles*/ 
+ /*smart criteria*/ 
+.action-section-analysis .hrc-icons_smart-s svg circle, 
+.action-section-analysis .hrc-icons_smart-m svg circle, 
+.action-section-analysis .hrc-icons_smart-a svg circle, 
+.action-section-analysis .hrc-icons_smart-r svg circle, 
+.action-section-analysis .hrc-icons_smart-t svg circle, 
+.filter-component-icon .hrc-icons_smart-s.active svg circle, 
+.filter-component-icon .hrc-icons_smart-m.active svg circle, 
+.filter-component-icon .hrc-icons_smart-a.active svg circle, 
+.filter-component-icon .hrc-icons_smart-r.active svg circle, 
+.filter-component-icon .hrc-icons_smart-t.active svg circle, 
+.actions-table .hrc-icons_smart-s svg circle,
+.actions-table .hrc-icons_smart-m svg circle,
+.actions-table .hrc-icons_smart-a svg circle,
+.actions-table .hrc-icons_smart-r svg circle,
+.actions-table .hrc-icons_smart-t svg circle {
+  fill: #69A41E !important;
+}
+.action-section-analysis .hrc-icons_smart-s svg *, 
+.action-section-analysis .hrc-icons_smart-m svg *, 
+.action-section-analysis .hrc-icons_smart-a svg *, 
+.action-section-analysis .hrc-icons_smart-r svg *, 
+.action-section-analysis .hrc-icons_smart-t svg *, 
+.filter-component-icon .hrc-icons_smart-s.active svg  *, 
+.filter-component-icon .hrc-icons_smart-m.active svg  *, 
+.filter-component-icon .hrc-icons_smart-a.active svg  *, 
+.filter-component-icon .hrc-icons_smart-r.active svg  *, 
+.filter-component-icon .hrc-icons_smart-t.active svg  *, 
+.actions-table .hrc-icons_smart-s svg *,
+.actions-table .hrc-icons_smart-m svg *,
+.actions-table .hrc-icons_smart-a svg *,
+.actions-table .hrc-icons_smart-r svg *,
+.actions-table .hrc-icons_smart-t svg *{
+  fill: #fff !important;
 }
 
-.icon-previous            { background-image: url('./img/svg-icons/icon_arrow-right.svg');
-                            -webkit-transform:scaleX(-1);
-                            -moz-transform:scaleX(-1);
-                            -ms-transform:scaleX(-1);
-                            -o-transform:scaleX(-1);
-                            transform:scaleX(-1);
-                            background-transform width: 13px; }
-a:hover .icon-previous,
-a:focus .icon-previous,
-.icon-previous:focus,
-.icon-previous:hover      { background-image: url('./img/svg-icons/icon_arrow-right.svg');
-                            -webkit-transform:scaleX(-1);
-                            -moz-transform:scaleX(-1);
-                            -ms-transform:scaleX(-1);
-                            -o-transform:scaleX(-1);
-                            transform:scaleX(-1);}
-.icon-next                { background-image: url('./img/svg-icons/icon_arrow-right.svg'); width: 13px; }
-a:hover .icon-next,
-a:focus .icon-next,
-.icon-next:focus,
-.icon-next:hover          { background-image: url('./img/svg-icons/icon_arrow-right.svg'); }
-.icon-li-arrow            { background-image: url('./img/svg-icons/icon_arrow-right.svg'); }
+ /*recs criteria*/ 
+ .filter-component-icon .hrc-icons_pass.active svg circle,
+ .recommendations-table .hrc-icons_pass svg circle {
+   fill: #029BE5 !important;
+ }
+ .filter-component-icon .hrc-icons_pass.active svg *,
+ .recommendations-table .hrc-icons_pass svg * {
+   stroke:#fff !important;
+ }
+ .filter-component-icon .hrc-icons_fail.active svg circle,
+ .recommendations-table .hrc-icons_fail svg circle{
+   fill: #C9D3D7 !important;
+ }
+ .filter-component-icon .hrc-icons_fail.active svg *,
+ .recommendations-table .hrc-icons_fail svg *{
+   fill: #546E7A !important
+ }
 
-a:hover .icon-information,
-a:focus .icon-information,
-.icon-information:focus,
-.icon-information:hover         { opacity: 0.8}
-.icon-information         { background-image: url('./img/svg-icons/icon_info.svg');  width:20px; height:20px}
-
-.icon-arrow-right-sm      { background-image: url('./img/svg-icons/icon_arrow-right.svg'); }
-a:hover .icon-arrow-right-sm,
-a:focus .icon-arrow-right-sm,
-.icon-arrow-right-sm:focus,
-.icon-arrow-right-sm:hover{ background-image: url('./img/svg-icons/icon_arrow-right.svg'); }
-
-.icon-menu                { background-image: url('./img/svg-icons/icon_menu-close.svg'); }
-.icon-menu-open           { background-image: url('./img/svg-icons/icon_menu-open.svg'); }
-
-.icon-open                { background-image: url('./img/svg-icons/icon_open.svg'); }
-.icon-outgoing-link       { background-image: url('./img/svg-icons/icon-outgoing-link.svg'); }
-
-.icon-social-facebook     { background-image: url('./img/svg-icons/icon_facebook.svg'); }
-.icon-social-linkedin     { background-image: url('./img/svg-icons/icon_linkedin.svg'); }
-.icon-social-twitter      { background-image: url('./img/svg-icons/icon_twitter.svg'); }
-
-.icon-social-facebook-sm  { background-image: url('./img/svg-icons/icon_facebook.svg'); width: 20px; height: 20px; }
-.icon-social-twitter-sm   { background-image: url('./img/svg-icons/icon_twitter.svg'); width: 20px; height: 20px; }
-
-
-
-
-.hrc-filter-panel .icon-accepted            { background-image: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
-.hrc-filter-panel .icon-rejected            { background-image: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
-.icon-accepted-sm      { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:15px; height:15px}
-.icon-rejected-sm      { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:15px; height:15px}
-.icon-accepted.active,
-.icon-accepted         { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
-.icon-rejected.active,
-.icon-rejected         { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
-
-.icon-accepted.active     { background-image: url('./img/svg-icons/icon_rec-yes.svg'); width:36px; height:36px}
-.icon-rejected.active     { background-image: url('./img/svg-icons/icon_rec-no.svg'); width:36px; height:36px}
-
-.icon-accepted-inactive   { background-image: url('./img/svg-icons/icon_rec-yes-inactive.svg'); width:36px; height:36px}
-.icon-rejected-inactive   { background-image: url('./img/svg-icons/icon_rec-no-inactive.svg'); width:36px; height:36px}
-
-
-.page-content-smart .marked-inner-html h3#specific:before,
-.page-content-smart .marked-inner-html h3#measurable:before,
-.page-content-smart .marked-inner-html h3#assignable:before,
-.page-content-smart .marked-inner-html h3#result-oriented:before,
-.page-content-smart .marked-inner-html h3#time-bound:before {
-  position: relative;
-  width:36px;
-  height:36px;
-  vertical-align: middle;
-  margin: 5px 16px 10px 0px;
-  float: left;
+ /*category icons*/ 
+.hrc-icons_cat {
+  width: 75%;
+  height:auto;
+  padding: 5px 0 0;
 }
-
-.page-content-smart .marked-inner-html h3#specific:before,
-.active .icon-smart-s,
-.icon-smart-s.active,
-.active .icon-smart-sm-s,
-.icon-smart-sm-s.active,
-.hrc-filter-panel .icon-smart-sm-s.active   { background-image: url('./img/svg-icons/icon_specific-yes.svg'); }
-.page-content-smart .marked-inner-html h3#measurable:before,
-.active .icon-smart-m,
-.icon-smart-m.active,
-.active .icon-smart-sm-m,
-.icon-smart-sm-m.active,
-.hrc-filter-panel .icon-smart-sm-m.active    { background-image: url('./img/svg-icons/icon_measurable-yes.svg'); }
-.page-content-smart .marked-inner-html h3#assignable:before,
-.active .icon-smart-a,
-.icon-smart-a.active,
-.active .icon-smart-sm-a,
-.icon-smart-sm-a.active,
-.hrc-filter-panel .icon-smart-sm-a.active    { background-image: url('./img/svg-icons/icon_assignable-yes.svg'); }
-.page-content-smart .marked-inner-html h3#result-oriented:before,
-.active .icon-smart-r,
-.icon-smart-r.active,
-.active .icon-smart-sm-r,
-.icon-smart-sm-r.active,
-.hrc-filter-panel .icon-smart-sm-r.active    { background-image: url('./img/svg-icons/icon_result-yes.svg'); }
-.page-content-smart .marked-inner-html h3#time-bound:before,
-.active .icon-smart-t,
-.icon-smart-t.active,
-.active .icon-smart-t-sm,
-.icon-smart-sm-t.active,
-.hrc-filter-panel .icon-smart-sm-t.active    { background-image: url('./img/svg-icons/icon_time-yes.svg');}
-
-.icon-smart-s,
-.hrc-filter-panel .icon-smart-sm-s           { background-image: url('./img/svg-icons/icon_specific.svg'); width:36px; height:36px}
-.icon-smart-m,
-.hrc-filter-panel .icon-smart-sm-m          { background-image: url('./img/svg-icons/icon_measurable.svg'); width:36px; height:36px}
-.icon-smart-a,
-.hrc-filter-panel .icon-smart-sm-a          { background-image: url('./img/svg-icons/icon_assignable.svg'); width:36px; height:36px}
-.icon-smart-r,
-.hrc-filter-panel .icon-smart-sm-r          { background-image: url('./img/svg-icons/icon_result.svg'); width:36px; height:36px}
-.icon-smart-t,
-.hrc-filter-panel .icon-smart-sm-t          { background-image: url('./img/svg-icons/icon_time.svg'); width:36px; height:36px}
-
-.icon-smart-s.inactive,
-.icon-smart-sm-s.inactive,
-.icon-smart-sm-s           { background-image: url('./img/svg-icons/icon_specific-no.svg'); width:36px; height:36px}
-.icon-smart-m.inactive,
-.icon-smart-sm-m.inactive,
-.icon-smart-sm-m           { background-image: url('./img/svg-icons/icon_measurable-no.svg'); width:36px; height:36px}
-.icon-smart-a.inactive,
-.icon-smart-sm-a.inactive,
-.icon-smart-sm-a           { background-image: url('./img/svg-icons/icon_assignable-no.svg'); width:36px; height:36px}
-.icon-smart-r.inactive,
-.icon-smart-sm-r.inactive,
-.icon-smart-sm-r           { background-image: url('./img/svg-icons/icon_result-no.svg'); width:36px; height:36px}
-.icon-smart-t.inactive,
-.icon-smart-sm-t.inactive,
-.icon-smart-sm-t           { background-image: url('./img/svg-icons/icon_time-no.svg'); width:36px; height:36px}
-
-@media (min-width: 768px) {
-
-  .page-content-smart .marked-inner-html h3#specific:before,
-  .page-content-smart .marked-inner-html h3#measurable:before,
-  .page-content-smart .marked-inner-html h3#assignable:before,
-  .page-content-smart .marked-inner-html h3#result-oriented:before,
-  .page-content-smart .marked-inner-html h3#time-bound:before {
-    width:57px; height:57px
+@media (min-width: 768px) {  
+  .hrc-icons_cat {
+    width: 50%;
+    padding: 10px 0 0;
   }
-  .page-content-smart .marked-inner-html h3#specific:before,
-  .active .icon-smart-s,
-  .icon-smart-s.active      { background-image: url('./img/svg-icons/icon_specific-yes.svg'); }
-  .page-content-smart .marked-inner-html h3#measurable:before,
-  .active .icon-smart-m,
-  .icon-smart-m.active      { background-image: url('./img/svg-icons/icon_measurable-yes.svg'); }
-  .page-content-smart .marked-inner-html h3#assignable:before,
-  .active .icon-smart-a,
-  .icon-smart-a.active      { background-image: url('./img/svg-icons/icon_assignable-yes.svg'); }
-  .page-content-smart .marked-inner-html h3#result-oriented:before,
-  .active .icon-smart-r,
-  .icon-smart-r.active      { background-image: url('./img/svg-icons/icon_result-yes.svg'); }
-  .page-content-smart .marked-inner-html h3#time-bound:before,
-  .active .icon-smart-t,
-  .icon-smart-t.active      { background-image: url('./img/svg-icons/icon_time-yes.svg'); }
-
-  .icon-smart-s             { background-image: url('./img/svg-icons/icon_specific.svg'); width:54px; height:54px; }
-  .icon-smart-m             { background-image: url('./img/svg-icons/icon_measurable.svg'); width:54px; height:54px; }
-  .icon-smart-a             { background-image: url('./img/svg-icons/icon_assignable.svg'); width:54px; height:54px; }
-  .icon-smart-r             { background-image: url('./img/svg-icons/icon_result.svg'); width:54px; height:54px; }
-  .icon-smart-t             { background-image: url('./img/svg-icons/icon_time.svg'); width:54px; height:54px; }
+  .intro-category-explore .hrc-icons_cat {
+    padding: 12px 0 6px;
+  }
+}
+ /*override default styles*/ 
+.active .hrc-icons_cat svg *, 
+a:hover .hrc-icons_cat svg * {
+  fill: #fff !important;
 }
 
-.icon-arrow-link           { background-image: url('./img/svg-icons/icon_arrow-right.svg'); width:12px; height: 20px; }
-.icon-arrow-tall           { background-image: url('./img/svg-icons/icon_arrow-intro.svg');  width:30px; height:90px; }
-.icon_arrow-green          { background-image: url('./img/svg-icons/icon_arrow-green.svg'); width: 17px; height: 12px; }
+.hrc-icons_cat-issues          { }
+.hrc-icons_cat-groups          { }
+.hrc-icons_cat-agencies        { }
+.hrc-icons_cat-treatybodies    { }
+
+.hrc-icons_filter-close, 
+.hrc-icons_filter-open {
+  width: 52px;
+  height: 44px;
+  background: #69A41E;
+  padding: 12px 15px;
+  margin-left: 10px;
+}
+
+.hrc-icons_dropdown-open       { width: 25px; height: 25px; }
+.hrc-icons_dropdown-close      { width: 25px; height: 25px; }
+
+.nav-primary .hrc-icons_search {
+  width: 16px;
+  height: 16px;
+}
+.search-field-wrapper .hrc-icons_search {
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+    width: 33px;
+    height: 33px;
+}
+ /*override default styles*/ 
+.search-field-wrapper .hrc-icons_search svg * {
+    stroke: #546E7A;
+    stroke-width: 1;
+}
+@media (min-width: 768px) {
+  .nav-primary .hrc-icons_search {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}
+.nav-primary .hrc-icons_search svg * {
+  stroke: #fff !important;
+}
+
+.hrc-icons_dismiss             { width: 25px; height: 25px; }
+.hrc-icons_close               { width: 68px; height: 68px; }
+.hrc-icons_info                { width: 20px; height: 20px; }
+.hrc-icons_download            { width: 25px; height: 25px; }
+
+.hrc-icons_facebook            { width: 18px; height:18px}
+.hrc-icons_linkedin            { width: 18px; height:18px }
+.hrc-icons_twitter             { width: 18px; height:18px }
+.share-modal-social .hrc-icons_facebook,
+.share-modal-social .hrc-icons_linkedin,
+.share-modal-social .hrc-icons_twitter { 
+  margin-right:10px
+}
+
+.hrc-icons_link-list           { width: 12px; height: 20px; }
+.hrc-icons_link-external       { width: 30px; height: 90px; }
+/*.icon_content-list        { see main.css }*/
+
+.hrc-icons_arrow-right         { }
+
+
+@media (min-width: 768px) {
+ 
+}

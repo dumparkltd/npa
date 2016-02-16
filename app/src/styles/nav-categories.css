@@ -92,8 +92,8 @@ li.nav-categories-li .title {
 
 @media (min-width: 768px) {
   li.nav-categories-li .title {
-    height: 43px;
-    padding: 12px 12px;
+    height: auto;
+    padding: 11px 12px;
     font-size: 15px;
     line-height: 19px;     
   }
