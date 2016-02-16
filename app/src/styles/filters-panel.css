@@ -208,7 +208,8 @@
 
 .hrc-filter-panel-wrapper .hrc-filter-toggle {
     color: #69A41E;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
     position: absolute;
     right: 0;
     z-index: 2;
