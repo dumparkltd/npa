@@ -29,7 +29,25 @@ nav .list-inline > li {
   padding-bottom: 250px;
 }
 
-
+.tooltip-inner{
+  background-color:#56707C
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow{
+  border-top-color: #56707C;
+}
+.tooltip.right .tooltip-arrow{
+  border-right-color: #56707C;
+}
+.tooltip.left .tooltip-arrow{
+  border-left-color: #56707C;
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #56707C;
+}
 @media (min-width:768px){
   .hrc-app {
     border-left: 12px solid #363636;
@@ -167,7 +185,7 @@ button,a {
   -o-transition: background-color 0.1s ease, color 0.1s ease;
   transition: background-color 0.1s ease, color 0.1s ease;
 }
-
+.tooltip-trigger,
 a{
   color: #029BE5;
 }
@@ -183,6 +201,11 @@ p a {
 p a em {
   font-style: normal;
 }
+.tooltip.in {
+  opacity: 1!important;
+  filter: alpha(opacity=100)!important;
+}
+.tooltip-trigger:hover,
 a:hover,
 a:focus{
   color: #008399;

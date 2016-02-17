@@ -98,6 +98,11 @@
     vertical-align: middle;
     padding: 10px 12px;
   }  
+  .hrc-table > .hrc-thead > .hrc-tr > .hrc-td.hrc-cell-icon, 
+  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell-icon{
+    vertical-align: middle;
+    padding: 10px 8px;
+  }  
   .articles-table .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell-no {
       vertical-align: middle;
   }  
@@ -230,7 +235,8 @@
 
  /*cell icon*/
 .header-cell-icon {
-    width: 50px;
+    width: 40px;
+    text-align:center;
 }
 @media (min-width:768px){
   .recommendations-table .header-cell-icon {
@@ -403,7 +409,7 @@
 
 @media (min-width:420px){
   .hrc-cell.hrc-cell-icon {
-    min-width: 60px;
+    min-width: 40px;
   }
 }
 /*cell spacer*/
