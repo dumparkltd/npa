@@ -16,6 +16,11 @@
   border-bottom: 1px solid #78909C;
   font-weight: 400;
 }
+.search-field::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
 a.btn-clear-search {
   position: absolute;
   right: 20px;

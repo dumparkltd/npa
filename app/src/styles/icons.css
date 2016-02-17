@@ -156,7 +156,10 @@ a:hover .hrc-icons_cat svg * {
 .hrc-icons_link-external       { width: 30px; height: 90px; }
 /*.icon_content-list        { see main.css }*/
 
-.hrc-icons_arrow-right         { }
+.hrc-icons_arrow-large-r {
+    height: auto;
+    width: 30px;
+}
 
 
 @media (min-width: 768px) {
