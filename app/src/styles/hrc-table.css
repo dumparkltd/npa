@@ -113,10 +113,13 @@
 
 /* header cells ------------------------------------------------------------- */
 
-.hrc-header-cell {
+.hrc-heder-cell,
+.hrc-header-cell .cell-key {
   color: #7696a5;
   font-size: 11px;
 }
+
+
 .hrc-header-cell .hrc-th-title{
   font-weight: bold;
   text-transform: uppercase;    
