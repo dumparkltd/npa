@@ -36,7 +36,11 @@ a.btn-clear-search {
   display: inline-block;
   margin: 0px 20px 10px 0;
 }
-
+.route-search .result-types .no-results {
+  font-size: 13px;
+  color: #627A85;  
+  font-weight:normal;
+}
 .route-search .result-types a {
   font-size: 13px;
   color: #627A85;
@@ -49,33 +53,24 @@ a.btn-clear-search {
   text-decoration:none;
   color:#0383C9
 }
-.route-search .result-types a.active :hover {
-  color:#263238
-}
-
-.route-search .result-types .active {
+.route-search .result-types a.active {
   color: #0383C9;
 }
-
-.route-search .result-types .disabled {
-  pointer-events:none;
-  cursor:default;
-  font-weight:normal;
+.route-search .result-types a.active.no-results {
+  font-weight:normal;  
 }
-
 .route-search .result-no {
   background-color: #E1E5E6;
   border-radius: 15px;
   padding: 3px 8px;
   margin-left: 5px;
 }
-.route-search .result-types a:hover .result-no, 
 .route-search .result-types a.active .result-no {
   color: #fff;
   background-color: #0383C9;
 }
 
-.route-search .result-types .disabled .result-no {
+.route-search .result-types .no-results .result-no {
   background-color: #E1E5E6;
 }
 
