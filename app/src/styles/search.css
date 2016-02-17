@@ -55,8 +55,6 @@ a.btn-clear-search {
 
 .route-search .result-types .active {
   color: #0383C9;
-  pointer-events:none;
-  cursor:default;  
 }
 
 .route-search .result-types .disabled {
