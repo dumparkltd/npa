@@ -139,6 +139,14 @@ a:hover .hrc-icons_cat svg * {
 }
 
 .hrc-icons_dismiss             { width: 25px; height: 25px; }
+.hrc-icons_dismiss-fat         { width: 12px; height: 12px; }
+.hrc-icons_more                { width: 12px; height: 12px; }
+
+.hrc-filter-toggle .hrc-icons{
+  margin-right: 7px;
+  margin-top: -6px;
+}
+
 .hrc-icons_close               { width: 68px; height: 68px; }
 .hrc-icons_info                { width: 20px; height: 20px; }
 .hrc-icons_download            { width: 25px; height: 25px; }

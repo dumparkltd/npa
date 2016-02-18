@@ -25,19 +25,6 @@
   border-right: none;
 }
 
-.hrc-filter-panel .hrc-filter-group{
-  border-bottom: 1px solid #fff;
-}
-
-.hrc-filter-panel .hrc-filter-group:last-child {
-  border-bottom: none;
-}
-
-.hrc-filter-panel .hrc-filter-group-response {
-  border-bottom: none;
-  border-right: 1px solid #fff;
-}
-
 .hrc-filter-panel .hrc-filter-group-response,
 .hrc-filter-panel .hrc-filter-group-addressed {
   margin: 25px 0;
@@ -51,9 +38,6 @@
     padding: 0 15px 15px 15px;
   }
 
-  .hrc-filter-panel .hrc-filter-group.hrc-filter-group-addressed:last-child {
-    border-right: 1px solid #fff;
-  }
 }
 
 .hrc-filter-panel .hrc-filter-group-response h5,
@@ -69,25 +53,18 @@
 
   .hrc-filter-panel .hrc-filter-group {
     border-right: 1px solid white;
-    border-bottom: none;
   }
 
   .hrc-filter-panel .hrc-filter-group.col-sm-12,
   .hrc-filter-panel .hrc-filter-group:last-child {
     border-right: none;
   }
-
-  .hrc-filter-panel .hrc-filter-group.col-sm-12 {
-    border-bottom: 1px solid #fff;
-  }
 }
-
+.hrc-filter-group {
+    padding-right: 0;
+}
 .hrc-filter-panel .hrc-filter-component {
   padding-right: 15px;
-}
-
-.hrc-filter-panel .hrc-filter-component:last-child {
-  padding-right: 0;
 }
 
 .hrc-filter-panel .hrc-filter-group-smart .hrc-filter-component{
@@ -196,22 +173,12 @@
   padding: 0;
 }
 
-.hrc-filter-panel-wrapper .icon-filter {
-  background-color: #69A41E;
-  background-size: 30px;
-  background-position: center;
-  padding: 22px;
-  margin-left: 15px;
-}
-
 .hrc-filter-panel-wrapper .hrc-filter-toggle {
-    color: #69A41E;
     font-size: 14px;
     font-weight: bold;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    top: 0;
+    margin: 0 0 20px;
+    display: inline-block;
+    padding: 10px 5px;
 }
 
 .hrc-filter-panel-wrapper {
@@ -273,10 +240,6 @@
     right: 15px;
     margin-top: 10px;
   }
-}
-
-.hrc-filter-panel .row {
-  margin-left: 0px;
 }
 
 .hrc-filter-panel .rw-widget > .rw-select {
