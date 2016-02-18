@@ -44,7 +44,6 @@
     "lodash": "^3.10.1",
     "marked": "^0.3.3",
     "moment": "^2.10.6",
-    "pdfmake": "https://github.com/rdoc101/pdfmake",
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.0",
     "react-debounce-input": "^2.2.0",
