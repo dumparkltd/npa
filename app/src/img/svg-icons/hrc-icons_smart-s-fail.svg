@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <g id="arrow-large-r">
@@ -40,7 +40,11 @@
 </g>
 <g id="fail">
 </g>
+<g id="fail-active">
+</g>
 <g id="pass">
+</g>
+<g id="pass-active">
 </g>
 <g id="smart-t-fail">
 	<g id="front_9_">
@@ -67,13 +71,13 @@
 				<polygon style="fill:#546E7A;" points="22.7,15.4 21.8,16.3 21.8,19.1 22.7,20 				"/>
 				<polygon style="fill:#546E7A;" points="10.2,21.8 10.2,12.9 9.3,12 9.3,22.7 20,22.7 19.1,21.8 				"/>
 				
-					<rect x="13.7" y="15.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 37.4401 20.7771)" style="fill:#546E7A;" width="1.5" height="6"/>
+					<rect x="13.7" y="15.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.6054 15.507)" style="fill:#546E7A;" width="1.5" height="6"/>
 				
-					<rect x="20.8" y="10.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 16.1658 -11.2512)" style="fill:#546E7A;" width="1.8" height="7.2"/>
+					<rect x="18.1" y="13" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.4752 19.3868)" style="fill:#546E7A;" width="7.2" height="1.8"/>
 			</g>
 			<g>
 				
-					<rect x="1.7" y="15.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 16.0005 -6.6273)" style="fill:#546E7A;" width="28.6" height="1"/>
+					<rect x="15.5" y="1.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.6275 15.9993)" style="fill:#546E7A;" width="1" height="28.6"/>
 			</g>
 		</g>
 	</g>
