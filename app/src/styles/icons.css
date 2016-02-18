@@ -20,7 +20,7 @@
 }
  /*override default styles*/ 
  /*smart criteria*/ 
-.action-section-analysis .hrc-icons_smart-s svg circle, 
+/*.action-section-analysis .hrc-icons_smart-s svg circle, 
 .action-section-analysis .hrc-icons_smart-m svg circle, 
 .action-section-analysis .hrc-icons_smart-a svg circle, 
 .action-section-analysis .hrc-icons_smart-r svg circle, 
@@ -53,10 +53,10 @@
 .actions-table .hrc-icons_smart-r svg *,
 .actions-table .hrc-icons_smart-t svg *{
   fill: #fff !important;
-}
+}*/
 
  /*recs criteria*/ 
- .filter-component-icon .hrc-icons_pass.active svg circle,
+/* .filter-component-icon .hrc-icons_pass.active svg circle,
  .recommendations-table .hrc-icons_pass svg circle {
    fill: #029BE5 !important;
  }
@@ -71,7 +71,7 @@
  .filter-component-icon .hrc-icons_fail.active svg *,
  .recommendations-table .hrc-icons_fail svg *{
    fill: #546E7A !important
- }
+ }*/
 
  /*category icons*/ 
 .hrc-icons_cat {
