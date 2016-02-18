@@ -8,15 +8,31 @@
 </g>
 <g id="link-list">
 </g>
+<g id="linkedin_1_">
+</g>
+<g id="twitter">
+</g>
+<g id="facebook">
+</g>
 <g id="download">
 </g>
 <g id="info">
 </g>
 <g id="close">
 </g>
+<g id="delete">
+</g>
+<g id="dismiss-fat">
+</g>
+<g id="more">
+</g>
 <g id="dismiss">
 </g>
 <g id="search">
+</g>
+<g id="dropdown-close_1_">
+</g>
+<g id="dropdown-open_1_">
 </g>
 <g id="filter-open">
 </g>
@@ -27,15 +43,23 @@
 <g id="pass">
 </g>
 <g id="smart-t-fail">
+	<g id="front_9_">
+	</g>
 </g>
 <g id="smart-r-fail">
+	<g id="front_8_">
+	</g>
 </g>
 <g id="smart-a-fail">
+	<g id="front_7_">
+	</g>
 </g>
 <g id="smart-m-fail">
+	<g id="front_6_">
+	</g>
 </g>
 <g id="smart-s-fail">
-	<g id="smart-s-fail_1_">
+	<g id="front_5_">
 	</g>
 </g>
 <g id="smart-t">
@@ -48,8 +72,8 @@
 </g>
 <g id="smart-s">
 	<g id="smart-s_1_">
-		<circle style="fill:#F9F9F8;" cx="16" cy="16" r="16"/>
-		<g>
+		<circle id="back" style="fill:#F9F9F8;" cx="16" cy="16" r="16"/>
+		<g id="front">
 			<g>
 				<polygon style="fill:#657C87;" points="21.8,16.3 21.8,21.8 10.2,21.8 10.2,10.2 21.8,10.2 21.8,11.3 22.7,10.4 22.7,9.3 
 					9.3,9.3 9.3,22.7 22.7,22.7 22.7,15.4 				"/>
@@ -60,6 +84,18 @@
 		</g>
 	</g>
 </g>
+<g id="smart-m-pass">
+</g>
+<g id="smart-s-pass">
+</g>
+<g id="smart-a-pass">
+</g>
+<g id="smart-r-pass">
+</g>
+<g id="smart-t-pass">
+</g>
 <g id="hrc-logo">
+</g>
+<g id="hrc-logo-icon">
 </g>
 </svg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+	 viewBox="0 0 84 58" style="enable-background:new 0 0 84 58;" xml:space="preserve">
 <g id="arrow-large-r">
 </g>
 <g id="link-external">
@@ -38,6 +38,17 @@
 </g>
 <g id="filter-close">
 </g>
+<g id="cat-agencies-white">
+	<polygon style="fill:#FFFFFF;" points="46,18.5 50.1,11.5 46,4.5 38,4.5 33.9,11.5 38,18.5 	"/>
+	<polygon style="fill:#FFFFFF;" points="27,25.9 27,24.2 28.8,24.2 28.8,23.5 33.7,23.5 36.4,18.9 32.4,12 24.3,12 20.3,18.9 
+		24.3,25.9 	"/>
+	<polygon style="fill:#FFFFFF;" points="51.6,25.9 59.7,25.9 63.7,18.9 59.7,12 51.6,12 47.6,18.9 	"/>
+	<polygon style="fill:#FFFFFF;" points="51.6,27.5 47.6,34.5 51.6,41.5 59.7,41.5 63.7,34.5 59.7,27.5 	"/>
+	<path style="fill:#FFFFFF;" d="M47.1,42.6v-0.4v-4h-1.4v-2.9h-1.4v-2.9h-1.4v-2.9H42v-2.9h-1.6v-1.6h-1.8v-0.7h-8.8v0.7h-1.8v1.6
+		h-1.6v2.9h-0.9v2.9H24v2.9h-1.4v2.9h-1.4v4v0.4v8.1h-0.9v2.8H48v-2.8h-0.9V42.6z M27.2,27.7h13.9v1.9H27.2V27.7z M26.3,30.5H42v1.9
+		H26.3V30.5z M24.9,33.4h18.5v1.9H24.9V33.4z M23.5,36.2h21.2v1.9H23.5V36.2z M24,50.7H23v-8.1H24V50.7z M31.1,50.7h-0.9v-8.1h0.9
+		V50.7z M38.2,50.7h-0.9v-8.1h0.9V50.7z M45.3,50.7h-0.9v-8.1h0.9V50.7z M46.2,41.6h-24v-2.5h24V41.6z"/>
+</g>
 <g id="fail">
 </g>
 <g id="pass">
@@ -55,20 +66,7 @@
 	</g>
 </g>
 <g id="smart-m-fail">
-	<circle id="back_6_" style="fill:#C9D3D7;" cx="16" cy="16" r="16"/>
 	<g id="front_6_">
-		<g>
-			<g>
-				<polygon style="fill:#546E7A;" points="21.8,8.9 19.1,8.9 19.1,16.4 21.8,19.1 				"/>
-				<polygon style="fill:#546E7A;" points="17.3,11.8 14.7,11.8 14.7,12 17.3,14.6 				"/>
-				<polygon style="fill:#546E7A;" points="19.1,22.2 17.3,22.2 17.3,20 14.7,17.4 14.7,22.2 12.9,22.2 12.9,15.6 12.4,15.1 
-					10.2,15.1 10.2,22.2 7.6,22.2 7.6,23.1 20.4,23.1 19.1,21.8 				"/>
-			</g>
-			<g>
-				
-					<rect x="1.7" y="15.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 16.0005 -6.6273)" style="fill:#546E7A;" width="28.6" height="1"/>
-			</g>
-		</g>
 	</g>
 </g>
 <g id="smart-s-fail">
