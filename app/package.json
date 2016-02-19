@@ -1,13 +1,13 @@
 {
   "name": "npa",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "'nz nationalplan of action'",
   "main": "src/app.js",
   "scripts": {
     "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run min-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
-    "assets": "cp src/index.html build/ && cp src/img/* build/img",
+    "assets": "cp src/index.html build/ && cp -r src/img/* build/img",
     "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
     "build-css": "cat src/styles/*.css > build/bundle.css",
     "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
@@ -40,16 +40,19 @@
   "homepage": "https://github.com/hrcnz/npa",
   "dependencies": {
     "debug": "^2.1.2",
-    "fluxxor": "^1.5.2",
-    "lodash": "^3.5.0",
+    "fluxxor": "^1.7.3",
+    "lodash": "^3.10.1",
     "marked": "^0.3.3",
-    "react": "^0.13.3",
-    "react-bootstrap": "^0.26.4",
+    "moment": "^2.10.6",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.0",
+    "react-debounce-input": "^2.2.0",
+    "react-dom": "^0.14.0",
     "react-g-analytics": "0.1.7",
-    "react-router": "^0.13.4",
-    "tabletop": "git://github.com/timwis/tabletop",
-    "traverse": "^0.6.6",
-    "url": "^0.10.3"
+    "react-router": "^0.13.5",
+    "react-svg-icons": "^0.2.0",
+    "react-widgets": "^3.0.0",
+    "tabletop": "git://github.com/timwis/tabletop"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
@@ -64,5 +67,8 @@
     "reactify": "^1.1.1",
     "uglify-js": "^2.4.23",
     "watchify": "^2.6.2"
+  },
+  "react-svg-icons": {
+    "assetPath": "src/img/svg-icons/"
   }
 }

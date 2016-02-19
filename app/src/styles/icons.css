@@ -1,0 +1,175 @@
+/* icons.css *********************************************  */
+/* icon- class is generally used as wrapper class for inline-svg element .isvg
+/  but may also be occasionally used to set backgground svg image
+*/
+[class^="hrc-icons_"], [class*=" hrc-icons_"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.hrc-icons_hrc-logo            { width: 220px; height: 135px; }
+
+.hrc-cell-icon [class^='hrc-icons'] {
+  width: 36px;
+  height: 36px;
+}
+ /*override default styles*/ 
+ /*smart criteria*/ 
+/*.action-section-analysis .hrc-icons_smart-s svg circle, 
+.action-section-analysis .hrc-icons_smart-m svg circle, 
+.action-section-analysis .hrc-icons_smart-a svg circle, 
+.action-section-analysis .hrc-icons_smart-r svg circle, 
+.action-section-analysis .hrc-icons_smart-t svg circle, 
+.filter-component-icon .hrc-icons_smart-s.active svg circle, 
+.filter-component-icon .hrc-icons_smart-m.active svg circle, 
+.filter-component-icon .hrc-icons_smart-a.active svg circle, 
+.filter-component-icon .hrc-icons_smart-r.active svg circle, 
+.filter-component-icon .hrc-icons_smart-t.active svg circle, 
+.actions-table .hrc-icons_smart-s svg circle,
+.actions-table .hrc-icons_smart-m svg circle,
+.actions-table .hrc-icons_smart-a svg circle,
+.actions-table .hrc-icons_smart-r svg circle,
+.actions-table .hrc-icons_smart-t svg circle {
+  fill: #69A41E !important;
+}
+.action-section-analysis .hrc-icons_smart-s svg *, 
+.action-section-analysis .hrc-icons_smart-m svg *, 
+.action-section-analysis .hrc-icons_smart-a svg *, 
+.action-section-analysis .hrc-icons_smart-r svg *, 
+.action-section-analysis .hrc-icons_smart-t svg *, 
+.filter-component-icon .hrc-icons_smart-s.active svg  *, 
+.filter-component-icon .hrc-icons_smart-m.active svg  *, 
+.filter-component-icon .hrc-icons_smart-a.active svg  *, 
+.filter-component-icon .hrc-icons_smart-r.active svg  *, 
+.filter-component-icon .hrc-icons_smart-t.active svg  *, 
+.actions-table .hrc-icons_smart-s svg *,
+.actions-table .hrc-icons_smart-m svg *,
+.actions-table .hrc-icons_smart-a svg *,
+.actions-table .hrc-icons_smart-r svg *,
+.actions-table .hrc-icons_smart-t svg *{
+  fill: #fff !important;
+}*/
+
+ /*recs criteria*/ 
+/* .filter-component-icon .hrc-icons_pass.active svg circle,
+ .recommendations-table .hrc-icons_pass svg circle {
+   fill: #029BE5 !important;
+ }
+ .filter-component-icon .hrc-icons_pass.active svg *,
+ .recommendations-table .hrc-icons_pass svg * {
+   stroke:#fff !important;
+ }
+ .filter-component-icon .hrc-icons_fail.active svg circle,
+ .recommendations-table .hrc-icons_fail svg circle{
+   fill: #C9D3D7 !important;
+ }
+ .filter-component-icon .hrc-icons_fail.active svg *,
+ .recommendations-table .hrc-icons_fail svg *{
+   fill: #546E7A !important
+ }*/
+
+ /*category icons*/ 
+.hrc-icons_cat {
+  width: 75%;
+  height:auto;
+  padding: 5px 0 0;
+}
+@media (min-width: 768px) {  
+  .hrc-icons_cat {
+    width: 50%;
+    padding: 10px 0 0;
+  }
+  .intro-category-explore .hrc-icons_cat {
+    padding: 12px 0 6px;
+  }
+}
+ /*override default styles*/ 
+.active .hrc-icons_cat svg *, 
+a:hover .hrc-icons_cat svg * {
+  fill: #fff !important;
+}
+
+.hrc-icons_cat-issues          { }
+.hrc-icons_cat-groups          { }
+.hrc-icons_cat-agencies        { }
+.hrc-icons_cat-treatybodies    { }
+
+.hrc-icons_filter-close, 
+.hrc-icons_filter-open {
+  width: 52px;
+  height: 44px;
+  background: #69A41E;
+  padding: 12px 15px;
+  margin-left: 10px;
+}
+
+.hrc-icons_dropdown-open       { width: 25px; height: 25px; }
+.hrc-icons_dropdown-close      { width: 25px; height: 25px; }
+
+.nav-primary .hrc-icons_search {
+  width: 16px;
+  height: 16px;
+}
+.search-field-wrapper .hrc-icons_search {
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+    width: 33px;
+    height: 33px;
+}
+ /*override default styles*/ 
+.search-field-wrapper .hrc-icons_search svg * {
+    stroke: #546E7A;
+    stroke-width: 1;
+}
+@media (min-width: 768px) {
+  .nav-primary .hrc-icons_search {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}
+.nav-primary .hrc-icons_search svg * {
+  stroke: #fff !important;
+}
+
+.hrc-icons_dismiss             { width: 25px; height: 25px; }
+.hrc-icons_dismiss-fat         { width: 12px; height: 12px; }
+.hrc-icons_more                { width: 12px; height: 12px; }
+
+.hrc-filter-toggle .hrc-icons{
+  margin-right: 7px;
+  margin-top: -6px;
+}
+
+.hrc-icons_close               { width: 68px; height: 68px; }
+.hrc-icons_info                { width: 20px; height: 20px; }
+.hrc-icons_download            { width: 25px; height: 25px; }
+
+.hrc-icons_facebook            { width: 18px; height:18px}
+.hrc-icons_linkedin            { width: 18px; height:18px }
+.hrc-icons_twitter             { width: 18px; height:18px }
+.share-modal-social .hrc-icons_facebook,
+.share-modal-social .hrc-icons_linkedin,
+.share-modal-social .hrc-icons_twitter { 
+  margin-right:10px
+}
+
+.hrc-icons_link-list           { width: 12px; height: 20px; }
+.hrc-icons_link-external       { width: 30px; height: 90px; }
+/*.icon_content-list        { see main.css }*/
+
+.hrc-icons_arrow-large-r {
+    height: auto;
+    width: 30px;
+}
+
+
+@media (min-width: 768px) {
+ 
+}

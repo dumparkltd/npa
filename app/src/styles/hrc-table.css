@@ -1,3 +1,4 @@
+/* hrc-table.css *********************************************  */
 .hrc-table{
   margin-top:10px;
   display:table;
@@ -97,6 +98,11 @@
     vertical-align: middle;
     padding: 10px 12px;
   }  
+  .hrc-table > .hrc-thead > .hrc-tr > .hrc-td.hrc-cell-icon, 
+  .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell-icon{
+    vertical-align: middle;
+    padding: 10px 8px;
+  }  
   .articles-table .hrc-table > .hrc-tbody > .hrc-tr > .hrc-td.hrc-cell-no {
       vertical-align: middle;
   }  
@@ -107,10 +113,13 @@
 
 /* header cells ------------------------------------------------------------- */
 
-.hrc-header-cell {
+.hrc-heder-cell,
+.hrc-header-cell .cell-key {
   color: #7696a5;
   font-size: 11px;
 }
+
+
 .hrc-header-cell .hrc-th-title{
   font-weight: bold;
   text-transform: uppercase;    
@@ -229,7 +238,8 @@
 
  /*cell icon*/
 .header-cell-icon {
-    width: 50px;
+    width: 40px;
+    text-align:center;
 }
 @media (min-width:768px){
   .recommendations-table .header-cell-icon {
@@ -310,7 +320,6 @@
   padding: 5px 5px 5px 0;
   position: relative;
   vertical-align:middle;
-  height:35px
 }
 
 .hrc-cell-bar .bar-value,
@@ -403,7 +412,7 @@
 
 @media (min-width:420px){
   .hrc-cell.hrc-cell-icon {
-    min-width: 60px;
+    min-width: 40px;
   }
 }
 /*cell spacer*/
