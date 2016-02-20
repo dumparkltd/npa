@@ -35,10 +35,7 @@ ul.nav-primary-list {
 .nav-primary-list a.btn {  
   font-weight: normal;
   font-size: 12px;
-  padding: 8px 12px;
-}
-.nav-primary-list li:last-child a.btn {
-    padding: 8px 5px;
+  padding: 8px;
 }
 .nav-categories {
   margin-bottom: 32px;

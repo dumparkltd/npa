@@ -75,23 +75,53 @@
 
  /*category icons*/ 
 .hrc-icons_cat {
-  width: 75%;
-  height:auto;
-  padding: 5px 0 0;
+  width:60px;
+  height:42px;  
+  margin-top:5px;
+}
+.intro-category-explore .hrc-icons_cat {
+  margin-top:10px;  
+  margin-bottom:10px;  
+}
+@media (min-width: 512px) {  
+  .hrc-icons_cat {
+    width:75px;
+    height: 52px;
+    margin-top:8px;
+  }
+  .intro-category-explore .hrc-icons_cat {
+    margin-top: 15px;  
+    margin-bottom: 15px;  
+  }  
 }
 @media (min-width: 768px) {  
   .hrc-icons_cat {
-    width: 50%;
-    padding: 10px 0 0;
+    width:90px;
+    height: 63px;
+    margin-top:12px;
   }
   .intro-category-explore .hrc-icons_cat {
-    padding: 12px 0 6px;
+    margin-bottom: 12px;    
+  }
+}
+@media (min-width: 992px) {  
+  .hrc-icons_cat {
+    width:115px;
+    height:80px;
+    margin-top: 15px;
+  }  
+  .intro-category-explore .hrc-icons_cat {
+    margin-bottom: 15px;    
   }
 }
  /*override default styles*/ 
 .active .hrc-icons_cat svg *, 
 a:hover .hrc-icons_cat svg * {
   fill: #fff !important;
+  -moz-transition: fill .2s ease;
+  -o-transition: fill .2s ease;
+  -webkit-transition: fill .2s ease;
+  transition: fill .2s ease;
 }
 
 .hrc-icons_cat-issues          { }
@@ -112,8 +142,8 @@ a:hover .hrc-icons_cat svg * {
 .hrc-icons_dropdown-close      { width: 25px; height: 25px; }
 
 .nav-primary .hrc-icons_search {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 .search-field-wrapper .hrc-icons_search {
     position: absolute;
@@ -129,9 +159,11 @@ a:hover .hrc-icons_cat svg * {
 }
 @media (min-width: 768px) {
   .nav-primary .hrc-icons_search {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin-left: 10px;
+    position: relative;
+    top:-1px;
   }
 }
 .nav-primary .hrc-icons_search svg * {

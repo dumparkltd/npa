@@ -14,7 +14,7 @@
 }
 
 .hrc-navbar .navbar-collapse .nav-group a {
-  padding: 8px 15px;
+  padding: 8px;
   height: 36px;
   display: block; 
 }
@@ -48,7 +48,8 @@
 button.navbar-toggle {
   position: absolute;
   right: 0;
-  padding: 16px 15px;
+  top: 8px;
+  padding: 8px 8px;
   float: none;
   border: none;
   margin: 0;

@@ -41,13 +41,11 @@ li.nav-categories-li:last-child a.btn{
 /*    padding: 6px 0 20px;    */
   }
 }
-li.nav-categories-li a:hover,
+li.nav-categories-li a:hover, 
 li.nav-categories-li a:hover:focus, 
-li.nav-categories-li.active a,
-li.nav-categories-li.active a:hover:focus,
-li.nav-categories-li a:active,
-li.nav-categories-li.active a:focus,
-li.nav-categories-li a:focus {
+li.nav-categories-li.active a, 
+li.nav-categories-li.active a:hover:focus, 
+li.nav-categories-li.active a:focus {
   background-color: #69A41E;
   color: #FFF;  
 }

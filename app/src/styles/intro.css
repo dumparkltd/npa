@@ -99,9 +99,6 @@ h3.intro-explore {
   display:table-cell;
   vertical-align: middle;
 }
-.intro-explore-text {
-  color: #78909C;
-}
 @media (min-width: 512px) {
   .intro-explore-buttons a.btn {
     font-size: 14px;

@@ -24,8 +24,11 @@ a.icon-hrc-logo:hover, a.icon-hrc-logo:focus {
 }
 
 
-.hrc-footer-item a {
+footer a {
   color: #fff;
+}
+footer a:hover {
+  color: #fff;  
 }
 
 
