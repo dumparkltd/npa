@@ -208,7 +208,7 @@ p a em {
 .tooltip-trigger:hover,
 a:hover,
 a:focus{
-  color: #008399;
+  color: #026B9F;
 }
 a.btn:hover,
 a.btn:focus,
@@ -435,7 +435,9 @@ ul.list-inline.list-bordered {
   width: 100%;
   background-color: #EAF0F4;
 }
-
+.recommendations-table .table-caption-highlight {
+  color:#029BE5;
+}
 .table-caption-highlight {
   color: #69A41E;
 }
