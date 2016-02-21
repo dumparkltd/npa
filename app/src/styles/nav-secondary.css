@@ -31,9 +31,9 @@
   text-decoration:none;
 }
 .hrc-navbar.navbar-default .navbar-nav > li > a:hover,
-.hrc-navbar.navbar-default .navbar-nav.nav-group-pages > li > a:focus,
-.hrc-navbar.navbar-default .navbar-nav.nav-group-pages  > li > a.active,
-.hrc-navbar.navbar-default .navbar-nav.nav-group-pages  > li.active > a{
+.hrc-navbar.navbar-default .navbar-nav > li > a:focus,
+.hrc-navbar.navbar-default .navbar-nav  > li > a.active,
+.hrc-navbar.navbar-default .navbar-nav  > li.active > a{
   color: #fff;
   background-color: #0383C9;
 }

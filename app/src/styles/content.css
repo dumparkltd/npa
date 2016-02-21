@@ -25,17 +25,20 @@
   margin: 26px 0 4px;
 }
 .smart-label {
-  font-weight: bold;
-  padding-top: 10px;
-  color: #7696a5;
-  display: table-cell;
-  height:50px;
+  padding-top: 7px;
+  color: #3C5462; 
+}
+.smart-label-result {
+    font-weight: bold;
 }
 
 li.list-item-smart {
   text-align: center;
+  vertical-align: top;
 }
-
+.target-date-date {
+  color: #69A41E;
+}
 .category-list-aside {
   border-top: 1px solid #dae4e7;
   padding: 5px 0;

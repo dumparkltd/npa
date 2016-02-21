@@ -41,11 +41,11 @@ var bucket = 'npabuffer'
 
 
 // V2 TEST
-var key = '1kaPzwJDFmA1WyUrvb5nDE6fIKWAy_6TC3rOun-FrhcY'
-var isProxy = false        
-// V2 DRAFT
-//var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
+//var key = '1kaPzwJDFmA1WyUrvb5nDE6fIKWAy_6TC3rOun-FrhcY'
 //var isProxy = false        
+// V2 DRAFT
+var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
+var isProxy = false        
 
 var entityStoreConfig = {
   key : key,

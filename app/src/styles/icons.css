@@ -11,7 +11,12 @@
   vertical-align: middle;
   max-width: 100%;
 }
-
+a:hover svg * {
+  -moz-transition: fill .2s ease;
+  -o-transition: fill .2s ease;
+  -webkit-transition: fill .2s ease;
+  transition: fill .2s ease;
+}
 .hrc-icons_hrc-logo            { width: 220px; height: 135px; }
 
 .hrc-cell-icon [class^='hrc-icons'] {
@@ -26,58 +31,84 @@
 }
  /*override default styles*/ 
  /*smart criteria*/ 
-/*.action-section-analysis .hrc-icons_smart-s svg circle, 
-.action-section-analysis .hrc-icons_smart-m svg circle, 
-.action-section-analysis .hrc-icons_smart-a svg circle, 
-.action-section-analysis .hrc-icons_smart-r svg circle, 
-.action-section-analysis .hrc-icons_smart-t svg circle, 
-.filter-component-icon .hrc-icons_smart-s.active svg circle, 
-.filter-component-icon .hrc-icons_smart-m.active svg circle, 
-.filter-component-icon .hrc-icons_smart-a.active svg circle, 
-.filter-component-icon .hrc-icons_smart-r.active svg circle, 
-.filter-component-icon .hrc-icons_smart-t.active svg circle, 
-.actions-table .hrc-icons_smart-s svg circle,
-.actions-table .hrc-icons_smart-m svg circle,
-.actions-table .hrc-icons_smart-a svg circle,
-.actions-table .hrc-icons_smart-r svg circle,
-.actions-table .hrc-icons_smart-t svg circle {
+.filter-component-icon a:hover .hrc-icons_smart-s-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-m-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-a-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-r-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-t-pass svg circle{
   fill: #69A41E !important;
 }
-.action-section-analysis .hrc-icons_smart-s svg *, 
-.action-section-analysis .hrc-icons_smart-m svg *, 
-.action-section-analysis .hrc-icons_smart-a svg *, 
-.action-section-analysis .hrc-icons_smart-r svg *, 
-.action-section-analysis .hrc-icons_smart-t svg *, 
-.filter-component-icon .hrc-icons_smart-s.active svg  *, 
-.filter-component-icon .hrc-icons_smart-m.active svg  *, 
-.filter-component-icon .hrc-icons_smart-a.active svg  *, 
-.filter-component-icon .hrc-icons_smart-r.active svg  *, 
-.filter-component-icon .hrc-icons_smart-t.active svg  *, 
-.actions-table .hrc-icons_smart-s svg *,
-.actions-table .hrc-icons_smart-m svg *,
-.actions-table .hrc-icons_smart-a svg *,
-.actions-table .hrc-icons_smart-r svg *,
-.actions-table .hrc-icons_smart-t svg *{
-  fill: #fff !important;
-}*/
-
  /*recs criteria*/ 
-/* .filter-component-icon .hrc-icons_pass.active svg circle,
- .recommendations-table .hrc-icons_pass svg circle {
+ .filter-component-icon a:hover .hrc-icons_pass svg circle{
    fill: #029BE5 !important;
  }
- .filter-component-icon .hrc-icons_pass.active svg *,
- .recommendations-table .hrc-icons_pass svg * {
-   stroke:#fff !important;
- }
- .filter-component-icon .hrc-icons_fail.active svg circle,
- .recommendations-table .hrc-icons_fail svg circle{
-   fill: #C9D3D7 !important;
- }
- .filter-component-icon .hrc-icons_fail.active svg *,
- .recommendations-table .hrc-icons_fail svg *{
-   fill: #546E7A !important
- }*/
+ /*smart and recs criteria*/
+.filter-component-icon a:hover .hrc-icons_smart-s-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-m-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-a-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-r-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-t-pass svg  *{
+  fill: #fff !important;
+}
+.filter-component-icon a:hover .hrc-icons_pass svg * {
+  stroke: #fff !important;
+}
+.filter-component-icon a:hover .hrc-icons_smart-s-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-m-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-a-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-r-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-t-fail svg circle,
+.filter-component-icon a:hover .hrc-icons_fail svg circle {
+  fill: #C9D3D7 !important;
+}
+.filter-component-icon a:hover .hrc-icons_smart-s-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-m-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-a-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-r-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-t-fail svg  *,
+.filter-component-icon a:hover .hrc-icons_fail svg * {
+  fill: #546E7A !important;
+}
+
+
+.page-content-smart .marked-inner-html h3#specific:before, 
+.page-content-smart .marked-inner-html h3#measurable:before, 
+.page-content-smart .marked-inner-html h3#assignable:before, 
+.page-content-smart .marked-inner-html h3#result-oriented:before, 
+.page-content-smart .marked-inner-html h3#time-bound:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-s-pass-active.svg');
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  content: "";
+  vertical-align: middle;
+  margin: 2px 16px 10px 0;
+  float: left;
+}
+@media (min-width: 768px) {  
+  .page-content-smart .marked-inner-html h3#specific:before, 
+  .page-content-smart .marked-inner-html h3#measurable:before, 
+  .page-content-smart .marked-inner-html h3#assignable:before, 
+  .page-content-smart .marked-inner-html h3#result-oriented:before, 
+  .page-content-smart .marked-inner-html h3#time-bound:before {
+    width: 57px;
+    height: 57px;
+    margin-top:2px;
+  }
+}
+.page-content-smart .marked-inner-html h3#measurable:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-m-pass-active.svg');
+}
+.page-content-smart .marked-inner-html h3#assignable:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-a-pass-active.svg');
+} 
+.page-content-smart .marked-inner-html h3#result-oriented:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-r-pass-active.svg');
+}
+.page-content-smart .marked-inner-html h3#time-bound:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-t-pass-active.svg');
+}
+
 
  /*category icons*/ 
 .hrc-icons_cat {
@@ -120,14 +151,12 @@
     margin-bottom: 15px;    
   }
 }
+
+
  /*override default styles*/ 
 .active .hrc-icons_cat svg *, 
 a:hover .hrc-icons_cat svg * {
   fill: #fff !important;
-  -moz-transition: fill .2s ease;
-  -o-transition: fill .2s ease;
-  -webkit-transition: fill .2s ease;
-  transition: fill .2s ease;
 }
 
 .hrc-icons_cat-issues          { }
@@ -151,17 +180,37 @@ a:hover .hrc-icons_cat svg * {
   width: 15px;
   height: 15px;
 }
+.hrc-icons_dismiss { 
+  width: 18px; 
+  height: 18px; 
+}
 .search-field-wrapper .hrc-icons_search {
-    position: absolute;
-    bottom: 6px;
-    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 768px) {
+  .search-field-wrapper .hrc-icons_search {
     width: 33px;
-    height: 33px;
+    height: 33px;  
+  }  
+  .hrc-icons_dismiss { 
+    width: 25px; 
+    height: 25px; 
+  }
 }
  /*override default styles*/ 
 .search-field-wrapper .hrc-icons_search svg * {
     stroke: #546E7A;
-    stroke-width: 1;
+    stroke-width: 1.2px;
+}
+.search-field-wrapper .hrc-icons_dismiss svg * {
+  stroke: #037ABA;
+  stroke-width: 2px;
+}
+.search-field-wrapper a:hover .hrc-icons_dismiss svg *,
+.search-field-wrapper a:focus .hrc-icons_dismiss svg * { 
+  stroke: #029BE5;
+  stroke-width: 3px;
 }
 @media (min-width: 768px) {
   .nav-primary .hrc-icons_search {
@@ -176,7 +225,6 @@ a:hover .hrc-icons_cat svg * {
   stroke: #fff !important;
 }
 
-.hrc-icons_dismiss             { width: 25px; height: 25px; }
 .hrc-icons_dismiss-fat         { width: 12px; height: 12px; }
 .hrc-icons_more                { width: 12px; height: 12px; }
 
@@ -184,8 +232,21 @@ a:hover .hrc-icons_cat svg * {
   margin-right: 7px;
   margin-top: -6px;
 }
+@media (min-width: 768px) {
+  .hrc-icons_close { 
+    width: 68px; height: 68px; 
+  }
+}
+a:hover .hrc-icons_info svg *,
+a:focus .hrc-icons_info svg * {
+  fill:#0383C9;
+}
+a:hover .hrc-icons_close svg *,
+a:focus .hrc-icons_close svg * { 
+  stroke: #0383C9;
+}
 
-.hrc-icons_close               { width: 68px; height: 68px; }
+
 .hrc-icons_info                { width: 20px; height: 20px; }
 .hrc-icons_download            { width: 25px; height: 25px; }
 
