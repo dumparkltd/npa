@@ -10,7 +10,8 @@ var actions         = require("actions"),
     
 //stores
 var RouteStore      = require("stores/route-store"),
-    EntityStore     = require("stores/entity-store")
+    EntityStore     = require("stores/entity-store"), 
+    PrintStore     = require("stores/print-store") 
 
 //utils
 var loadData        = require('utils/load-data')
@@ -57,6 +58,7 @@ var entityStoreConfig = {
 // initialise stores
 var stores = {
   routes:  new RouteStore({ router: router }),
+  printer:  new PrintStore({  }),
   actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
