@@ -97,7 +97,8 @@ h2.header-type-large{
 .section-recs h2 {
   margin-bottom: 5px;
 }
-
+.hrc-single-view-recommendation h1.header-title,
+.hrc-single-view-action h1.header-title,
 h3 {
   font-size: 18px;
   font-weight: 500;
@@ -396,6 +397,8 @@ ul.list-inline.list-bordered {
   .section-recs h2 {
     margin-bottom: 30px;
   }
+  .hrc-single-view-recommendation h1.header-title,
+  .hrc-single-view-action h1.header-title,
   h3 {
     font-size: 26px;
     line-height: 1.3;
