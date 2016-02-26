@@ -135,6 +135,29 @@ h5 {
   text-transform:uppercase;
   color: #899BA3
 }
+h5.header-tool a {
+    color: #899BA3;
+}
+h5.header-tool a:hover {
+color: #026B9F;
+}
+
+.sup-title-tools li:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+.sup-title-tools li {
+    border-left: 1px solid #899BA3;
+    margin: 8px 0;
+    padding: 0 10px;
+}
+h5.header-type, h5.header-tool {
+    margin: 2px 0 0;
+}
+h5.header-tool {
+    text-transform: none;
+}
+
 h5.header-type {
   margin-bottom:6px;
   text-transform:uppercase;
