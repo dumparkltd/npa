@@ -136,11 +136,11 @@ h5 {
   color: #899BA3
 }
 h5.header-tool a {
-    color: #899BA3;
+  font-weight: normal;
 }
-h5.header-tool a:hover {
+/*h5.header-tool a:hover {
 color: #026B9F;
-}
+}*/
 
 .sup-title-tools li:first-child {
     padding-left: 0;
@@ -460,6 +460,23 @@ ul.list-inline.list-bordered {
   width: 100%;
   background-color: #EAF0F4;
 }
+
+
+.tool-message {
+    font-weight: normal;
+    padding-left: 42px;
+    position: relative;
+}
+.tool-message.tool-print-tool {
+    padding-left: 42px;
+    position: relative;
+}
+.tool-message.tool-print-tool img{
+    position: absolute;
+    top: -9px;
+    left: 0;
+}
+
 .table-caption-highlight {
   color:#029BE5;
 }
