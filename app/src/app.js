@@ -62,11 +62,11 @@ var stores = {
   actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
-    title:{single:'Action',plural:'Actions'}})),  
+    title:{single:'Government Action',plural:'Government Actions'}})),  
   recommendations: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'recommendations', 
     type:'recommendation', 
-    title:{single:'Recommendation',plural:'Recommendations'}})),  
+    title:{single:'UPR Recommendation',plural:'UPR Recommendations'}})),  
   issues: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'issues', 
     type:'issue', 
