@@ -47,7 +47,7 @@
     "react-bootstrap": "^0.28.0",
     "react-debounce-input": "^2.2.0",
     "react-dom": "^0.14.0",
-    "react-g-analytics": "0.1.7",
+    "react-ga": "^1.2.0",
     "react-router": "^0.13.5",
     "react-svg-icons": "^0.2.0",
     "react-widgets": "^3.0.0",

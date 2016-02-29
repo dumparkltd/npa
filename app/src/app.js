@@ -2,7 +2,8 @@
 var React           = require("react"),
     ReactDOM        = require("react-dom"),
     Router          = require("react-router"),
-    Fluxxor         = require("fluxxor")
+    Fluxxor         = require("fluxxor"),
+    ga              = require("react-ga")
 
 // flux 
 var actions         = require("actions"),
@@ -23,6 +24,9 @@ window.Tabletop     = Tabletop
 //helpers
 var _               = require('lodash')
 var log             = require('debug')('src:app')
+
+
+ga.initialize('UA-51960056-3');
 
 
 //TODO set with config | environment variable
@@ -106,8 +110,9 @@ var flux = new Fluxxor.Flux(stores, actions.methods);
 
 // run application
 router.run(
-  function(Handler) {
+  function(Handler,state) {
     log('rendering app...')
+    ga.pageview(state.pathname)
     ReactDOM.render(
       React.createElement(Handler, { flux: flux }),
       document.getElementById("app")
