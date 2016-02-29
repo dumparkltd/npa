@@ -11,8 +11,8 @@
   width: 100%;
   height: 30px;
   padding: 0 24px;
-  color: #627A85;
-  border-bottom: 1px solid #78909C;
+  color: #4F6C82;
+  border-bottom: 1px solid #4F6C82;
   font-weight: 200;
 }
 @media (min-width: 768px) {                        
@@ -71,10 +71,10 @@ a.btn-clear-search {
 }
 .route-search .result-types a:hover {
   text-decoration:none;
-  color:#0383C9
+  color:#026B9F
 }
 .route-search .result-types a.active {
-  color: #0383C9;
+  color: #026B9F;
 }
 .route-search .result-types a.active.no-results {
   font-weight:normal;  
@@ -87,7 +87,7 @@ a.btn-clear-search {
 }
 .route-search .result-types a.active .result-no {
   color: #fff;
-  background-color: #0383C9;
+  background-color: #026B9F;
 }
 
 .route-search .result-types .no-results .result-no {

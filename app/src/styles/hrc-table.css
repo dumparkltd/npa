@@ -114,14 +114,13 @@
 /* header cells ------------------------------------------------------------- */
 
 .hrc-header-cell .cell-key {
-  color: #899BA3;
+  color: #627A84;
   font-size: 12px;
 }
 
 
 .hrc-header-cell .hrc-th-title{
-  font-weight: bold;
-  color: #899BA3;
+  color: #627A84;
 }
 .hrc-header-cell .tooltip-trigger  .hrc-th-title{
     color: #263238;

@@ -15,7 +15,7 @@ h3.intro-explore {
 }
 
 .intro-lead {
-  background-color: #0383C9;
+  background-color: #026B9F;
   color: #fff;
   font-size: 16px;
 }
@@ -28,7 +28,7 @@ h3.intro-explore {
   left: 50%;
   bottom: -11px;
   
-  border-color: #0383C9 transparent transparent transparent;
+  border-color: #026B9F transparent transparent transparent;
   border-bottom-width: 0;
   border-width: 11px 11px 0;
   border-style: solid;    

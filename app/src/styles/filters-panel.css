@@ -17,7 +17,7 @@
 
 .hrc-filter-panel .filter-label,
 .hrc-filter-panel .hrc-filter-group h5 {
-  color: #3C5462;
+  color: #4F6C82;
   font-size: 13px;
   text-transform: none;
   margin-bottom:5px;
@@ -36,7 +36,7 @@
   font-size: 12px;
 }
 .hrc-filter-panel h4 {
-  color: #3C5462;
+  color: #4F6C82;
   font-size: 13px;
   text-transform: none;
   margin-top: 20px;
@@ -149,7 +149,7 @@
 .hrc-filter-panel .filter-component-icon a,
 .hrc-filter-panel .filter-component-icon a:hover,
 .hrc-filter-panel .filter-component-icon a:focus {
-    color: #3C5462;
+    color: #4F6C82;
 }
 .hrc-filter-panel .filter-component-icon a:hover {
     text-decoration:none;
@@ -164,7 +164,7 @@
 /* smart true */
 .hrc-filter-panel .hrc-filter-component-type-smart a:hover .filter-component-icon-text.Met,
 .hrc-filter-panel .hrc-filter-component-type-smart a .filter-component-icon-text.true {
-  color: #69A41E;
+  color: #53830B;
 }
 .hrc-filter-panel .hrc-filter-component-type-smart a:hover .filter-component-icon-text.Not-met,
 .hrc-filter-panel .hrc-filter-component-type-smart a .filter-component-icon-text.false,
@@ -178,7 +178,7 @@
 .hrc-filter-panel .filter-component-icon a:hover .filter-component-icon-text.Addressed,
 .hrc-filter-panel .filter-component-icon .filter-component-icon-text.Accepted.true,
 .hrc-filter-panel .filter-component-icon .filter-component-icon-text.Addressed.true {
-  color: #0383C9;
+  color: #026B9F;
 }
 
 .filter-component-icon a {
@@ -215,7 +215,7 @@
 }
 
 .hrc-filter-panel .hrc-filter-toggle-bottom .hrc-filter-toggle {
-    background-color: #69A41E;
+    background-color: #53830B;
     color: #fff;
     /* text-align: center; */
     position: initial;
@@ -267,7 +267,7 @@
 }
 
 .hrc-filter-panel .rw-multiselect-taglist > li {
-  background-color: #029BE5;
+  background-color: #027DBB;
   border-radius: 18px;
   padding: 3px 4px 2px 8px;
   margin: 3px 5px;
@@ -343,7 +343,7 @@ ul.rw-list > li.rw-list-empty:last-child{
 ul.rw-list > li.rw-list-option.rw-state-focus, 
 .rw-selectlist > li.rw-list-option.rw-state-focus {
     background-color: #ffffff;
-    border-color: #029BE5!important;
+    border-color: #027DBB!important;
     color: #263238;
 }
 .rw-calendar-grid td .rw-btn:hover,

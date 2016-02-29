@@ -9,7 +9,6 @@
 }
 
 .nav-group li a{
-  font-weight: bold;
   text-align: right;
 }
 
@@ -35,7 +34,7 @@
 .hrc-navbar.navbar-default .navbar-nav  > li > a.active,
 .hrc-navbar.navbar-default .navbar-nav  > li.active > a{
   color: #fff;
-  background-color: #0383C9;
+  background-color: #026B9F;
 }
 
 
@@ -73,12 +72,12 @@ button.navbar-toggle {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle:hover {
-  background-color: #0383C9;
+  background-color: #026B9F;
 }
 .hrc-navbar.navbar-default .navbar-collapse {
   overflow: hidden;
-  border-bottom: 1px solid #029BE5;
-  border-top: 1px solid #0383C9;
+  border-bottom: 1px solid #027DBB;
+  border-top: 1px solid #026B9F;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -114,7 +113,7 @@ button.navbar-toggle {
     font-size: 14px;
   }
   .nav-group-pages li {
-    border-right: 1px solid #0383C9;
+    border-right: 1px solid #026B9F;
   }
   .hrc-navbar .navbar-collapse {
     position: absolute;

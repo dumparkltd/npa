@@ -3,7 +3,7 @@
 
 nav.nav-primary {
   position: relative;
-  background-color: #029BE5;
+  background-color: #027DBB;
 }
 ul.nav-primary-list {
     margin-bottom: 0;
@@ -12,10 +12,10 @@ ul.nav-primary-list {
 }
 
 .nav-primary-list > li {
-  border-right: 1px solid #0383C9;
+  border-right: 1px solid #026B9F;
 }
 .nav-primary-list > li:first-child {
-  border-left: 1px solid #0383C9;
+  border-left: 1px solid #026B9F;
 }
 
 .nav-primary-list > li:last-child {
@@ -23,12 +23,12 @@ ul.nav-primary-list {
   top: 0;
   right: 0;
   border-right: none;
-  border-left: 1px solid #0383C9;
+  border-left: 1px solid #026B9F;
 }
 
 .nav-primary-list a.btn:hover,
 .nav-primary-list a.btn.active{
-  background-color: #0383C9;
+  background-color: #026B9F;
   color: #ffffff;
 }
 

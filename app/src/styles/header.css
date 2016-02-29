@@ -1,6 +1,6 @@
 /* header.css *********************************************  */
 .hrc-header {
-  background-color: #029BE5;
+  background-color: #027DBB;
   position:relative;
   z-index:1; /* make sure shadow is visible on following divs */
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
@@ -10,11 +10,11 @@
 
 /*navbar*/
 .hrc-navbar {
-  background-color: #029BE5; /* override bootstrap default */
+  background-color: #027DBB; /* override bootstrap default */
   margin-bottom: 0px;
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #0383C9;
+  border-bottom: 1px solid #026B9F;
 }
 
 .header-intro .navbar-collapse {

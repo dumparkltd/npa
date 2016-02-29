@@ -17,7 +17,7 @@ li.nav-categories-li {
 li.nav-categories-li a.btn {
   width: 100%;
   text-decoration: none;
-  color: #3C5462;
+  color: #4F6C82;
   display: block;
   background-color:transparent;
   padding: 0;
@@ -46,12 +46,12 @@ li.nav-categories-li a:hover:focus,
 li.nav-categories-li.active a, 
 li.nav-categories-li.active a:hover:focus, 
 li.nav-categories-li.active a:focus {
-  background-color: #69A41E;
+  background-color: #53830B;
   color: #FFF;  
 }
 .intro li.nav-categories-li a:hover,
 .intro li.nav-categories-li a:hover:focus {
-  background-color: #598E0C;
+  background-color: #456D09;
 }
 
 
@@ -61,13 +61,13 @@ li.nav-categories-li .title-wrap {
 }
 
 .intro li.nav-categories-li .title-wrap {
-  background: #69A41E;
+  background: #53830B;
   color: #fff;
   border-top: 1px solid #EAF0F4;
   width: 101%;
 }
 .intro li.nav-categories-li a:hover .title-wrap {
-  background: #598E0C;
+  background: #456D09;
 }
 
 li.nav-categories-li .title {
@@ -113,6 +113,6 @@ li.nav-categories-li .title {
   bottom: -11px;
   left: 50%;
   margin-left: -11px;
-  border-top-color: #69A41E;
+  border-top-color: #53830B;
   border-bottom-width: 0;
 }
