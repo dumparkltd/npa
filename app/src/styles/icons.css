@@ -248,8 +248,17 @@ a:focus .hrc-icons_close svg * {
 
 
 .hrc-icons_info                { width: 20px; height: 20px; }
-.hrc-icons_download            { width: 25px; height: 25px; }
-
+.hrc-icons_download {
+    width: 17px;
+    height: 20px;
+    margin-right: 5px;
+}
+a .hrc-icons_download svg * {
+  fill:#029BE5;
+}
+a:hover .hrc-icons_download svg * {
+  fill:#026B9F;
+}
 .hrc-icons_facebook            { width: 18px; height:18px}
 .hrc-icons_linkedin            { width: 18px; height:18px }
 .hrc-icons_twitter             { width: 18px; height:18px }

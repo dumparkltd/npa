@@ -4,17 +4,16 @@
   "description": "'nz nationalplan of action'",
   "main": "src/app.js",
   "scripts": {
-    "dev": "NODE_ENV=development npm run assets && npm run watch-css && npm run budo",
+    "assets": "cp src/index.html build/ && cp -r src/img/* build/img && cp -r src/js/* build/js",
+    "build-css": "cat src/styles/*.css > build/bundle.css",
+    "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
     "build": "browserify src/app.js | uglifyjs > build/bundle.js && npm run min-css",
     "build-dev": "browserify src/app.js -o build/bundle.js -d  && npm run build-css",
-    "assets": "cp src/index.html build/ && cp -r src/img/* build/img",
-    "min-css": "cat src/styles/*.css | cleancss -o build/bundle.css",
-    "build-css": "cat src/styles/*.css > build/bundle.css",
-    "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
     "ready-deploy": "npm run build && npm run assets",
+    "watch-css": "./node_modules/catw/bin/cmd.js src/styles/*.css -o build/bundle.css -v",
     "watch": "watchify src/app.js -o build/bundle.js -v -d && npm run watch-css",
-    "budo": "budo src/app.js:bundle.js --dir build -v | garnish",
-    "deploy-unix": "node gh-pages.js",
+    "disc": "browserify --full-paths src/app.js | uglifyjs | discify > build/disc.html",
+    "list": "browserify --list src/app.js > build/list.txt",
     "postinstall": "npm dedupe"
   },
   "browserify": {
@@ -52,18 +51,15 @@
     "react-router": "^0.13.5",
     "react-svg-icons": "^0.2.0",
     "react-widgets": "^3.0.0",
-    "tabletop": "git://github.com/timwis/tabletop"
+    "scriptjs": "^2.5.8",
+    "tabletop": "^1.4.3"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
-    "browserify": "^9.0.8",
-    "budo": "^3.1.1",
+    "browserify": "^13.0.0",
     "catw": "^1.0.1",
     "clean-css": "^3.3.3",
-    "colors": "^1.0.3",
     "envify": "^3.4.0",
-    "garnish": "^2.1.3",
-    "gh-pages": "^0.2.0",
     "reactify": "^1.1.1",
     "uglify-js": "^2.4.23",
     "watchify": "^2.6.2"
