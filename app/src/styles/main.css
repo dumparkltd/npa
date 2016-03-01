@@ -55,7 +55,7 @@ nav .list-inline > li {
 }
 .loading {
   text-align:center;
-  margin: 50px 0
+  margin: 40px 0 40px 0
 }
 
 p {
@@ -761,3 +761,22 @@ ul.list-inline.list-bordered {
         margin-left: 91.66666666666666%;
     }
 }  
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #999999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #999999;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #999999;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #999999;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #999999;
+}
