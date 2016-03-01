@@ -17,7 +17,7 @@
 
 .hrc-filter-panel .filter-label,
 .hrc-filter-panel .hrc-filter-group h5 {
-  color: #4F6C82;
+  color: #546e7a;
   font-size: 13px;
   text-transform: none;
   margin-bottom:5px;
@@ -36,7 +36,7 @@
   font-size: 12px;
 }
 .hrc-filter-panel h4 {
-  color: #4F6C82;
+  color: #546e7a;
   font-size: 13px;
   text-transform: none;
   margin-top: 20px;
@@ -151,7 +151,7 @@
 .hrc-filter-panel .filter-component-icon a,
 .hrc-filter-panel .filter-component-icon a:hover,
 .hrc-filter-panel .filter-component-icon a:focus {
-    color: #4F6C82;
+    color: #546e7a;
 }
 .hrc-filter-panel .filter-component-icon a:hover {
     text-decoration:none;
