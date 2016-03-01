@@ -100,7 +100,9 @@
 .hrc-filter-panel .hrc-filter-component {
   padding-right: 15px;
 }
-
+.hrc-filter-panel .hrc-filter-group-type-icon .hrc-filter-component{
+    padding: 0 5px;
+}
 .hrc-filter-panel .hrc-filter-group-smart .hrc-filter-component{
   vertical-align: top;
   text-align: center;
@@ -258,7 +260,7 @@
 .hrc-filter-panel .rw-input {
   background: none;
   min-height: 34px;
-  padding: 6px 8px;
+  padding: 6px 4px;
 }
 
 .hrc-filter-panel .rw-multiselect-wrapper {

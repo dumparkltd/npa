@@ -29,6 +29,11 @@ a:hover svg * {
     height: 36px;
   }
 }
+.column-smart .list-item-smart .hrc-icons {
+    width: 49px;
+    height: 49px;
+    font-size: 14px;
+}
  /*override default styles*/ 
  /*smart criteria*/ 
 .filter-component-icon a:hover .hrc-icons_smart-s-pass svg circle, 
@@ -223,6 +228,7 @@ a:hover .hrc-icons_cat svg * {
 }
 .nav-primary .hrc-icons_search svg * {
   stroke: #fff !important;
+  stroke-width: 3;
 }
 
 .hrc-icons_dismiss-fat         { width: 12px; height: 12px; }
@@ -268,7 +274,7 @@ a:hover .hrc-icons_download svg * {
   margin-right:10px
 }
 
-.hrc-icons_link-list           { width: 12px; height: 20px; }
+.hrc-icons_link-list           { width: 14px; height: 20px; }
 .hrc-icons_link-external       { width: 30px; height: 90px; }
 /*.icon_content-list        { see main.css }*/
 

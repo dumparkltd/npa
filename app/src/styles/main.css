@@ -107,7 +107,6 @@ h3 {
 .page-lead-header {
   margin-bottom: 15px;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.3;
 }
 .marked-inner-html h1,
@@ -207,6 +206,9 @@ button,a {
   -moz-transition: background-color 0.2s ease, color 0.2s ease;
   -o-transition: background-color 0.2s ease, color 0.2s ease;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+.tooltip-trigger{
+  font-weight:bold
 }
 .tooltip-trigger,
 a{
@@ -373,12 +375,12 @@ ul.list-inline.list-bordered {
 }
 .hrc-nav-carousel a.btn {
   background:none;
-  color: #027DBB;
+  color: #627A84;
 }
 .hrc-nav-carousel a.btn:focus,
 .hrc-nav-carousel a.btn:hover{
   background:none;
-  color: #026B9F;
+  color: #627A84;
 }
 
 
@@ -395,7 +397,7 @@ ul.list-inline.list-bordered {
   }
   small,
   .small{
-    font-size:13px;
+    font-size:14px;
   }
   .small p,
   .small .marked-inner-html,
@@ -478,10 +480,10 @@ ul.list-inline.list-bordered {
 }
 
 .table-caption-highlight {
-  color:#027DBB;
+  color:#029BE5;
 }
 .actions-table .table-caption-highlight {
-  color: #53830B;
+  color: #69A41E;
 }
 
 .container {

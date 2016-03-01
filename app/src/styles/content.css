@@ -49,12 +49,15 @@ ul.hrc-category-list {
 }
 .hrc-category-list > li {
   display: inline-block;
+}
+.hrc-category-list > li a{
   border-right: 1px solid #0094ab;
   padding: 0 10px 0 0;
   margin: 0 10px 0 0;
+  display:inline
 }
 
-.hrc-category-list > li:last-child {
+.hrc-category-list > li:last-child a{
   border-right: 0;
 }
 
