@@ -196,8 +196,7 @@
 
 .hrc-filter-group-reset, .hrc-filter-row-reset {
     font-size: 12px;
-    font-weight: normal;
-    margin-left: 5px;
+    margin-left: 15px
 }
 
 .hrc-filter-panel .rw-widget > .rw-select {

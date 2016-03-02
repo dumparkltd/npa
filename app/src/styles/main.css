@@ -781,3 +781,10 @@ ul.list-inline.list-bordered {
 :placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
   color:    #999999;
 }
+
+
+@media (max-width: 767px) {
+  span.visible-xs {
+      display: inline-block!important;
+  }
+}
