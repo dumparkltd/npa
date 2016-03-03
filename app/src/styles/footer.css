@@ -30,6 +30,10 @@ footer a {
 footer a:hover {
   color: #fff;  
 }
+footer a:focus {
+  color: #fff;
+  opacity:0.8
+}
 
 
 a.builtby {
@@ -61,6 +65,7 @@ footer > .container {
     position: absolute;
     bottom: 10px;
     right:initial;
+    left:26px
   }
   .hrc-footer-builtby-wrap{
     padding: 0 26px;
