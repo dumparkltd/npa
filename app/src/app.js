@@ -28,7 +28,6 @@ var log             = require('debug')('src:app')
 
 ga.initialize('UA-51960056-3');
 
-
 //TODO set with config | environment variable
 //localStorage.setItem("debug", "*");
 
@@ -38,19 +37,15 @@ var router = Router.create({
 })
 
 // the google spreadsheet key
-// PRODUCTION
-//var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
-//var isProxy = true        
-
-var bucket = 'npabuffer'
-
-
-// V2 TEST
+// TEST V2 
 //var key = '1kaPzwJDFmA1WyUrvb5nDE6fIKWAy_6TC3rOun-FrhcY'
 //var isProxy = false        
-// V2 DRAFT
+// PRODUCTION V2 
 var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
-var isProxy = false        
+var isProxy = false
+
+
+var bucket = 'npabuffer'
 
 var entityStoreConfig = {
   key : key,
@@ -62,7 +57,7 @@ var entityStoreConfig = {
 // initialise stores
 var stores = {
   routes:  new RouteStore({ router: router }),
-  printer:  new PrintStore({  }),
+  printer:  new PrintStore({}),
   actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
