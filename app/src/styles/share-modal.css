@@ -1,3 +1,5 @@
+/* share-modal.css  ********************************************* */
+
 .share-modal .close-modal{
   position: fixed;
   top: 0;
@@ -10,7 +12,7 @@
 }
 
 .share-modal-inner {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #fff;
   z-index: 100;
@@ -20,7 +22,6 @@
 }
 @media (min-width:768px){
   .share-modal-inner {
-    top: 100px;
     bottom: auto;
     height: auto;
   }  
@@ -34,13 +35,10 @@
 }
 
 .btn.share-modal-social {
-  padding: 0px 7px;
+  padding: 6px 12px;  
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
-}
-.btn.share-modal-social {
-  background-color: #0094ab;
   color: #fff;  
 }
 
@@ -48,21 +46,14 @@
 .btn.share-modal-social:focus:hover,
 .btn.share-modal-social:active:hover,
 .btn.share-modal-social:hover {
-  background-color: #008399;
   color: #fff; 
 }
 
-.share-modal-social span {
-  height: 40px;
-  width: 40px;
-  padding-right: 10px;
-}
-
 .share-modal-link {
-  background-color: #dae4e7;
+  background-color: #EAF0F4;
   width: 100%;
   height: 40px;
-  color: #0094ab;
+  color: #026B9F;
   /*copied from btn*/
   padding: 6px 12px;
   background-image: none;

@@ -1,45 +1,73 @@
+/* footer.css ********************************************* */
 footer.hrc-footer {
   width: 100%;
   min-height: 200px;
   position:absolute;
   top: 100%;
   margin-top: -200px;
-  background-color: #e7eef0;
+  background-color: #027DBB;
+  color: #fff;
 }
 
-a.icon-hrc-logo-claim:hover, a.icon-hrc-logo-claim:focus {
+a.icon-hrc-logo:hover, a.icon-hrc-logo:focus {
     opacity: 0.8;
 }
 
 .hrc-footer-info {
-  background-color: #dae4e7;
+  background-color: #026B9F;
   padding-bottom: 60px !important;
 }
 
 .hrc-footer-item {
   vertical-align: top;
-  padding: 30px 26px;  
+  padding: 30px 26px !important;
 }
 
 
-.hrc-footer-item a {
-  color: #0094ab;
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;  
+}
+footer a:focus {
+  color: #fff;
+  opacity:0.8
 }
 
 
 a.builtby {
-  color: #a5bdc7;
+  color: #EAF0F4;
   position: absolute;
   bottom: 10px;
+  right: 10px;
 }
-
-
+footer > .container {
+    padding: 0;
+}
+.hrc-footer-row.row {
+    margin: 0;
+    padding: 0;
+}
+.hrc-footer-brand-logo {
+    text-align: left;
+}
 @media (min-width:768px){
-  .hrc-footer-item {    
+  .hrc-footer-item {
     min-height: 200px;
     text-align: left;
   }
   .hrc-footer-brand-logo {
     text-align: right;
+  }
+  a.builtby {
+    color: #EAF0F4;
+    position: absolute;
+    bottom: 10px;
+    right:initial;
+    left:26px
+  }
+  .hrc-footer-builtby-wrap{
+    padding: 0 26px;
   }
 }

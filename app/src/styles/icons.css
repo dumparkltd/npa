@@ -1,0 +1,289 @@
+/* icons.css *********************************************  */
+/* icon- class is generally used as wrapper class for inline-svg element .isvg
+/  but may also be occasionally used to set backgground svg image
+*/
+[class^="hrc-icons_"], [class*=" hrc-icons_"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+a:hover svg * {
+  -moz-transition: fill .2s ease;
+  -o-transition: fill .2s ease;
+  -webkit-transition: fill .2s ease;
+  transition: fill .2s ease;
+}
+.hrc-icons_hrc-logo            { width: 220px; height: 135px; }
+
+.hrc-cell-icon [class^='hrc-icons'] {
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 768px) {  
+  .hrc-cell-icon [class^='hrc-icons'] {
+    width: 36px;
+    height: 36px;
+  }
+}
+.column-smart .list-item-smart .hrc-icons {
+    width: 49px;
+    height: 49px;
+}
+ /*override default styles*/ 
+ /*smart criteria*/ 
+.filter-component-icon a:hover .hrc-icons_smart-s-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-m-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-a-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-r-pass svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-t-pass svg circle{
+  fill: #69A41E !important;
+}
+ /*recs criteria*/ 
+ .filter-component-icon a:hover .hrc-icons_pass svg circle{
+   fill: #029BE5 !important;
+ }
+ /*smart and recs criteria*/
+.filter-component-icon a:hover .hrc-icons_smart-s-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-m-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-a-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-r-pass svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-t-pass svg  *{
+  fill: #fff !important;
+}
+.filter-component-icon a:hover .hrc-icons_pass svg * {
+  stroke: #fff !important;
+}
+.filter-component-icon a:hover .hrc-icons_smart-s-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-m-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-a-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-r-fail svg circle, 
+.filter-component-icon a:hover .hrc-icons_smart-t-fail svg circle,
+.filter-component-icon a:hover .hrc-icons_fail svg circle {
+  fill: #C9D3D7 !important;
+}
+.filter-component-icon a:hover .hrc-icons_smart-s-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-m-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-a-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-r-fail svg  *, 
+.filter-component-icon a:hover .hrc-icons_smart-t-fail svg  *,
+.filter-component-icon a:hover .hrc-icons_fail svg * {
+  fill: #546E7A !important;
+}
+
+
+.page-content-smart .marked-inner-html h3#specific:before, 
+.page-content-smart .marked-inner-html h3#measurable:before, 
+.page-content-smart .marked-inner-html h3#assignable:before, 
+.page-content-smart .marked-inner-html h3#result-oriented:before, 
+.page-content-smart .marked-inner-html h3#time-bound:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-s-pass-active.svg');
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  content: "";
+  vertical-align: middle;
+  margin: 2px 16px 10px 0;
+  float: left;
+}
+@media (min-width: 768px) {  
+  .page-content-smart .marked-inner-html h3#specific:before, 
+  .page-content-smart .marked-inner-html h3#measurable:before, 
+  .page-content-smart .marked-inner-html h3#assignable:before, 
+  .page-content-smart .marked-inner-html h3#result-oriented:before, 
+  .page-content-smart .marked-inner-html h3#time-bound:before {
+    width: 57px;
+    height: 57px;
+    margin-top:2px;
+  }
+}
+.page-content-smart .marked-inner-html h3#measurable:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-m-pass-active.svg');
+}
+.page-content-smart .marked-inner-html h3#assignable:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-a-pass-active.svg');
+} 
+.page-content-smart .marked-inner-html h3#result-oriented:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-r-pass-active.svg');
+}
+.page-content-smart .marked-inner-html h3#time-bound:before {
+  background-image: url('./img/svg-icons/hrc-icons_smart-t-pass-active.svg');
+}
+
+
+ /*category icons*/ 
+.hrc-icons_cat {
+  width:60px;
+  height:42px;  
+  margin-top:5px;
+}
+.intro-category-explore .hrc-icons_cat {
+  margin-top:10px;  
+  margin-bottom:10px;  
+}
+@media (min-width: 512px) {  
+  .hrc-icons_cat {
+    width:75px;
+    height: 52px;
+    margin-top:8px;
+  }
+  .intro-category-explore .hrc-icons_cat {
+    margin-top: 15px;  
+    margin-bottom: 15px;  
+  }  
+}
+@media (min-width: 768px) {  
+  .hrc-icons_cat {
+    width:90px;
+    height: 63px;
+    margin-top:12px;
+  }
+  .intro-category-explore .hrc-icons_cat {
+    margin-bottom: 12px;    
+  }
+}
+@media (min-width: 992px) {  
+  .hrc-icons_cat {
+    width:115px;
+    height:80px;
+    margin-top: 15px;
+  }  
+  .intro-category-explore .hrc-icons_cat {
+    margin-bottom: 15px;    
+  }
+}
+
+
+ /*override default styles*/ 
+.active .hrc-icons_cat svg *, 
+a:hover .hrc-icons_cat svg * {
+  fill: #fff !important;
+}
+
+.hrc-icons_cat-issues          { }
+.hrc-icons_cat-groups          { }
+.hrc-icons_cat-agencies        { }
+.hrc-icons_cat-treatybodies    { }
+
+.hrc-icons_filter-close, 
+.hrc-icons_filter-open {
+  width: 52px;
+  height: 44px;
+  background: #69A41E;
+  padding: 12px 15px;
+  margin-left: 10px;
+}
+
+.hrc-icons_dropdown-open       { width: 25px; height: 25px; }
+.hrc-icons_dropdown-close      { width: 25px; height: 25px; }
+
+.nav-primary .hrc-icons_search {
+  width: 15px;
+  height: 15px;
+}
+.hrc-icons_dismiss { 
+  width: 18px; 
+  height: 18px; 
+}
+.search-field-wrapper .hrc-icons_search {
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 768px) {
+  .search-field-wrapper .hrc-icons_search {
+    width: 33px;
+    height: 33px;  
+  }  
+  .hrc-icons_dismiss { 
+    width: 25px; 
+    height: 25px; 
+  }
+}
+ /*override default styles*/ 
+.search-field-wrapper .hrc-icons_search svg * {
+    stroke: #546E7A;
+    stroke-width: 1.2px;
+}
+.search-field-wrapper .hrc-icons_dismiss svg * {
+  stroke: #037ABA;
+  stroke-width: 2px;
+}
+.search-field-wrapper a:hover .hrc-icons_dismiss svg *,
+.search-field-wrapper a:focus .hrc-icons_dismiss svg * { 
+  stroke: #029BE5;
+  stroke-width: 3px;
+}
+@media (min-width: 768px) {
+  .nav-primary .hrc-icons_search {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    position: relative;
+    top:-1px;
+  }
+}
+.nav-primary .hrc-icons_search svg * {
+  stroke: #fff !important;
+  stroke-width: 3;
+}
+
+.hrc-icons_dismiss-fat         { width: 12px; height: 12px; }
+.hrc-icons_more                { width: 12px; height: 12px; }
+
+.hrc-filter-toggle .hrc-icons{
+  margin-right: 7px;
+  margin-top: -6px;
+}
+@media (min-width: 768px) {
+  .hrc-icons_close { 
+    width: 68px; height: 68px; 
+  }
+}
+a:hover .hrc-icons_info svg *,
+a:focus .hrc-icons_info svg * {
+  fill:#0383C9;
+}
+a:hover .hrc-icons_close svg *,
+a:focus .hrc-icons_close svg * { 
+  stroke: #0383C9;
+}
+
+
+.hrc-icons_info                { width: 20px; height: 20px; }
+.hrc-icons_download {
+    width: 17px;
+    height: 20px;
+    margin-right: 5px;
+}
+a:hover .hrc-icons_download svg * {
+  fill:#026B9F;
+}
+.hrc-icons_facebook,
+.hrc-icons_linkedin,
+.hrc-icons_twitter 
+{ 
+  width: 18px; height:18px;
+        vertical-align: text-bottom;
+}
+.share-modal-social .hrc-icons_facebook,
+.share-modal-social .hrc-icons_linkedin,
+.share-modal-social .hrc-icons_twitter { 
+  margin-right:10px
+}
+
+.hrc-icons_link-list           { width: 14px; height: 20px; }
+.hrc-icons_link-external       { width: 30px; height: 90px; }
+/*.icon_content-list        { see main.css }*/
+
+.hrc-icons_arrow-large-r {
+    height: auto;
+    width: 30px;
+}
+
+
+@media (min-width: 768px) {
+ 
+}

@@ -1,7 +1,9 @@
 // react
 var React           = require("react"),
+    ReactDOM        = require("react-dom"),
     Router          = require("react-router"),
-    Fluxxor         = require("fluxxor")
+    Fluxxor         = require("fluxxor"),
+    ga              = require("react-ga")
 
 // flux 
 var actions         = require("actions"),
@@ -9,7 +11,8 @@ var actions         = require("actions"),
     
 //stores
 var RouteStore      = require("stores/route-store"),
-    EntityStore     = require("stores/entity-store") 
+    EntityStore     = require("stores/entity-store"), 
+    PrintStore     = require("stores/print-store") 
 
 //utils
 var loadData        = require('utils/load-data')
@@ -23,6 +26,8 @@ var _               = require('lodash')
 var log             = require('debug')('src:app')
 
 
+ga.initialize('UA-51960056-3');
+
 //TODO set with config | environment variable
 //localStorage.setItem("debug", "*");
 
@@ -32,15 +37,15 @@ var router = Router.create({
 })
 
 // the google spreadsheet key
-// PRODUCTION
-var key = '10t6LSAUsgVoqdxLbiTcQ8A_3m-R1t71iBAp4ctAoLew' 
-var isProxy = true        
-var bucket = 'npabuffer'
-
-
-// TEST
-//var key = '1N8XjgNi0C2NnCv9jfVaoEc3Pj1hASCZLk0lbWAQEonw'
+// TEST V2 
+//var key = '1kaPzwJDFmA1WyUrvb5nDE6fIKWAy_6TC3rOun-FrhcY'
 //var isProxy = false        
+// PRODUCTION V2 
+var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
+var isProxy = false
+
+
+var bucket = 'npabuffer'
 
 var entityStoreConfig = {
   key : key,
@@ -52,14 +57,15 @@ var entityStoreConfig = {
 // initialise stores
 var stores = {
   routes:  new RouteStore({ router: router }),
+  printer:  new PrintStore({}),
   actions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'actions',
     type:'action', 
-    title:{single:'Action',plural:'Actions'}})),  
+    title:{single:'Government Action',plural:'Government Actions'}})),  
   recommendations: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'recommendations', 
     type:'recommendation', 
-    title:{single:'Recommendation',plural:'Recommendations'}})),  
+    title:{single:'UPR Recommendation',plural:'UPR Recommendations'}})),  
   issues: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'issues', 
     type:'issue', 
@@ -80,10 +86,10 @@ var stores = {
     sheet: 'articles', 
     type:'article', 
     title:{single:'Article',plural:'Article'}})),  
-  terms: new EntityStore(_.extend({},entityStoreConfig,{ 
-    sheet: 'terms', 
-    type:'term', 
-    title:{single:'Term',plural:'Terms'}})),  
+  faq: new EntityStore(_.extend({},entityStoreConfig,{ 
+    sheet: 'faq', 
+    type:'faq', 
+    title:{single:'Question',plural:'Questions'}})),  
   sessions: new EntityStore(_.extend({},entityStoreConfig,{ 
     sheet: 'sessions', 
     type:'session', 
@@ -99,9 +105,10 @@ var flux = new Fluxxor.Flux(stores, actions.methods);
 
 // run application
 router.run(
-  function(Handler) {
+  function(Handler,state) {
     log('rendering app...')
-    React.render(
+    ga.pageview(state.pathname)
+    ReactDOM.render(
       React.createElement(Handler, { flux: flux }),
       document.getElementById("app")
     );

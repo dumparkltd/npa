@@ -1,0 +1,110 @@
+/* search.css ********************************************* */
+
+.search-field-wrapper {
+  padding: 20px 0 20px;
+}
+
+.search-field {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+  padding: 0 24px;
+  color: #546e7a;
+  border-bottom: 1px solid #546e7a;
+  font-weight: 200;
+}
+@media (min-width: 768px) {                        
+  .search-field {
+    font-size: 36px;
+    height: 50px;
+    padding: 0 50px;
+  }  
+}
+.search-field::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
+a.btn-clear-search {
+  position: absolute;
+  right: 5px;
+  bottom: 6px;
+}
+.search-field-wrapper .hrc-icons_search {
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+@media (min-width: 768px) {
+  .search-field-wrapper .hrc-icons_search {
+    left: 20px; 
+    bottom: 7px;
+  }  
+  a.btn-clear-search {
+    right: 20px;    
+    bottom: 10px;
+  }
+}
+.route-search .result-types {
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+.route-search .result-types li {
+  display: inline-block;
+  margin: 0px 20px 10px 0;
+}
+.route-search .result-types .no-results {
+  font-size: 13px;
+  color: #627A85;  
+  font-weight:normal;
+}
+.route-search .result-types a {
+  font-size: 13px;
+  color: #627A85;
+  font-weight:bold
+}
+.route-search .result-types a:focus .result-no{
+  text-decoration: none;
+}
+.route-search .result-types a:hover {
+  text-decoration:none;
+  color:#026B9F
+}
+.route-search .result-types a.active {
+  color: #026B9F;
+}
+.route-search .result-types a.active.no-results {
+  font-weight:normal;  
+}
+.route-search .result-no {
+  background-color: #E1E5E6;
+  border-radius: 15px;
+  padding: 3px 8px;
+  margin-left: 5px;
+}
+.route-search .result-types a.active .result-no {
+  color: #fff;
+  background-color: #026B9F;
+}
+
+.route-search .result-types .no-results .result-no {
+  background-color: #E1E5E6;
+}
+
+@media (min-width: 768px) {
+
+  .search-field-wrapper .icon-close-small {
+    height: 46px;
+    background-size: 25px;
+    background-position: center left;
+    width: 5%;
+  }
+
+  .route-search .result-types li {
+    display: block;
+    margin: 0px 20px 10px 0;
+  }
+}

@@ -1,0 +1,118 @@
+/*nav-categories.css ********************************************* */
+
+ul.nav-categories-list {
+  margin-bottom: 0px;
+  font-size: 0;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+li.nav-categories-li {
+  text-align: center;
+  padding:0;
+  position:relative;
+  vertical-align: top;
+}
+
+li.nav-categories-li a.btn {
+  width: 100%;
+  text-decoration: none;
+  color: #546e7a;
+  display: block;
+  background-color:transparent;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  white-space: normal;
+  border-right: 1px solid #EAF0F4;
+}
+li.nav-categories-li:last-child a.btn{
+  border-right: none;
+}
+@media (min-width: 768px) {
+  ul.nav-primary-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  ul.nav-categories-list {
+    margin: 0px;    
+  }
+  li.nav-categories-li a.btn {
+/*    padding: 6px 0 20px;    */
+  }
+}
+li.nav-categories-li a:hover, 
+li.nav-categories-li a:hover:focus, 
+li.nav-categories-li.active a, 
+li.nav-categories-li.active a:hover:focus, 
+li.nav-categories-li.active a:focus {
+  background-color: #53830B;
+  color: #FFF;  
+}
+.intro li.nav-categories-li a:hover,
+.intro li.nav-categories-li a:hover:focus {
+  background-color: #456D09;
+}
+
+
+li.nav-categories-li .title-wrap {
+  display:table;
+  width:100%;
+}
+
+.intro li.nav-categories-li .title-wrap {
+  background: #53830B;
+  color: #fff;
+  border-top: 1px solid #EAF0F4;
+  width: 101%;
+}
+.intro li.nav-categories-li a:hover .title-wrap {
+  background: #456D09;
+}
+
+li.nav-categories-li .title {
+  font-weight: bold;
+  font-size: 12px;
+  height: 36px;
+  line-height: 14px;
+  padding: 4px;
+  display:table-cell;
+  vertical-align:middle
+}
+@media (min-width: 512px) {
+  li.nav-categories-li .title {
+    font-size: 14px;
+    line-height: 17px;
+    height: 46px;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  li.nav-categories-li .title {
+    height: auto;
+    padding: 11px 12px;
+    font-size: 15px;
+    line-height: 19px;     
+  }
+}
+.nav-categories-li .arrow,
+.nav-categories-li .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.nav-categories-li.active .arrow {
+  border-width: 11px;
+}
+
+.nav-categories-li.active .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #53830B;
+  border-bottom-width: 0;
+}
