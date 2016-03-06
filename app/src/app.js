@@ -42,7 +42,7 @@ var router = Router.create({
 //var isProxy = false        
 // PRODUCTION V2 
 var key = '1I38ZaDXQvtXKWWOtCU7HtvC5Z8IcH5WOPQnBXcbZPbI'
-var isProxy = false
+var isProxy = true
 
 
 var bucket = 'npabuffer'
